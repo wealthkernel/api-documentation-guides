@@ -6,7 +6,7 @@ See the <a href="/docs/api/docs/help/Introduction.md">introduction</a> of the AP
 
 Here is how to get a mandate <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandate-pdf-preview/get">PDF preview</a>
 
-![Bacon](http://placebacon.net/800/300)
+[Bacon](http://placebacon.net/800/300)
 
 
 1. Numbered List Item 1
