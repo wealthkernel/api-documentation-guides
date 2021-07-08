@@ -4,6 +4,19 @@
       "type": "item",
       "title": "Welcome",
       "uri": "docs/Welcome.md"
+    },
+    {
+      "type": "divider",
+      "title": "Direct Debits"
+    },
+    {
+      "type": "item",
+      "title": "Getting API Access",
+      "uri": "docs/direct-debits/Api-Access.md"
     }
+    {
+      "type": "divider",
+      "title": "Direct Debits"
+    },
   ]
 }
