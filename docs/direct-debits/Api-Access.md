@@ -2,7 +2,7 @@
 tags: [Direct Debits]
 ---
 
-# Api-Access
+# Getting Access to the API
 
 All Direct Debit APIs are openly available in the sandbox environment. In order to access these APIs in Live the following steps must be completed to satisfy compliance requirements:
 
