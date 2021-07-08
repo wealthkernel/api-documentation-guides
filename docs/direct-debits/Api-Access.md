@@ -20,7 +20,7 @@ We would ask that you follow these guidelines as closely as possible to avoid de
 ### Page 1 - Bank Account Capture
 The first page must capture the back account to be used for the mandate. See the example below
 
-[[PUT IMAGE HERE]]
+<div style="text-align:center"><img style="display:inline" src="https://placekitten.com/500/700" /></div>
 
 This page must contain the following:
 - Capture of the bank account to be used for the mandate. This could also take the form of a dropdown selections of accounts previously registered. In either case the following details must be captured.
@@ -44,7 +44,7 @@ This page must contain the following:
 
 The link from the Direct Debit guarantee statement must show the full guarantee wording as shown below. The Direct Debit logo***(Make this a link)*** must also appear beside the statement.
 
-> **Put a logo in here**
+> <div style="text-align:center"><img style="display:inline" src="https://placekitten.com/200/300" /></div>
 >
 > The Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits.
 > If there are any changes to the amount, date or frequency of your Direct Debit GC re WealthKernel will notify you (normally 2 working days) in advance of your account being debited or as otherwise agreed.
@@ -52,6 +52,13 @@ The link from the Direct Debit guarantee statement must show the full guarantee 
 > If an error is made in the payment of your Direct Debit, by GC re WealthKernel or your bank or building society, you are entitled to a full and immediate refund of the amount paid from your bank or building society.
 > If you receive a refund you are not entitled to, you must pay it back when GC re WealthKernel asks you to.
 > You can cancel a Direct Debit at any time simply by contacting your bank or building society. Written confirmation may be required. Please also notify GC re WealthKernel.
+
+### Page 2 - Confirmation Screen
+The second screen must confirm back to the user the banking details they have entered and allow them to check the details and correct mistakes. See the example below
+
+<div style="text-align:center"><img style="display:inline" src="https://placekitten.com/500/700" /></div>
+
+This page must contain the following:
 
 
 
