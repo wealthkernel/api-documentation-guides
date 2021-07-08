@@ -44,7 +44,7 @@ This page must contain the following:
 
 The link from the Direct Debit guarantee statement must show the full guarantee wording as shown below. The Direct Debit logo***(Make this a link)*** must also appear beside the statement.
 
-> <div style="text-align:center"><img style="display:inline" src="https://placekitten.com/200/300" /></div>
+> <div style="text-align:center"><img style="display:inline" src="https://placekitten.com/200/100" /></div>
 >
 > The Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits.
 > If there are any changes to the amount, date or frequency of your Direct Debit GC re WealthKernel will notify you (normally 2 working days) in advance of your account being debited or as otherwise agreed.
@@ -58,9 +58,22 @@ The second screen must confirm back to the user the banking details they have en
 
 <div style="text-align:center"><img style="display:inline" src="https://placekitten.com/500/700" /></div>
 
-This page must contain the following:
+This page must meet the following criteria:
+- It must display back to the user their account name, account number and sort code so they can confirm they are correct.
+- The user must be able to change or correct the account details if they are deemed to be incorrect.
+- It must display the users email address to be used for communication purposes.
+- It must confirm that WealthKernel will appear on the users bank statement.
+- As with the first page, a statement must be displayed stating that WealthKernel can be contacted for direct debit issues. For example "If you have any questions about your direct debit please contact directdebits@wealthkernel.com"
 
+This screen can also be used to present a draft version of the mandate PDF, which can be retrieved from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandate-pdf-preview/get">pdf-preview API.</a>
 
+### Page 3 - Success Screen
+After checking and accepting the Direct Debit details the client must be presented with a success screen like the example below:
 
+<div style="text-align:center"><img style="display:inline" src="https://placekitten.com/800/300" /></div>
+
+The final mandate PDF is sent to the user by email, but this page can be used to present a download link to them using the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1pdf/get">pdf API.</a>
+
+The final mandate contains the BACS mandate reference number (this is not contains on the draft mandate that's pulled from the pdf-preview API). This mandate BACS reference number is also displayed in the email sent to the user, and can be viewed on the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get">mandate resource.</a>
 
 
