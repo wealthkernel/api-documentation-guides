@@ -32,7 +32,7 @@ This page must contain the following:
   - Mandates for accounts with multiple signatories are not currently supported and so must be explicitly excluded.
 - A statement relating to the Direct Debit guarantee with the Direct Debit Logo beside it.
   - The statement must read "Your payments are protected by the Direct Debit guarantee"
-  - It must also contain a link to the full Direct Debit wording, see below.
+  - It must also contain a link to the full Direct Debit wording, [see below](#direct-debit-guarantee---full-wording).
 - A statement relating to the GoCardless privay notice.
   - It must read "Payments by GoCardless. Read the GoCardless privay notice"
   - The statement must also contain a link to the GoCardless privacy notice at **https://gocardless.com/privacy**
