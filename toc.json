@@ -11,8 +11,13 @@
     },
     {
       "type": "item",
-      "title": "Getting API Access",
+      "title": "API Access",
       "uri": "docs/direct-debits/Api-Access.md"
+    },
+    {
+      "type": "item",
+      "title": "Getting to your first Payment",
+      "uri": "docs/direct-debits/First-Payment.md"
     }
   ]
 }
