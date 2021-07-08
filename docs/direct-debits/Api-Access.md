@@ -30,7 +30,7 @@ This page must contain the following:
 - A mandatory checkbox for the user that states "I confirm that I am the account holder and am authorised to set up Direct Debit payments on this account"
 - A checkbox which must be not be checked which states "More than one person is required to authorise Direct Debits"
   - Mandates for accounts with multiple signatories are not currently supported and so must be explicitly excluded.
-- A statement relating to the Direct Debit guarantee with the Direct Debit Logo***(Make this a link)*** beside it.
+- A statement relating to the Direct Debit guarantee with the Direct Debit Logo<span style="background-color:red">(Make this a link)</span> beside it.
   - The statement must read "Your payments are protected by the Direct Debit guarantee"
   - It must also contain a link to the full Direct Debit wording, [see below](#direct-debit-guarantee---full-wording).
 - A statement relating to the GoCardless privay notice.
@@ -42,7 +42,7 @@ This page must contain the following:
 
 #### Direct Debit Guarantee - Full Wording
 
-The link from the Direct Debit guarantee statement must show the full guarantee wording as shown below. The Direct Debit logo***(Make this a link)*** must also appear beside the statement.
+The link from the Direct Debit guarantee statement must show the full guarantee wording as shown below. The Direct Debit logo<span style="background-color:red">(Make this a link)</span> must also appear beside the statement.
 
 > <div style="text-align:center"><img style="display:inline" src="https://placekitten.com/200/100" /></div>
 >
