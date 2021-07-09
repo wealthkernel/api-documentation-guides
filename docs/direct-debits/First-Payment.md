@@ -11,6 +11,13 @@ The bank account number and sort code must be able to pass a Modulus check inclu
 
 Once you've met the prerequisites you can request a new mandate using the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates/post">Create Mandate API.</a>
 
-When a mandate has been created it starts in a `Pending` state. You must wait until it has transitioned to an 'Active' status before you can start creating payments. It's also at this stage you would display the success page referred to in the [UI Guidelines.](./Api-Access.md#page-3---success-screen) You can monitor this using the returned mandate Id against the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get">Get Mandate API.</a> 
+When a mandate has been created it starts in a `Pending` state. You must wait until it has transitioned to an 'Active' status before you can start creating payments. It's also at this stage you would display the success page referred to in the [UI Guidelines.](./Api-Access.md#page-3---success-screen) You can monitor this using the returned mandate Id against the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get">Get Mandate API.</a>
+
+The end user will receive an email, usually within an hour, of the mandate being create. This email have the mandate PDF attached to it.
 
 > It's still possible for a mandate to fail after it's reached the Active state. If this happens, any payments created against the mandate will automatically be failed as well.
+
+### Mandate Failures
+When a mandate failure occurs, the reason will usually be returned on the mandate through the [Get Mandate API](/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get).
+
+These are most commonly caused by incorrect bank account details. In this case the simplest solution is to create a new bank account against the party and try again to create a mandate using the new bank account id.
