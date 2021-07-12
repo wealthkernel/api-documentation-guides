@@ -34,8 +34,8 @@ This page must contain the following:
 
 The link from the Direct Debit guarantee statement must show the full guarantee wording as shown below. The [Direct Debit logo](../../assets/images/direct-debit-logo.svg) must also appear beside the statement.
 
-![DDLogo](../../assets/images/direct-debit-logo.svg)
-> <div style="text-align:center"><img src="../../assets/images/direct-debit-logo.svg" /><span>![DDLogo](../../assets/images/direct-debit-logo.svg)</span></div>
+
+> <div style="text-align:center"><figure>![DDLogo](../../assets/images/direct-debit-logo.svg)</figure></div>
 >
 > The Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits.
 > If there are any changes to the amount, date or frequency of your Direct Debit GC re WealthKernel will notify you (normally 2 working days) in advance of your account being debited or as otherwise agreed.
