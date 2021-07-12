@@ -16,6 +16,11 @@
     },
     {
       "type": "item",
+      "title": "UI Guidelines & Approval",
+      "uri": "docs/direct-debits/UI-Guidlines.md"
+    },
+    {
+      "type": "item",
       "title": "Requesting Payments",
       "uri": "docs/direct-debits/How-To-Request-Payments.md"
     }
