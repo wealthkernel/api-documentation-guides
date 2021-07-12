@@ -31,7 +31,7 @@ You can create a payment either as a single one-off or as a recuring subscriptio
 ### Single Payments
 You can create single payments through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments/post">Create Payment API</a>. You can optionally provide a collection date, but this must be on or after the date returned from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1next-possible-collection-date/get">next possible collection date endpoint</a>. If a collection date is not specified, the payment will be collected as soon as possible.
 
-You can monitor the status of the payment through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">Get Payment API.</a> Depending on whether the payment has been submitted to BACS (See the note above) you can also <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D~1actions~1cancel/post">cancel</a> the payment.
+You can monitor the status of the payment through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">Get Payment API</a>. Depending on whether the payment has been submitted to BACS (See the note above) you can also <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D~1actions~1cancel/post">cancel</a> the payment.
 
 ### Subscriptions
 A subscription is effectively a rule to describe when to automatically create single payments. Once created these payments behave like any other single payment and can be viewed through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">payments API</a>.

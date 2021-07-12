@@ -72,8 +72,8 @@ After checking and accepting the Direct Debit details the client must be present
 
 <div style="text-align:center"><img style="display:inline" src="https://placekitten.com/800/300" /></div>
 
-The final mandate PDF is sent to the user by email, but this page can be used to present a download link to them using the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1pdf/get">pdf API.</a>
+The final mandate PDF is sent to the user by email, but this page can be used to present a download link to them using the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1pdf/get">pdf API</a>.
 
-The final mandate contains the BACS mandate reference number (this is not contains on the draft mandate that's pulled from the pdf-preview API). This mandate BACS reference number is also displayed in the email sent to the user, and can be viewed on the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get">mandate resource.</a>
+The final mandate contains the BACS mandate reference number (this is not contains on the draft mandate that's pulled from the pdf-preview API). This mandate BACS reference number is also displayed in the email sent to the user, and can be viewed on the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get">mandate resource</a>.
 
 
