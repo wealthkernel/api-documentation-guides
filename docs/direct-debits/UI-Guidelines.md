@@ -10,7 +10,7 @@ We would ask that you follow these guidelines as closely as possible to avoid de
 ### Page 1 - Bank Account Capture
 The first page must capture the back account to be used for the mandate. See the example below
 
-<div style="text-align:center"><img style="display:inline" src="https://placekitten.com/500/700" /></div>
+![DirectDebitsPage1](../../assets/images/direct-debits/UI-Guidelines-Page1.png)
 
 This page must contain the following:
 - Capture of the bank account to be used for the mandate. This could also take the form of a dropdown selections of accounts previously registered. In either case the following details must be captured.
@@ -47,7 +47,7 @@ The link from the Direct Debit guarantee statement must show the full guarantee 
 ### Page 2 - Confirmation Screen
 The second screen must confirm back to the user the banking details they have entered and allow them to check the details and correct mistakes. See the example below
 
-<div style="text-align:center"><img style="display:inline" src="https://placekitten.com/500/700" /></div>
+![DirectDebitsPage2](../../assets/images/direct-debits/UI-Guidelines-Page2.png)
 
 This page must meet the following criteria:
 - It must display back to the user their account name, account number and sort code so they can confirm they are correct.
@@ -61,7 +61,7 @@ This screen can also be used to present a draft version of the mandate PDF, whic
 ### Page 3 - Success Screen
 After checking and accepting the Direct Debit details the client must be presented with a success screen like the example below:
 
-<div style="text-align:center"><img style="display:inline" src="https://placekitten.com/800/300" /></div>
+![DirectDebitsPage3](../../assets/images/direct-debits/UI-Guidelines-Page3.png)
 
 The final mandate PDF is sent to the user by email, but this page can be used to present a download link to them using the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1pdf/get">pdf API</a>.
 
