@@ -18,6 +18,17 @@ The end user will receive an email, usually within an hour, of the mandate being
 > It's still possible for a mandate to fail after it's reached the Active state. If this happens, any payments created against the mandate will automatically be failed as well.
 
 ### Mandate Failures
-When a mandate failure occurs, the reason will usually be returned on the mandate through the [Get Mandate API](/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get).
+When a mandate failure occurs, the reason will usually be returned on the mandate through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get">Get Mandate API</a>.
 
 These are most commonly caused by incorrect bank account details. In this case the simplest solution is to create a new bank account against the party and try again to create a mandate using the new bank account id.
+
+## Creating a Payment
+
+You can create a payment either as a single one-off or as a recuring subscription. Before you can create either of these a mandate must have been created using the steps mentioned previously, and a portfolio must have also been created. The mandate must have an `Active` status before payments or subscriptions can be created.
+
+> Payments are submitted to BACS daily at around 4pm. After this they cannot be cancelled.
+
+### Single Payments
+You can create single payments through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments/post">Create Payment API.</a> You can optionally provide a collection date, but this must be on or after the date returned from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1next-possible-collection-date/get">next possible collection date endpoint</a>. If a collection date is not specified, the payment will be collected as soon as possible.
+
+You can monitor the status of the payment through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">Get Payment API.</a> Depending on whether the payment has been submitted to BACS you can also <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D~1actions~1cancel/post">cancel the payment.</a>
