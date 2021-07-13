@@ -45,9 +45,9 @@ Once created a payment will pass through several states as outlined below
 |Cancelled|The payment was cancelled at the intention of the API user|
 
 ### Recurring Subscriptions
-A Subscription is effectively a rule to describe when to automatically create single payments. Once created these payments behave like any other single payment and can be retrieved through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">payments API</a>. After a Subscription has been created it will continue generating payments until <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions~1%7BsubscriptionId%7D~1actions~1pause/post">paused</a> or <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions~1%7BsubscriptionId%7D~1actions~1cancel/post">cancelled</a>.
+A Subscription is a schedule definition describing to generate payments. Once created these payments behave like any other single payment. As such you can manage it through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">payments APIs</a>. After a Subscription starts it will continue generating payments until <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions~1%7BsubscriptionId%7D~1actions~1pause/post">paused</a> or <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions~1%7BsubscriptionId%7D~1actions~1cancel/post">cancelled</a>.
 
-When <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions/post">creating</a> a Subscription, you can specify an interval of `Weekly`, `Monthly` or `Yearly`. Some optional request properties are only valid for certain intervals. If none of these are provided then the first payment will be taken at the earliest available opportunity.
+When <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions/post">creating</a> a Subscription, you can specify an interval of `Weekly`, `Monthly` or `Yearly`. Some optional request properties are only valid for certain intervals. If the request does not include any of these properties, the first payment will be taken at the earliest opportunity.
 
 |Interval|Description|
 |--------|-----------|
@@ -55,11 +55,11 @@ When <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptio
 |Monthly|Can optionally specify a `dayOfMonth` when creating. |
 |Yearly|Can optionally specify a `dayOfMonth` and/or `month` when creating|
 
-When specifying the `dayOfMonth` you should consider inspecting the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1next-possible-collection-date/get">next available collection date</a> on the mandate to see if your first payment will be taken when you'd expect. You can specify any day between 1-28, or you can specify -1 to signify that the payment should be take on the last working day of the month.
+You should consider inspecting the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1next-possible-collection-date/get">next available collection date</a> on the mandate. This will you predict when a created subscription will generate its first payment. It's particularly helpful when using the `dayOfMonth` property. `dayOfMonth` can be between 1-28. Or you can specify -1 to signify that the payment should be take on the last working day of the month.
 
-> `dayOfMonth` refers to the collection date, so the payment will be created prior to this date with the goal of the money being taken from the end users account on this day or the next working day.
+> `dayOfMonth` refers to the collection date. This is when the money will be taken from the users account (or the next working day). But the payment will be created in the system before this date.
 
-Optionally you can also supply a `startDate` when creating a subscription. This controls when the subscription can start triggering payments. For example if you create a monthly subscription on the 2nd of the month, with the dayOfMonth set to the 15th, but then set the `startDate` to the 20th. Then the first payment would not be created until just before the 15th of the following month. Whereas omitted in the startDate would result in the first payment being created on the 15th of the same month.
+Optionally you can also supply a `startDate` when creating a subscription. This controls when the subscription can start triggering payments. For example if you create a monthly subscription on the 2nd of the month, with the dayOfMonth set to the 15th, but then set the `startDate` to the 20th. Then the first payment would not be created until just before the 15th of the following month. Whereas omitting the startDate would result in the first payment being created on the 15th of the same month.
 
 ### Payment Failures
 As with mandates, if a payment fails then the reason will usually be returned on the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">Payment resource</a>.
