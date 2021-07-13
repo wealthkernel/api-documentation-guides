@@ -4,7 +4,7 @@ tags: [Direct Debits]
 
 # Getting Access to the API
 
-All Direct Debit APIs are available in the sandbox environment. To access these APIs in Live you must complete the following steps to meet compliance requirements:
+All Direct Debit APIs are available in the sandbox environment. To access these APIs in Production you must complete the following steps to meet compliance requirements:
 
 1. You must agree to our commercial terms and legal arrangements covering the usage of the Direct Debit facility.
 2. You must have updated your retail customer Terms & Conditions to include the Direct Debit payment service.
