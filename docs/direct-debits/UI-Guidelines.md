@@ -34,7 +34,7 @@ This page must contain the following:
 
 ### Direct Debit Guarantee - Full Wording
 
-You must have a page that shows the Full Direct Debit Guarantee working as shown below. The [Direct Debit logo](https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg) must also appear beside the statement. You should link to this page in the Direct Debit statement shown on [page 1](#Page1DDStatement) when setting up a mandate.
+You must have a page that shows the Full Direct Debit Guarantee wording as shown below. The [Direct Debit logo](https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg) must also appear beside the statement. You should link to this page in the Direct Debit statement shown on [page 1](#Page1DDStatement) when setting up a mandate.
 
 > <div style="text-align:center"><img width="200" style="display:inline" src="https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg" /></div>
 ><div style="text-align:center;margin:15px 0"><span><strong>Direct Debit Guarantee</strong></span></div>
