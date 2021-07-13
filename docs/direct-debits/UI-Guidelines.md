@@ -3,9 +3,9 @@ tags: [Direct Debits]
 ---
 
 # UI Guidelines & Approval
-The content of your customer facing screens for setting up a Direct Debit mandate must be approved as "Payment Services Regulations" compliant. This regulation covers the set up of the mandate. As such the designs for the UI of screens relating to payments/contributions do not need approval.
+The content of your customer facing screens for setting up a Direct Debit mandate must be approved as "Payment Services Regulations" compliant. This regulation covers the set up of the mandate. As such the designs for the UI of screens relating to Direct Debit payments do not need approval.
 
-We would ask that you follow these guidelines as closely as possible to avoid delay in gaining approval and to prevent problems arising when regulators force change.
+We would ask that you follow these guidelines as closely as possible. This will help avoid delay in gaining approval and also to prevent problems arising when regulators force change.
 
 ### Page 1 - Bank Account Capture
 The first page must capture the back account to be used for the mandate. See the example below
@@ -17,14 +17,14 @@ This page must contain the following:
   - Account name (exactly as it appears on their bank statement)
   - Account Number
   - Sort Code
-- A mandatory checkbox for the user that states "I confirm that I am the account holder and am authorised to set up Direct Debit payments on this account"
-- A checkbox which must be not be checked which states "More than one person is required to authorise Direct Debits"
+- A mandatory checkbox for the user that states "I confirm that I am the account holder and am authorized to set up Direct Debit payments on this account"
+- A checkbox which must be not be checked which states "More than one person is required to authorize Direct Debits"
   - Mandates for accounts with multiple signatories are not currently supported and so must be explicitly excluded.
 - A statement relating to the Direct Debit guarantee with the [Direct Debit logo](https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg) beside it.
   - The statement must read "Your payments are protected by the Direct Debit guarantee"
   - It must also contain a link to the full Direct Debit wording, [see below](#direct-debit-guarantee---full-wording).
-- A statement relating to the GoCardless privay notice.
-  - It must read "Payments by GoCardless. Read the GoCardless privay notice"
+- A statement relating to the GoCardless privacy notice.
+  - It must read "Payments by GoCardless. Read the GoCardless privacy notice"
   - The statement must also contain a link to the GoCardless privacy notice at https://gocardless.com/privacy
 - A statement about how WealthKernel can be contacted for Direct Debit issues, for example "If you have any questions about your direct debit please contact directdebits@wealthkernel.com"
   - As the official service user it is a regulatory requirement that the WelthKernel email address is used for direct debit support.
@@ -50,19 +50,24 @@ The second screen must confirm back to the user the banking details they have en
 ![DirectDebitsPage2](../../assets/images/direct-debits/UI-Guidelines-Page2.png)
 
 This page must meet the following criteria:
-- It must display back to the user their account name, account number and sort code so they can confirm they are correct.
-- The user must be able to change or correct the account details if they are deemed to be incorrect.
+- It must display to the user their account name, account number and sort code so they can confirm they are correct.
+- The user must be able to change or correct the account details if they are incorrect.
 - It must display the users email address to be used for communication purposes.
 - It must confirm that WealthKernel will appear on the users bank statement.
 - As with the first page, a statement must be displayed stating that WealthKernel can be contacted for direct debit issues. For example "If you have any questions about your direct debit please contact directdebits@wealthkernel.com"
 
-This screen can also be used to present a draft version of the mandate PDF, which can be retrieved from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandate-pdf-preview/get">pdf-preview API.</a>
+This screen can also be used to present a draft version of the mandate PDF, which can be retrieved from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandate-pdf-preview/get">pdf-preview API</a>.
 
 ### Page 3 - Success Screen
 After checking and accepting the Direct Debit details the client must be presented with a success screen like the example below:
 
 ![DirectDebitsPage3](../../assets/images/direct-debits/UI-Guidelines-Page3.png)
 
-The final mandate PDF is sent to the user by email, but this page can be used to present a download link to them using the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1pdf/get">pdf API</a>.
 
-The final mandate contains the BACS mandate reference number (this is not contains on the draft mandate that's pulled from the pdf-preview API). This mandate BACS reference number is also displayed in the email sent to the user, and can be viewed on the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get">mandate resource</a>.
+This page can be used to present a download link to the end user 
+with the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1pdf/get">PDF API</a>. But the final mandate PDF will also be sent to the user by email.
+
+The BACS mandate reference will be included on the final mandate. It will also be included on the email sent to the user, and on the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get">mandate resource</a>.
+
+> The final mandate PDF is not made available at the same time as the mandate is made active. You may have to poll for it like status codes.
+
