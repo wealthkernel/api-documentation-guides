@@ -3,7 +3,9 @@ tags: [Direct Debits]
 ---
 
 # UI Guidelines & Approval
-The content of your customer facing screens for setting up a Direct Debit mandate must be approved as "Payment Services Regulations" compliant. This regulation covers the set up of the mandate. As such the designs for the UI of screens relating to Direct Debit payments do not need approval.
+The content of your customer facing screens for setting up a Direct Debit mandate must be approved as "Payment Services Regulations" compliant. This regulation covers the set up of the mandate. 
+
+Please note the designs for the UI of screens relating to Direct Debit payments do not need approval.
 
 We would ask that you follow these guidelines as closely as possible. This will help avoid delay in gaining approval and also to prevent problems arising when regulators force change.
 
@@ -32,7 +34,7 @@ This page must contain the following:
 
 #### Direct Debit Guarantee - Full Wording
 
-The link from the Direct Debit guarantee statement must show the full guarantee wording as shown below. The [Direct Debit logo](https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg) must also appear beside the statement.
+You must have a page that shows the Full Direct Debit Guarantee working as shown below. The [Direct Debit logo](https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg) must also appear beside the statement. You should link to this page in the Direct Debit statement shown on page 1 when setting up a mandate.
 
 
 > <div style="text-align:center"><img width="200" style="display:inline" src="https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg" /></div>
@@ -40,6 +42,8 @@ The link from the Direct Debit guarantee statement must show the full guarantee 
 > The Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits.
 > If there are any changes to the amount, date or frequency of your Direct Debit GC re WealthKernel will notify you (normally 2 working days) in advance of your account being debited or as otherwise agreed.
 > If you request GC re WealthKernel to collect a payment, confirmation of the amount and date will be given to you at the time of the request.
+>
+>
 > If an error is made in the payment of your Direct Debit, by GC re WealthKernel or your bank or building society, you are entitled to a full and immediate refund of the amount paid from your bank or building society.
 > If you receive a refund you are not entitled to, you must pay it back when GC re WealthKernel asks you to.
 > You can cancel a Direct Debit at any time simply by contacting your bank or building society. Written confirmation may be required. Please also notify GC re WealthKernel.
@@ -50,11 +54,11 @@ The second screen must confirm back to the user the banking details they have en
 ![DirectDebitsPage2](../../assets/images/direct-debits/UI-Guidelines-Page2.png)
 
 This page must meet the following criteria:
-- It must display to the user their account name, account number and sort code so they can confirm they are correct.
+- It must display to the user their full name, account name, account number and sort code so they can confirm they are correct.
 - The user must be able to change or correct the account details if they are incorrect.
 - It must display the users email address to be used for communication purposes.
 - It must confirm that WealthKernel will appear on the users bank statement.
-- As with the first page, a statement must be displayed stating that WealthKernel can be contacted for direct debit issues. For example "If you have any questions about your direct debit please contact directdebits@wealthkernel.com"
+- As with the first page, a statement must be displayed stating that WealthKernel can be contacted by the end user for direct debit issues. For example "If you have any questions about your direct debit please contact directdebits@wealthkernel.com"
 
 This screen can also be used to present a draft version of the mandate PDF, which can be retrieved from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandate-pdf-preview/get">pdf-preview API</a>.
 
