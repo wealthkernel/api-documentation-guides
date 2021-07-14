@@ -24,12 +24,12 @@ These are most commonly caused by incorrect bank account details. In this case t
 
 ## Creating a Payment
 
-You can create a payment either as a single one-off or as a recurring subscription. You must have created a portfolio and mandate before you can create a payment or subscription. The mandate must also be `Active`.
+You can create a payment either as a single one-off or as a recurring subscription. You must have created a portfolio and mandate before you can create a payment or subscription. The mandate must also be `Active`. Multiple payments and subscriptions or a mixture of both can all be raised against a single mandate.
 
 > Payments are submitted to BACS daily at around 4pm. After this they cannot be cancelled.
 
 ### Single Payments
-You can create single payments through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments/post">Create Payment API</a>. You may specify a collection date. This must be on or after the date returned from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1next-possible-collection-date/get">next possible collection date endpoint</a> endpoint. If a collection date is not specified, the payment will be collected as soon as possible. If the collection date is not a working day, then the payment will be taken on the next working day.
+You can create single payments through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments/post">Create Payment API</a>. You may specify a collection date. This must be on or after the date returned from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1next-possible-collection-date/get">next possible collection date endpoint</a> endpoint. If a collection date is not specified, the payment will be collected as soon as possible. If the collection date is not a working day, then the payment will be taken on the next working day. If the specified collection date is too soon, then the payment will fail. Use the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1next-possible-collection-date/get">next-possible-collection-date</a> endpoint to see the earliest available collection date for a mandate.
 
 You can monitor the status of the payment through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">Get Payment API</a>. You can also <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D~1actions~1cancel/post">cancel</a> the payment before it has been submitted to BACS (See the note above).
 
