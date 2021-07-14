@@ -4,6 +4,25 @@
       "type": "item",
       "title": "Welcome",
       "uri": "docs/Welcome.md"
+    },
+    {
+      "type": "divider",
+      "title": "Direct Debits"
+    },
+    {
+      "type": "item",
+      "title": "API Access",
+      "uri": "docs/direct-debits/Api-Access.md"
+    },
+    {
+      "type": "item",
+      "title": "UI Guidelines & Approval",
+      "uri": "docs/direct-debits/UI-Guidelines.md"
+    },
+    {
+      "type": "item",
+      "title": "Requesting Payments",
+      "uri": "docs/direct-debits/How-To-Request-Payments.md"
     }
   ]
 }
