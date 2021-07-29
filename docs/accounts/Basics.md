@@ -6,14 +6,9 @@ tags: [Accounts]
 
 Accounts are an entity which hold information about the type product a client may wish to open, and validate that one of more parties can open a product of that type. Each account can have multiple parties and also have multiple Portfolios.
 
-For example, here is how a JISA could look
+For example, here are the links that a JISA would have
 
-```mermaid
-erDiagram
-          Child ||--|| JISA : owns
-          RegisteredContact ||--|| JISA : "contact of"
-          JISA ||--o{ Portfolios : "owns"
-```
+![Account-JISA-ER](../../assets/images/accounts/JISA-ER.png)
 
 Or put simply, a JISA is owned by a child and has a registered contact associated with it. It can have one or more portfolios attached to it.
 
@@ -33,18 +28,7 @@ Each of these will have their own requirements for opening, which will be checke
 
 ## Account Lifecycle
 
-```mermaid
-stateDiagram-v2
-    [*] --> Pending
-    Pending --> Active
-    Pending --> Suspended
-    Pending --> Closing
-    Active --> Suspended
-    Active --> Closing
-    Suspended --> Active
-    Suspended --> Closing
-    Closing --> Closed
-```
+![Account-Status-SD](../../assets/images/accounts/Status-SD.png)
 
 | Status | Explanation |
 |---|---|
