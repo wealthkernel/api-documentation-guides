@@ -4,7 +4,7 @@ tags: [Accounts]
 
 # Opening Requirements
 
-Each Account has it's own set of requirements that must be validated before an account can be opened. The list below explains what these are.
+Each Account has its own set of requirements, listed below, that must be validated before the account can be opened.
 
 <!-- theme: info -->
 > These requirements are up to date as of 2021-09-27
