@@ -4,13 +4,15 @@ tags: [Accounts]
 
 # Account Basics
 
-Accounts are an entity which hold information about the type product a client may wish to open, and validate that one of more parties can open a product of that type. Each account can have multiple parties and also have multiple Portfolios.
+Accounts are an entity which hold information about the type product a client may wish to open and validate that [all the requirements](Opening-Requirements.md) are met to be able to open that account.
+
+Each account can have multiple parties and also have multiple Portfolios.
 
 For example, here are the links that a JISA would have
 
 ![Account-JISA-ER](../../assets/images/accounts/JISA-ER.png)
 
-Or put simply, a JISA is owned by a child and has a registered contact associated with it. It can have one or more portfolios attached to it.
+Put simply, a JISA is owned by a child and has a registered contact associated with it. It can have one or more portfolios attached to it.
 
 ## Account types
 
