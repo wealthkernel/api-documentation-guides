@@ -4,13 +4,9 @@ tags: [Accounts]
 
 # Account Basics
 
-<<<<<<< HEAD
 Accounts are an entity which hold information about the type product a client may wish to open and validate that [all the requirements](Opening-Requirements.md) are met to be able to open that account.
 
 Each account can have multiple parties and also have multiple Portfolios.
-=======
-Accounts are an entity which hold information about the type product a client may wish to open, and validate that one or more parties can open a product of that type. Each account can have both multiple Parties and multiple Portfolios associated to it.
->>>>>>> e9e3f8e21fa17dc73da99d51aa105e37cecf88ed
 
 For example, here are the links that a JISA would have
 
