@@ -13,3 +13,6 @@
 1. [Api Access](./direct-debits/Api-Access.md)
 2. [How To Request Payments](./direct-debits/How-To-Request-Payments.md)
 3. [UI Guidelines](./direct-debits/UI-Guidelines.md)
+
+## Sandbox
+1. [Sandbox FAQ](./sandbox/Sandbox-FAQ.md)
