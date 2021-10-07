@@ -50,7 +50,7 @@ Valuations for Portfolios are always generated at the same time each day. This o
 
 #### Production
 
-Due to the nature of the platform, we may not generate valuations at the same time each day. Generally valuations for all portfolios should be available by 9AM (GMT) but this is not guarenteed.
+Due to the nature of the platform, we may not generate valuations at the same time each day. Generally valuations for all portfolios should be available by 9AM (GMT) but this is not guaranteed.
 
 ### Orders
 
@@ -58,7 +58,7 @@ Due to the nature of the platform, we may not generate valuations at the same ti
 
 Orders you create will automatically move into a `Matched` state roughly 30 seconds after creation, at which time the `Buy`/`Sell` transaction will be booked into the Portfolio for that day. The transaction will then automatically move into a `Settled` state roughly 60 seconds later.
 
-We do not currently create orders in Sandbox for portfolio setups that will managed by us. If you need some orders created for your testing then please raise a service desk ticket and we will try to help.
+We do not currently create orders in Sandbox for portfolio setups that will be managed by us. If you need some orders created for your testing then please raise a service desk ticket and we will try to help.
 
 #### Production
 
