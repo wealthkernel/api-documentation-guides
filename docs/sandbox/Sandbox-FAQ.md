@@ -6,7 +6,7 @@ tags: [Sandbox]
 
 ## What is Sandbox?
 
-Sandbox is the name for our pre-production environment that you will likely use as part of your onboarding process. You will be given an API key and potentially access to Admin Portal.
+Sandbox is our pre-production environment that you will use as part of your onboarding process. 
 
 ## How should I use it?
 
@@ -56,11 +56,15 @@ Due to the nature of the platform, we may not generate valuations at the same ti
 
 #### Sandbox
 
-Depending on your portfolio's mandate type, portfolios may be managed by us which means we will be placing the orders for the portfolios. We do not currently do this in sandbox. If you require this for testing, please raise a service desk ticket and someone will be able to help you.
+Orders you create will automatically move into a `Matched` state roughly 30 seconds after creation, at which time the `Buy`/`Sell` transaction will be booked into the Portfolio for that day. The transaction will then automatically move into a `Settled` state roughly 60 seconds later.
+
+We do not currently create orders in Sandbox for portfolio setups that will managed by us. If you need some orders created for your testing then please raise a service desk ticket and we will try to help.
 
 #### Production
 
 If your portfolios are managed by us, we will be placing orders for your portfolios.
+
+Be aware that orders will usually not match until after 3pm on the day they were created, and typically not settle until 2 days after they were created. This will vary by ISIN.
 
 ### Prices & Securities
 
