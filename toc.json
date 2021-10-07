@@ -37,6 +37,15 @@
       "type": "item",
       "title": "Requesting Payments",
       "uri": "docs/direct-debits/How-To-Request-Payments.md"
+    },
+    {
+      "type": "divider",
+      "title": "Sandbox"
+    },
+    {
+      "type": "item",
+      "title": "Sandbox FAQ",
+      "uri": "docs/sandbox/Sandbox-FAQ.md"
     }
   ]
 }
