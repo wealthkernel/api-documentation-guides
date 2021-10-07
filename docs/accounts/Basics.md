@@ -10,7 +10,12 @@ Each account can have multiple parties and also have multiple Portfolios.
 
 For example, here are the links that a JISA would have
 
-![Account-JISA-ER](../../assets/images/accounts/JISA-ER.png)
+```mermaid
+erDiagram
+    Child ||--|| JISA : owns
+    RegisteredContact ||--|| JISA : "contact of"
+    JISA ||--o{ Portfolios : "owns"
+```
 
 Put simply, a JISA is owned by a child and has a registered contact associated with it. It can have one or more portfolios attached to it.
 
@@ -30,7 +35,18 @@ Each of these will have their own requirements for opening, which will be checke
 
 ## Account Lifecycle
 
-![Account-Status-SD](../../assets/images/accounts/Status-SD.png)
+```mermaid
+stateDiagram-v2
+    [*] --> Pending
+    Pending --> Active
+    Pending --> Suspended
+    Pending --> Closing
+    Active --> Suspended
+    Active --> Closing
+    Suspended --> Active
+    Suspended --> Closing
+    Closing --> Closed
+```
 
 | Status | Explanation |
 |---|---|
