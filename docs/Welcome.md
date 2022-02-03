@@ -11,7 +11,7 @@
 
 ## Balances
 1. [Basics](./balances/Basics.md)
-2. [FAQs](./balances/Opening-Requirements.md)
+2. [FAQs](./balances/FAQs.md)
 
 ## Direct Debits
 1. [Api Access](./direct-debits/Api-Access.md)
