@@ -9,6 +9,10 @@
 1. [Basics](./accounts/Basics.md)
 2. [Opening Requirements](./accounts/Opening-Requirements.md)
 
+## Balances
+1. [Basics](./balances/Basics.md)
+2. [FAQs](./balances/FAQs.md)
+
 ## Direct Debits
 1. [Api Access](./direct-debits/Api-Access.md)
 2. [How To Request Payments](./direct-debits/How-To-Request-Payments.md)
