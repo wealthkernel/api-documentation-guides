@@ -9,6 +9,7 @@ Deposits represent an expectation that the counter party of a portfolio will be 
 ## Funding a Portfolio
 
 ```mermaid
+sequenceDiagram
 rect rgb(191, 223, 255)
 Party ->> Your Application: "I want to fund my portfolio"
 Your Application -->> Party: "Ok, please make a bank transfer to WealthKernel Clients"
