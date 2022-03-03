@@ -13,6 +13,10 @@
 1. [Basics](./balances/Basics.md)
 2. [FAQs](./balances/FAQs.md)
 
+## Deposits
+1. [Basics](./deposits/Basics.md)
+2. [FAQs](./deposits/FAQs.md)
+
 ## Direct Debits
 1. [Api Access](./direct-debits/Api-Access.md)
 2. [How To Request Payments](./direct-debits/How-To-Request-Payments.md)
