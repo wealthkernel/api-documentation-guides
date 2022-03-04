@@ -4,7 +4,7 @@ tags: [Deposits]
 
 # Deposit FAQs
 
-## What should I use as a deposit's `reference`?
+## What should be used as a deposit's reference?
 
 You should agree with WealthKernel a reference prefix to use and the remainder of the reference should be something highly unique to increase the chances of successful matching.
 
