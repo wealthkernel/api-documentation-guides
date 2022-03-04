@@ -35,6 +35,20 @@
     },
     {
       "type": "divider",
+      "title": "Deposits"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/deposits/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/deposits/FAQs.md"
+    },
+    {
+      "type": "divider",
       "title": "Direct Debits"
     },
     {
