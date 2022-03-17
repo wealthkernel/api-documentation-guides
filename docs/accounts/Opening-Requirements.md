@@ -22,7 +22,6 @@ The owner must:
 - Not be a US National
 - Not be a US tax Resident
 - Have an email address
-- Have at least one bank account
 - Have at least one active UK address
 
 ## ISA
@@ -38,7 +37,6 @@ The owner must:
 - Not be a US national
 - Not be a US tax resident
 - Have an email address
-- Have at least one bank account
 - Have at least one active UK address
 
 ## JISA
