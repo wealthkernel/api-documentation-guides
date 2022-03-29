@@ -74,6 +74,20 @@
       "type": "item",
       "title": "Sandbox FAQ",
       "uri": "docs/sandbox/Sandbox-FAQ.md"
+    },
+    {
+      "type": "divider",
+      "title": "Webhooks"
+    },
+    {
+      "type": "item",
+      "title": "How to Receive Webhooks Locally",
+      "uri": "docs/webhooks/Receiving-Webhooks.md"
+    },
+    {
+      "type": "item",
+      "title": "Event Types",
+      "uri": "docs/webhooks/Event-Types.md"
     }
   ]
 }
