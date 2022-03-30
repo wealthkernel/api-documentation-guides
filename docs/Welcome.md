@@ -28,3 +28,6 @@
 ## Webhooks
 1. [How to Receive Webhooks Locally](./webhooks/Receiving-Webhooks.md)
 2. [Types of Event](./webhooks/Event-Types.md)
+3. [Secrets](./webhooks/Secrets.md)
+4. [Testing](./webhooks/Testing.md)
+5. [FAQs](./webhooks/FAQs.md)

@@ -88,6 +88,21 @@
       "type": "item",
       "title": "Event Types",
       "uri": "docs/webhooks/Event-Types.md"
+    },
+    {
+      "type": "item",
+      "title": "Secrets",
+      "uri": "docs/webhooks/Secrets.md"
+    },
+    {
+      "type": "item",
+      "title": "Testing",
+      "uri": "docs/webhooks/Testing.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/webhooks/FAQs.md"
     }
   ]
 }
