@@ -21,6 +21,7 @@ Once you’re up and running with ngrok, you’ll need to configure our webhooks
 2. Create subscription in the portal, using the HTTPS URL provided by ngrok, e.g. `https://9999-123-456-789-12.ngrok.io`
 
   ![Create a subscription](../../assets/images/webhooks/Create-Subscription1.png)
+  
   ![Create a subscription details](../../assets/images/webhooks/Create-Subscription2.png)
 
 Ensure ngrok is running and forwarding traffic to the port on which your local application is running.
