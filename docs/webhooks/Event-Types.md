@@ -15,7 +15,7 @@ This is an excerpt of a request to demonstrate how event types are included in t
 }
 ```
 
-Within the name of the event is the concept of a namespace to give a more consistent view of what is happening in our system. For example deposit.deposit_settled, which generally refers to a resource that exists on the WealthKernel API, e.g. Parties.
+The name of an eventType is broken down into the namespace name and local name, separated by a full stop (`.`).
 
 The eventType also contains a version, which allows us to update an eventType without breaking your integration. Should you wish to work with the new version of this event, you can then manage the transition between two versions of the event at your convenience.
 
