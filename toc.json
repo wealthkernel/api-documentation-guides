@@ -81,8 +81,8 @@
     },
     {
       "type": "item",
-      "title": "How to Receive Webhooks Locally",
-      "uri": "docs/webhooks/Receiving-Webhooks.md"
+      "title": "Getting Started",
+      "uri": "docs/webhooks/Getting-Started.md"
     },
     {
       "type": "item",

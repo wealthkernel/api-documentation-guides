@@ -6,7 +6,7 @@ We do not guarantee in order events, so you’ll need to consider how to deal wi
 
 ## How many times will you deliver a webhook?
 
-In order to guarantee that each webhook request is delivered at least once while remaining performant, it is possible that a webhook request may be delivered more than once. 
+We guarantee at least once delivery within our retry policy, so it is possible that a webhook request may be delivered more than once.
 
 ## How can I handle a webhook delivered more than once?
 

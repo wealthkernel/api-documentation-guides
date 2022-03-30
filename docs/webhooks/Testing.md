@@ -1,6 +1,10 @@
 # Testing
 
-To enable you to check you have set up your infrastructure correctly, we offer a test event type. This can be triggered via our portal or API and does not contain any information pertaining to a resource, just the following:
+To enable you to check you have set up your infrastructure correctly, we offer a test event type. This can be triggered via API or in our portal.
+
+  ![Create a subscription](../../assets/images/webhooks/Create-Subscription1.png)
+
+It does not contain any information pertaining to a resource, just the following:
 
 ```json
 {
@@ -15,10 +19,25 @@ To enable you to check you have set up your infrastructure correctly, we offer a
 }
 ```
 
-You can view the status of webhook requests in our portal, including the HTTP status code we received.
+Note that if this is triggered from our portal, the payload will be as follows:
+
+```json
+“payload”: {
+  "event": "This event was sent from Admin Portal."
+}
+```
+
+
+You can view the status of webhook requests in our portal.
+
+  ![Create a subscription](../../assets/images/webhooks/Webhook-Messages.png)
+
+The details of an individual request can be seen from the details page, including the HTTP status code we received.
+
+  ![Create a subscription](../../assets/images/webhooks/Webhook-Messages-Details.png)
 
 Webhooks are also available to try out on our sandbox environment. 
 
-If you want to receive webhooks locally, you can use a service such as ngrok to make your local endpoint accessible publicly, see [here](../webhooks/Receiving-Webhooks.md) for more information.
+If you want to receive webhooks locally, you can use a service such as ngrok to make your local endpoint accessible publicly, see [here](../webhooks/Receiving-Webhooks.md) for more information. 
 
 You may wish to disable the subscription for this event when you are finished.

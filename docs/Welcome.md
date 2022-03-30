@@ -26,7 +26,7 @@
 1. [Sandbox FAQ](./sandbox/Sandbox-FAQ.md)
 
 ## Webhooks
-1. [How to Receive Webhooks Locally](./webhooks/Receiving-Webhooks.md)
+1. [Getting Started](./webhooks/Getting-Started.md)
 2. [Types of Event](./webhooks/Event-Types.md)
 3. [Secrets](./webhooks/Secrets.md)
 4. [Testing](./webhooks/Testing.md)
