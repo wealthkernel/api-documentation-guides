@@ -32,7 +32,7 @@ You can view the status of webhook requests in our portal.
 
   ![Create a subscription](../../assets/images/webhooks/Webhook-Messages.png)
 
-The details of an individual request can be seen from the details page, including the HTTP status code we received.
+The details of an individual request can be seen from the details page, including the HTTP status code we received. You can also manually retry from this page should the automatic retries have been exhausted.
 
   ![Create a subscription](../../assets/images/webhooks/Webhook-Messages-Details.png)
 
