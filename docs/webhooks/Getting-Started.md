@@ -4,9 +4,9 @@ tags: [Webhooks]
 
 # Getting Started
 
-## Tunnelling traffic to your local machine
+## Tunnelling traffic to your local environment
 
-To test out webhooks locally without deploying an application to an environment or exposing your test environments to the Internet, you can use ngrok, a free service which tunnels internet traffic to your local environment. 
+To test out webhooks locally without deploying an application to an environment or exposing your test environments to the Internet, you'll need some additional tooling. There are third party services to help you tunnel internet traffic to your local environment. In this guide we will be using ngrok.
 
 Download ngrok [here](https://ngrok.com/download), then follow their getting started guide.
 
@@ -14,20 +14,22 @@ Download ngrok [here](https://ngrok.com/download), then follow their getting sta
 
 Once you’re up and running with ngrok, you’ll need to configure our webhooks as follows:
 
-1. Generate a secret in the portal and save its value for later
+1. Generate a secret in the portal and save its value for later. Note that you may only have two active secrets.
 
-  ![Generate a secret in the portal](../../assets/images/webhooks/Generate-Secret.png)
+  ![Generate a secret in the portal](../../assets/images/webhooks/Generate-Secret.gif)
 
-2. Create subscription in the portal, using the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`
+2. Create a subscription in the portal, using the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`.
 
-  ![Create a subscription](../../assets/images/webhooks/Create-Subscription1.png)
-  
-  ![Create a subscription details](../../assets/images/webhooks/Create-Subscription2.png)
+  ![Create a subscription](../../assets/images/webhooks/Create-Subscription.gif)
 
 Ensure ngrok is running and forwarding traffic to the port on which your local application is running.
 
 You can then send the test event by clicking the button in admin portal or sending an API request
-The request will be sent to your local application via ngrok, where you can:
+The request will be sent to your local application via ngrok.
+
+## Receiving the webhook request
+
+After the above configuration is complete, you're set up to receive the request. In your application you'll need to:
 
 ### 1. Handle the event
 
@@ -35,17 +37,7 @@ Receive the POST request on your HTTPS endpoint.
 
 ### 2. Check the signature
 
-On every webhook request there is a header called `X-Webhook-Signature`. It is composed of a timestamp and one or more HMACs.
-
-First you'll need to split the header down into its component pieces using comma (`,`) as a delimiter. The timestamp can be identified by the `t=` prefix. The HMACs can be identified by a scheme prefix, e.g. `v1=`. Note that if you have multiple secrets you might need to compare against more than one HMAC.
-
-Next you'll need to take the body of the webhook request and concatenate the value of the timestamp element to the end.
-Compute the HMAC with SHA-256 as the hash function, using your secret as the key, and the output from the previous step as the message. Encode the genereated HMAC in base64.
-
-Lastly, compare the base64 encoded HMAC(s) in the X-Webhook-Signature header with the base64 encoded HMAC(s) you have generated.
-
-<!-- theme: info -->
-> A constant time string comparison here is recommended
+Verify that the webhook request came from WealthKernel. More detail on how to do this can be found [here](./Secrets.md).
 
 ### 3. Return a successful HTTP status code, e.g. 200
 
