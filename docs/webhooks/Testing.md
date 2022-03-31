@@ -19,7 +19,7 @@ It does not contain any information pertaining to a resource, just the following
 }
 ```
 
-Note that if this is triggered from our portal, the payload will be as follows:
+Note that if this is triggered from our portal, the payload will be:
 
 ```json
 “payload”: {

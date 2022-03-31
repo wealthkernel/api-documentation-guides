@@ -18,7 +18,7 @@ Once you’re up and running with ngrok, you’ll need to configure our webhooks
 
   ![Generate a secret in the portal](../../assets/images/webhooks/Generate-Secret.png)
 
-2. Create subscription in the portal, using the HTTPS URL provided by ngrok, e.g. `https://9999-123-456-789-12.ngrok.io`
+2. Create subscription in the portal, using the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`
 
   ![Create a subscription](../../assets/images/webhooks/Create-Subscription1.png)
   
@@ -31,13 +31,13 @@ The request will be sent to your local application via ngrok, where you can:
 
 ### 1. Handle the event
 
-Receive the POST request on your HTTPS endpoint
+Receive the POST request on your HTTPS endpoint.
 
 ### 2. Check the signature
 
-On every webhook request there is a header called `X-Webhook-Signature`. It is composed of a timestamp and upto two HMACs
+On every webhook request there is a header called `X-Webhook-Signature`. It is composed of a timestamp and one or more HMACs.
 
-First you'll need to split the header down into its component pieces using comma (`,`) as a delimiter. The timestamp can be identified by the `t=` prefix. The HMACs can be identified by a scheme prefix, e.g. `v1=`. Note that if you have generate multiple secrets you might need to compare against more than one HMAC.
+First you'll need to split the header down into its component pieces using comma (`,`) as a delimiter. The timestamp can be identified by the `t=` prefix. The HMACs can be identified by a scheme prefix, e.g. `v1=`. Note that if you have multiple secrets you might need to compare against more than one HMAC.
 
 Next you'll need to take the body of the webhook request and concatenate the value of the timestamp element to the end.
 Compute the HMAC with SHA-256 as the hash function, using your secret as the key, and the output from the previous step as the message. Encode the genereated HMAC in base64.
@@ -53,4 +53,4 @@ You may wish to return another status code, e.g. 401, if the signature check fai
 
 ### 4. Perform any business logic based on the new information you have received
 
-The rest is up to you!
+We recommend that you perform any actions only once you have responded to the webhook, as you'll need to respond promptly to ensure the webhook request does not time out. The The rest is up to you!
