@@ -53,4 +53,4 @@ You may wish to return another status code, e.g. 401, if the signature check fai
 
 ### 4. Perform any business logic based on the new information you have received
 
-We recommend that you perform any actions only once you have responded to the webhook, as you'll need to respond promptly to ensure the webhook request does not time out. The The rest is up to you!
+We recommend that you perform any actions only once you have responded to the webhook, as you'll need to respond promptly to ensure the webhook request does not time out. The rest is up to you!
