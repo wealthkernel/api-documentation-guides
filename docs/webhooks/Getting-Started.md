@@ -24,8 +24,7 @@ Once you’re up and running with ngrok, you’ll need to configure our webhooks
 
 Ensure ngrok is running and forwarding traffic to the port on which your local application is running.
 
-You can then send the test event by clicking the button in admin portal or sending an API request
-The request will be sent to your local application via ngrok.
+You can then send the test event by clicking the button in admin portal or sending an API request.
 
 ## Receiving the webhook request
 
