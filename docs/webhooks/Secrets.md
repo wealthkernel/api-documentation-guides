@@ -19,9 +19,9 @@ The process for verifying the webhook using the signature is:
 
 First, split the header down into its component pieces using comma (`,`) as a delimiter. Each component is a key-value pair, delimited by equals (`=`). The timestamp can be identified by the `t=` key. The HMAC(s) can be identified by a scheme key, e.g. `v1=`.
 
-Next, concatenate the value of the timestamp element to the end of the body of the webhook request. Compute the HMAC with SHA-256 as the hash function, using your secret as the key, and the concatenated value as the message. Get the HEX encoding of the genereated HMAC.
+Next, concatenate the value of the timestamp element to the end of the body of the webhook request. Compute the HMAC with SHA-256 as the hash function, using your secret as the key, and the concatenated value as the message. Get the hexadecimal encoding of the genereated HMAC.
 
-Lastly, check if the timestamp is within your tolerance (to protect from replay attacks). Compare the HEX encoded HMAC(s) from the first step to the HEX encoded HMAC(s) you have generated. Note that if you have multiple secrets you might need to compare more than one HMAC.
+Lastly, check if the timestamp is within your tolerance (to protect from replay attacks). Compare the hexadecimal encoded HMAC(s) from the first step to the hexadecimal encoded HMAC(s) you have generated. Note that if you have multiple secrets you might need to compare more than one HMAC.
 
 <!-- theme: info -->
 > A constant time string comparison here is recommended
