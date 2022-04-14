@@ -12,13 +12,13 @@ Download ngrok [here](https://ngrok.com/download), then follow their getting sta
 
 ## Configuring webhooks through the portal
 
-Once you’re up and running with ngrok, you’ll need to configure our webhooks as follows:
+Once you’re up and running with ngrok, you’ll need to configure our webhooks. In order to do that, go to our portal and use the left menu to navigate to the webhook pages.
 
-1. Generate a secret in the portal and save its value for later. Note that you may only have two active secrets.
+1. Navigate to the webhooks secret page. Click on 'Generate secret' and save its value for later. Note that you may only have two active secrets.
 
   ![Generate a secret in the portal](../../assets/images/webhooks/Generate-Secret.gif)
 
-2. Create a subscription in the portal, using the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`.
+2. Navigate to the subscriptions page, click on 'Create' a subscription and use the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`.
 
   ![Create a subscription](../../assets/images/webhooks/Create-Subscription.gif)
 
