@@ -2,7 +2,7 @@
 
 We sign our webhooks using a secret, to prove that it is WealthKernel sending you requests, and not a third party. You can generate this secret through our portal. The secret will only be shown to you once, and is not retrievable, so make sure you record it at this point. The secret should be stored securely.
 
-The value is the same for all subscriptions and event types, and consists of a series of cryptographically strong bytes encoded into base64. It is not possible to receive webhooks without first generating a secret.
+The secret is the same for all subscriptions and event types, and consists of a series of cryptographically strong bytes encoded into base64. It is not possible to receive webhooks without first generating a secret.
 
 Secrets can be disabled, should the need arise, for example if your secret becomes compromised. If you disable your only secret, all webhook traffic will stop until a new secret is generated.
 
@@ -10,7 +10,7 @@ Secrets can be disabled, should the need arise, for example if your secret becom
 
 Secrets expire after 3 months, however you may have up to two active secrets concurrently, allowing you to continue to receive webhooks without any downtime. The expiration time of your secret can be viewed through our portal at any time.
 
-The webhook signature will contain one or two HMAC values, depending on the number of active secrets at a given time. If you have two active secrets and one of them expires, from that point you will only receive one HMAC in the signature. If all secrets expire you will stop receiving webhooks.
+The webhook signature header will contain one or two HMAC (hash-based message authentication code) values, depending on the number of active secrets at a given time. If you have two active secrets and one of them expires, from that point you will only receive one HMAC in the signature. If all secrets expire you will stop receiving webhooks.
 
 We recommend to have one active secret and generate a new one when the expiration date of the secret gets close.
 
@@ -18,7 +18,8 @@ We recommend to have one active secret and generate a new one when the expiratio
 
 On every webhook request there is a header called `Webhook-Signature`, which is composed of:
 1. A timestamp in [UNIX seconds](https://en.wikipedia.org/wiki/Unix_time) prefixed by `t=`.
-1. At least one HMAC (hash-based message authentication code) prefixed by `v1=`.
+1. One HMAC prefixed by `v1=`.
+1. An additional HMAC prefixed by `v1=` if there are two active secrets.
 
 A signature header with two HMACs looks like this:
 ```
@@ -53,5 +54,5 @@ content = concatenate(body, timestamp)
 contentHmac = getHmacSha256(content)
 contentHmacHexadecimal = toHexadecimal(contentHmac)
 
-isVerified = equals(signatureHmac, contentSignedHexadecimal)
+isVerified = equals(signatureHmac, contentHmacHexadecimal)
 ```
