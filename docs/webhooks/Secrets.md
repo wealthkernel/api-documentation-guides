@@ -10,16 +10,15 @@ Secrets can be disabled, should the need arise, for example if your secret becom
 
 Secrets expire after 3 months, however you may have up to two active secrets concurrently, allowing you to continue to receive webhooks without any downtime. The expiration time of your secret can be viewed through our portal at any time.
 
-The webhook signature header will contain one or two HMAC (hash-based message authentication code) values, depending on the number of active secrets at a given time. If you have two active secrets and one of them expires, from that point you will only receive one HMAC in the signature. If all secrets expire you will stop receiving webhooks.
+The webhook signature header will contain one or multiple HMAC (hash-based message authentication code) values, depending on the number of active secrets at a given time. If you have two active secrets and one of them expires, from that point you will only receive one HMAC in the signature. If all secrets expire you will stop receiving webhooks.
 
 We recommend to have one active secret and generate a new one when the expiration date of the secret gets close.
 
 ## Using a secret to verify a webhook
 
 On every webhook request there is a header called `Webhook-Signature`, which is composed of:
-1. A timestamp in [UNIX seconds](https://en.wikipedia.org/wiki/Unix_time) prefixed by `t=`.
-1. One HMAC prefixed by `v1=`.
-1. An additional HMAC prefixed by `v1=` if there are two active secrets.
+* A timestamp in [UNIX seconds](https://en.wikipedia.org/wiki/Unix_time) prefixed by `t=`.
+* A HMAC for each secret and scheme prefixed by `v{scheme}=`. (e.g. `v1=`). The only valid signature scheme at the moment is `v1`, but new schemas might be added in the future.
 
 A signature header with two HMACs looks like this:
 ```
