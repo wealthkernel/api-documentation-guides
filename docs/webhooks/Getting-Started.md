@@ -12,7 +12,7 @@ Download ngrok [here](https://ngrok.com/download), then follow their getting sta
 
 ## Configuring webhooks through the portal
 
-Once you’re up and running with ngrok, you’ll need to configure our webhooks. In order to do that, go to our portal and use the left menu to navigate to the webhook pages.
+Once you’re up and running with ngrok you will need to configure your webhooks through our portal, using the left menu to navigate to the webhook pages
 
 1. Navigate to the webhooks secret page. Click on 'Generate secret' and save its value for later. Note that you may only have two active secrets.
 
