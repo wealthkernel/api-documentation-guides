@@ -10,7 +10,7 @@ Secrets can be disabled, should the need arise, for example if your secret becom
 
 Secrets expire after 3 months, however you may have up to two active secrets concurrently, allowing you to continue to receive webhooks without any downtime. The expiration time of your secret can be viewed through our portal at any time.
 
-The webhook signature header will contain one or more HMAC (hash-based message authentication code) values, depending on the number of active secrets at a given time. If you have two active secrets and one of them expires, from that point you will only receive one HMAC in the signature. If all secrets expire you will stop receiving webhooks.
+The webhook signature header will contain one or more HMAC (hash-based message authentication code) values, depending on the number of active secrets at a given time. If you have two active secrets and one of them expires, from that point you will only receive HMAC(s) for the active secret. If all secrets expire you will stop receiving webhooks.
 
 We recommend to have one active secret and generate a new one when the expiration date of the secret gets close.
 
