@@ -1,6 +1,6 @@
 # Testing
 
-To enable you to check you have set up your infrastructure correctly, we offer a test event type. This can be triggered via API or in our portal.
+To enable you to check you have set up your infrastructure correctly, we offer a test event type. This can be triggered via API or in our portal in the subcriptions page.
 
   ![Create a subscription](../../assets/images/webhooks/Create-Subscription1.png)
 
