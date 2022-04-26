@@ -14,4 +14,4 @@ We provide an idempotency key as a header on each request, which we advise you u
 
 ## What happens with events after I disable a subscription?
 
-When a subscription is disabled, it stops receiving events, including any ongoing retry request due to transient HTTP error codes. If you re-enable a disabled subscription, it will only receive new events.
+When a subscription is disabled, it stops receiving events, including any ongoing retry requests due to transient HTTP error codes. If you re-enable a disabled subscription, it will only receive new events.
