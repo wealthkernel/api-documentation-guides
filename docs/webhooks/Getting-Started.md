@@ -4,7 +4,7 @@ tags: [Webhooks]
 
 # Getting Started
 
-> Webhooks functionality is in closed **Beta** and is subject to change. If you are interested in using webhooks please contact tenant management team.
+> Webhooks functionality is in closed **Beta** and is subject to change. If you are interested in using webhooks please contact your tenant manager.
 
 ## Tunnelling traffic to your local environment
 
