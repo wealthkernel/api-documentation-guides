@@ -4,6 +4,8 @@ tags: [Webhooks]
 
 # Getting Started
 
+> Webhooks functionality is in closed **Beta** and is subject to change. If you are interested in using webhooks please contact your tenant manager.
+
 ## Tunnelling traffic to your local environment
 
 To test out webhooks locally without deploying an application to an environment or exposing your test environments to the Internet, you'll need some additional tooling. There are third party services to help you tunnel internet traffic to your local environment. In this guide we will be using ngrok.
@@ -18,9 +20,9 @@ Once you’re up and running with ngrok you will need to configure your webhooks
 
   ![Generate a secret in the portal](../../assets/images/webhooks/Generate-Secret.gif)
 
-2. Navigate to the subscriptions page, click on 'Create' a subscription and use the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`.
+2. Navigate to the webhook subscriptions page, click on 'Create' and use the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`.
 
-  ![Create a subscription](../../assets/images/webhooks/Create-Subscription.gif)
+  ![Create a webhook subscription](../../assets/images/webhooks/Create-Subscription.gif)
 
 Ensure ngrok is running and forwarding traffic to the port on which your local application is running.
 
