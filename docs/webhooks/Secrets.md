@@ -2,7 +2,7 @@
 
 We sign our webhooks using a secret, to prove that it is WealthKernel sending you requests, and not a third party. You can generate this secret through our portal. The secret will only be shown to you once, and is not retrievable, so make sure you record it at this point. The secret should be stored securely.
 
-The secret is the same for all subscriptions and event types, and consists of a series of cryptographically strong bytes encoded into base64. It is not possible to receive webhooks without first generating a secret.
+The secret is the same for all webhook subscriptions and event types, and consists of a series of cryptographically strong bytes encoded into base64. It is not possible to receive webhooks without first generating a secret.
 
 Secrets can be disabled, should the need arise, for example if your secret becomes compromised. If you disable your only secret, all webhook traffic will stop until a new secret is generated.
 

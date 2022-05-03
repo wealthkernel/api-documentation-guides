@@ -12,6 +12,6 @@ We guarantee at least once delivery within our retry policy, so it is possible t
 
 We provide an idempotency key as a header on each request, which we advise you utilise to ensure you do not process the same event more than once.
 
-## What happens with events after I disable a subscription?
+## What happens with events after I disable a webhook subscription?
 
-When a subscription is disabled, it stops receiving events, including any ongoing retry requests due to transient HTTP error codes. If you re-enable a disabled subscription, it will only receive new events.
+When a webhook subscription is disabled, it stops receiving events, including any ongoing retry requests due to transient HTTP error codes. If you re-enable a disabled webhook subscription, it will only receive new events.
