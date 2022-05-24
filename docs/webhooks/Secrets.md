@@ -50,7 +50,7 @@ timestamp = signatureSplitByComma[0].Split("t=")[1]
 signatureHmac = signatureSplitByComma[1].Split("v1=")[1]
 
 content = concatenate(body, timestamp)
-contentHmac = getHmacSha256(content)
+contentHmac = getHmacSha256(content, secretDecoded)
 contentHmacHexadecimal = toHexadecimal(contentHmac)
 
 isVerified = equals(signatureHmac, contentHmacHexadecimal)
