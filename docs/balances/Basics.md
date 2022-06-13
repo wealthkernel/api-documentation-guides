@@ -8,6 +8,7 @@ tags: [Balances]
 > This API is currently in **Beta** and is subject to change.
 
 This API provides a set of endpoints to get the current balances of a portfolio based on latest prices and FX rates.
+The security value is based on prices from close of business the previous day and cash value is current day.
 
 ## Total Balance
 
@@ -35,3 +36,9 @@ The `value` is calculated using the following equation: `quantity * price / rate
 
 <!-- theme: warning -->
 > The `value` element of this object could be `null` in the absence of a latest price or FX rate.
+
+## Additional Information
+
+If securities are being purchased the balances API will be updated when the orders are matched to the portfolio, it is not determined on the orders being settled.
+
+If securities are being sold the balances API will follow the same logic . This enables the cash to be reinvested prior to settlement. However, if the cash is wished to be withdrawn the orders must be settled.
