@@ -8,7 +8,9 @@ Secrets can be disabled, should the need arise, for example if your secret becom
 
 ## Secret expiration
 
-Secrets expire after 1 year, however you may have up to two active secrets concurrently, allowing you to continue to receive webhooks without any downtime. The expiration time of your secret can be viewed through our portal at any time.
+The default secret expiration policy is 1 year, and you may have up to two active secrets concurrently, allowing you to continue to receive webhooks without any downtime. The expiration time of your secret can be viewed through our portal at any time.
+
+As an alternative, you can select an expiration policy of 'Never' when creating a secret. This means the secret will never expire unless manually disabled through our API or portal. Even if you decide to use this policy, we recommend you rotate your secrets periodically.
 
 The webhook signature header will contain one or more HMAC (hash-based message authentication code) values, depending on the number of active secrets at a given time. If you have two active secrets and one of them expires, from that point you will only receive HMAC(s) for the active secret. If all secrets expire you will stop receiving webhooks.
 
@@ -50,7 +52,7 @@ timestamp = signatureSplitByComma[0].Split("t=")[1]
 signatureHmac = signatureSplitByComma[1].Split("v1=")[1]
 
 content = concatenate(body, timestamp)
-contentHmac = getHmacSha256(content, secretDecoded)
+contentHmac = getHmacSha256(content)
 contentHmacHexadecimal = toHexadecimal(contentHmac)
 
 isVerified = equals(signatureHmac, contentHmacHexadecimal)
