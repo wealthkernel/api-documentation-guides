@@ -5,7 +5,7 @@ stoplight-id: 8738880941b84
 
 # ISA Subscription Basics
 
-Any account which is a type of ISA or JISA will have a subscription. A subscription keeps track of how much a user has subscribed towards their account in a given tax year. This includes money is deposited into their portfolio(s), as well as a user transferring an ISA/JISA from a previous provider. Note that depending on various factors, it may take some time for the subscription amount to be updated in the case of a transfer.
+Any account which is a type of ISA or JISA will have a subscription. A subscription keeps track of how much a party has subscribed towards their account in a given tax year. This includes money is deposited into their portfolio(s), as well as a party transferring an ISA/JISA from a previous provider. Note that depending on various factors, it may take some time for the subscription amount to be updated in the case of a transfer.
 
 It's worth noting that not all changes to a portfolio mean a change to the corresponding subscription. The following do not change the value of a subscription:
 
