@@ -68,6 +68,15 @@
     },
     {
       "type": "divider",
+      "title": "ISA Subscriptions"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/isa-subscriptions/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "Sandbox"
     },
     {
