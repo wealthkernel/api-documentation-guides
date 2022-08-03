@@ -112,6 +112,20 @@
       "type": "item",
       "title": "FAQs",
       "uri": "docs/webhooks/FAQs.md"
+    },    
+    {
+      "type": "divider",
+      "title": "Withdrawals"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/withdrawals/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/withdrawals/FAQs.md"
     }
   ]
 }
