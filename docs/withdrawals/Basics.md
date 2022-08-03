@@ -24,6 +24,16 @@ Party ->> Your Application: "I want to make a withdrawal"
 Your Application ->> WealthKernel: POST /withdrawals
 Note over WealthKernel: WealthKernel checks the portfolio <br> meets the conditions for a withdrawal<br>to proceed, then makes a payment<br> to the party, and transitions<br> the withdrawal to Settled.
 
+alt Discretionary Strategy
+WealthKernel ->> WealthKernel: Start raising cash
+end
+
+alt Full withdrawal
+WealthKernel ->> Your Fee Portfolio: Payment of fees charged
+end
+
+WealthKernel ->> Party: Payment to bank account
+
 Your Application ->> WealthKernel: GET /withdrawals/wth-123
 WealthKernel -->> Your Application: Settled Withdrawal
 
