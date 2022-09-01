@@ -13,7 +13,6 @@ The inbound transfer will pass through the following stages:
 stateDiagram-v2
     [*] --> Pending
     Pending --> Submitted
-    Pending --> Rejected
     Submitted --> Rejected
     Submitted --> Accepted
     Accepted --> Transferring
