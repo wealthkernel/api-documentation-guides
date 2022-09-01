@@ -22,6 +22,14 @@
 2. [How To Request Payments](./direct-debits/How-To-Request-Payments.md)
 3. [UI Guidelines](./direct-debits/UI-Guidelines.md)
 
+## Inbound Transfers
+1. [Basics](./inbound-transfers/Basics.md)
+2. [ISA Transfers](./inbound-transfers/ISA-Transfers.md)
+3. [Sandbox Simulation](./inbound-transfers/Sandbox-Simulation.md)
+
+## ISA Subscriptions
+1. [Basics](./isa-subscriptions/Basics.md)
+
 ## Sandbox
 1. [Sandbox FAQ](./sandbox/Sandbox-FAQ.md)
 
