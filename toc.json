@@ -68,6 +68,25 @@
     },
     {
       "type": "divider",
+      "title": "Inbound Transfers"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/inbound-transfers/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "ISA Transfers",
+      "uri": "docs/inbound-transfers/ISA-Transfers.md"
+    },
+    {
+      "type": "item",
+      "title": "Sandbox Simulation",
+      "uri": "docs/inbound-transfers/Sandbox-Simulation.md"
+    },
+    {
+      "type": "divider",
       "title": "ISA Subscriptions"
     },
     {
