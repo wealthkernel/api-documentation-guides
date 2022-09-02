@@ -11,3 +11,8 @@ After an inbound transfer has been submitted to WealthKernel for processing, the
 If you would like to simulate a request for more information(for example the ceding account reference was not found by the ceding provider) you can do so by setting the ceding provider reference to `TRIGGER_PENDING`. Once you submit the inbound transfer to WealthKernel for processing, after 30 seconds we will move the inbound transfer back to Pending.
 
 You can then update the inbound transfer and resubmit.
+
+## Simulating A Cancellation Rejection
+If you would like to simulate a cancellation request being rejected you can do so by setting the ceding provider reference to `TRIGGER_CANCELLATION_REJECTION`.
+
+Once you request cancellation of the inbound transfer, after 30 seconds we will set cancellation requested back to false.
