@@ -27,6 +27,8 @@ State | Explanation
  Accepted | The inbound transfer has been accepted by the ceding provider. 
  Transferring | The funds for the inbound transfer have been sent by the ceding provider to the portfolio managed by WealthKernel. 
  Completed | The funds for the inbound transfer have been received and are available in the portfolio managed by WealthKernel.
+ Rejected | The inbound transfer has been rejected by WealthKernel. This could happen if your porfolio or account didn´t pass validation checks done by WealthKernel. The reason will be communicated through the status change history.
+ Cancelled | The inbound tranfer has been cancelled by WealthKernel. This state is irreversible.
 
 ## Status History
 For each status change that an inbound transfer goes through, we create a status history entry on the resource with a timestamp and an optional reason (populated for rejections and requests for more information).
