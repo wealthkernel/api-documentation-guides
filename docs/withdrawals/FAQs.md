@@ -6,7 +6,9 @@ stoplight-id: 9ji36bqx57o2j
 
 ## What should be used as a withdrawal's reference?
 
-The only limitation is a maximum of 50 characters, otherwise this is up to you. You might choose to generate something unique or partially unique concatenated with something more readable for your users to be able to tell withdrawals apart.
+The only limitation is length, otherwise this is up to you. You might choose to generate something unique or partially unique concatenated with something more readable for your users to be able to tell withdrawals apart.
+
+Note that due to external provider limitations, the reference will be truncated if length is greater than 16 characters.
 
 ## Why has a withdrawal been rejected?
 
