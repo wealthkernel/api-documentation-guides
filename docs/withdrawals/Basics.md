@@ -31,7 +31,7 @@ WealthKernel ->> WealthKernel: Complete raising cash
 end
 
 alt if this is a full withdrawal
-WealthKernel ->> Your Fee Portfolio: Payment of fees charged
+WealthKernel ->> Your Fee Portfolio: Fees charged and credited to your fee portfolio
 end
 
 WealthKernel ->> Party: Payment to bank account
