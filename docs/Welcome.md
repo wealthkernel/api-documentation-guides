@@ -39,3 +39,11 @@
 3. [Secrets](./webhooks/Secrets.md)
 4. [Testing](./webhooks/Testing.md)
 5. [FAQs](./webhooks/FAQs.md)
+
+## Withdrawals
+1. [Basics](./withdrawals/Basics.md)
+1. [FAQs](./withdrawals/FAQs.md)
+
+
+## Transactions
+1. [Basics](./transactions/Basics.md)

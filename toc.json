@@ -145,6 +145,15 @@
       "type": "item",
       "title": "FAQs",
       "uri": "docs/withdrawals/FAQs.md"
+    },    
+    {
+      "type": "divider",
+      "title": "Transactions"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/transactions/Basics.md"
     }
   ]
 }
