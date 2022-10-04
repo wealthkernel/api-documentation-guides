@@ -8,9 +8,9 @@ The status of every order will first be “Matched” before moving to “Settle
 
 **Adjustment**: A transaction type used in orders to rectify a system error or an issue with the orders. E.g.: If the client was affected by postponed orders, we will then use the ‘adjustment’ transaction type for any alterations in the consideration or quantity.
 
-**Buy**: It refers specifically to an order that has been bought.
+**Buy**: It represents the buying of a security. It will include the secutity ISIN code, the quantity and price of the trade and any other charges applied to the charge if any. When the trade has executed the transaction remains in matched state until is settled
 
-**Sell**: It refers specifically to an order that has been sold.
+**Sell**: It represents the selling of a security. It will include the secutity ISIN code, the quantity and price of the trade and any other charges applied to the charge if any. When the trade has executed the transaction remains in matched state until is settled
 
 **Deposit**: A deposit made directly from the client’s bank account to us.
 
@@ -18,19 +18,19 @@ The status of every order will first be “Matched” before moving to “Settle
 
 **Charge**: It is related to custody fees deducted in each portfolio as per instruction of each tenant.
 
-**Consolidation In/Out**: It is related to merging an order
+**Consolidation In/Out**: It's used to reflect some corporate actions orders.
 
-**Dividend**: It refers to the payment of a dividend and includes details such as the ISIN number, for example.
+**Dividend**: It represent the payment of a dividend in cash, includes the secutity ISIN code.
 
-**FxIn/FxOut**: It was previously used when dividends were booked in the currency of its home country, however, this is no longer the case.
+**FxIn/FxOut**: It's used when dividends were booked in the currency of its home country, however, this is no longer the case.
 
-**Cash Transfer IN/OUT**: It is related to cash transfers, such as ISA transfers for example, and is not used so frequently, being used for similar purposes as the Internal Cash Transfer IN/OUT but it is more broadly as it doesn't need to be necessarily made internally.
+**Cash Transfer IN/OUT**: It is used to to book cash transfers coming from the outside, such as ISA transfers for example.
 
-**Internal Cash Transfer IN/OUT**: It is related to an internal transfer such as transfer between accounts (GIA <> ISA <> JISA) and portfolios and it can also be used for a transfer between a corporate portfolio to a client portfolio, for example.
+**Internal Cash Transfer IN/OUT**: It is used to to book cash transfers between accounts (GIA <> ISA <> JISA) and portfolios inside WealthKernel.
 
-**Internal Transfer IN/OUT**: This is used when we move units or stocks between any portfolios held with WealthKernel. For example: from one GIA to another under the same party. 
+**Internal Transfer IN/OUT**: Used to transfer units or stocks between portfolios held with WealthKernel. For example: from one GIA to another under the same party. 
 
-**Transfer IN/OUT**: It is related to any transfer of stock or units into a portfolio with WealthKernel to a portfolio held with another broker/provider or vice versa. 
+**Transfer IN/OUT**: Used to transfer units or stocks between a portfolio within WealthKernel and a portfolio held with another broker/provider or vice versa. 
 
 **Redemption**: It is related to corporate actions, however, it is an infrequently transaction type.
 
