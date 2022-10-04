@@ -18,7 +18,7 @@ The status of every order will first be “Matched” before moving to “Settle
 
 **Charge**: It is related to custody fees deducted in each portfolio as per instruction of each tenant.
 
-**Consolidation In/Out**: It's used to reflect some corporate actions orders.
+**Consolidation In/Out**: It's used to reflect some corporate actions operations.
 
 **Dividend**: It represent the payment of a dividend in cash, includes the secutity ISIN code.
 
