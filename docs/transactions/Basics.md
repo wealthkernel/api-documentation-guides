@@ -32,7 +32,7 @@ The status of every order will first be “Matched” before moving to “Settle
 
 **Transfer IN/OUT**: Used to book a units or stocks transfer between a portfolio within WealthKernel and a portfolio held with another broker/provider or vice versa. 
 
-**Redemption**: It is related to corporate actions.
+**Redemption**: Used for repayments of principal and interests owed of debts instruments.
 
 ## Timestamp and Updated At
 
