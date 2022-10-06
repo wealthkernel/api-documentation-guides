@@ -6,27 +6,27 @@ The status of every order will first be “Matched” before moving to “Settle
 
 # Type of Transactions
 
-**Adjustment**: A transaction type used in orders to rectify a system error or an issue with the orders. E.g.: If the client was affected by postponed orders, we will then use the ‘adjustment’ transaction type for any alterations in the consideration or quantity.
+**Adjustment**: Used in order to rectify errors.
 
-**Buy**: It represents the buying of a security. It will include the secutity ISIN code, the quantity and price of the trade and any other charges applied to the trade if any. When the trade has executed the transaction remains in matched state until it is settled
+**Buy**: Represents the buying of a security. It will include the secutity ISIN code, the quantity and price of the trade and any other charges applied to the trade if any. When the trade has executed the transaction remains in matched state until it is settled
 
-**Sell**: It represents the selling of a security. It will include the secutity ISIN code, the quantity and price of the trade and any other charges applied to the trade if any. When the trade has executed the transaction remains in matched state until it is settled
+**Sell**: Represents the selling of a security. It will include the secutity ISIN code, the quantity and price of the trade and any other charges applied to the trade if any. When the trade has executed the transaction remains in matched state until it is settled
 
 **Deposit**: A deposit made directly from the client’s bank account to us.
 
 **Withdrawal**: A payment out into the client’s bank account processed upon request.
 
-**Charge**: It is related to custody fees deducted in each portfolio as per instruction of each tenant.
+**Charge**: Represents custody fees taken.
 
-**Consolidation In/Out**: It's used to reflect some corporate actions operations.
+**Consolidation In/Out**: Used to reflect some corporate action operations.
 
-**Dividend**: It represent the payment of a dividend in cash, includes the secutity ISIN code.
+**Dividend**: Represent the payment of a dividend in cash.
 
-**FxIn/FxOut**: It's used to book exchange operations, for example for dividend payments in a foreign currency.
+**FxIn/FxOut**: Used to book exchange operations, for example for dividend payments in a foreign currency.
 
-**Cash Transfer IN/OUT**: It is used to book cash transfers coming from the outside, such as ISA transfers for example.
+**Cash Transfer IN/OUT**: Used to book cash transfers coming from other provider, such as ISA transfers for example.
 
-**Internal Cash Transfer IN/OUT**: It is used to book cash transfers between accounts (GIA <> ISA <> JISA) and portfolios inside WealthKernel.
+**Internal Cash Transfer IN/OUT**: Used to book cash transfers between accounts (GIA <> ISA <> JISA) and portfolios held with WealthKernel.
 
 **Internal Transfer IN/OUT**: Used to book a units or stocks transfer between portfolios held with WealthKernel. For example: from one GIA to another under the same party. 
 
