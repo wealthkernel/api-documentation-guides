@@ -1,6 +1,6 @@
 # Transactions
 
-A transaction represents a movement of cash or holdings to/from a portfolio. When the transaction refers to a cash movement it will only contain a consideration. If the transaction is related to securities trading details about the security, price and quantity could also be included.
+A transaction represents a movement of cash or holdings to/from a portfolio. When the transaction refers to a cash movement it will only contain a consideration. If the transaction is related to a security, trading details about the security, price and quantity will also be included.
 
 The status of every order will first be `Matched` before moving to `Settled` or `Cancelled`.
 
@@ -8,9 +8,9 @@ The status of every order will first be `Matched` before moving to `Settled` or 
 
 **Adjustment**: Used in order to rectify errors.
 
-**Buy**: Represents the purchase of a security. It will include the secutity ISIN code, the quantity and price of the trade and any other charges applied to the trade if any. When the trade has executed the transaction remains in `Matched` state until it is `Settled`.
+**Buy**: Represents the purchase of a security. It will include the security ISIN code, the quantity and price of the trade and any other charges applied to the trade if any. When the trade has executed the transaction remains in `Matched` state until it is `Settled`.
 
-**Sell**: Represents the sale of a security. It will include the secutity ISIN code, the quantity and price of the trade and any other charges applied to the trade if any. When the trade has executed the transaction remains in `Matched` state until it is `Settled`.
+**Sell**: Represents the sale of a security. It will include the security ISIN code, the quantity and price of the trade and any other charges applied to the trade if any. When the trade has executed the transaction remains in `Matched` state until it is `Settled`.
 
 **Deposit**: A deposit made directly from the client’s bank account to WealthKernel.
 
