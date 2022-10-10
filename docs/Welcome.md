@@ -33,9 +33,16 @@
 ## Sandbox
 1. [Sandbox FAQ](./sandbox/Sandbox-FAQ.md)
 
+## Transactions
+1. [Basics](./transactions/Basics.md)
+
 ## Webhooks
 1. [Getting Started](./webhooks/Getting-Started.md)
 2. [Types of Event](./webhooks/Event-Types.md)
 3. [Secrets](./webhooks/Secrets.md)
 4. [Testing](./webhooks/Testing.md)
 5. [FAQs](./webhooks/FAQs.md)
+
+## Withdrawals
+1. [Basics](./withdrawals/Basics.md)
+1. [FAQs](./withdrawals/FAQs.md)
