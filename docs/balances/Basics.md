@@ -4,9 +4,6 @@ tags: [Balances]
 
 # Balance Basics
 
-<!-- theme: info -->
-> This API is currently in **Beta** and is subject to change.
-
 This API provides a set of endpoints to get the current balances of a portfolio based on latest prices and FX rates.
 
 ## Total Balance
