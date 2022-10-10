@@ -38,8 +38,6 @@ The status of every order will first be `Matched` before moving to `Settled` or 
 
 The `timestamp` is the time and date the transaction was initially created and this will not change, whereas the `updatedAt` is the time and date the transaction data was last updated. For example, a change of status from `Matched` to `Settled` or some other manual update if it was mispriced or similar.
 
-The date and time in the `timestamp` and in the `updatedAt` are all in the UTC time zone
-
 ## `settledOn`
 
 The `settledOn` is the date at which the transaction will be settled.
