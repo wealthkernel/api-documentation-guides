@@ -4,8 +4,6 @@ tags: [Webhooks]
 
 # Getting Started
 
-> Webhooks functionality is in closed **Beta** and is subject to change. If you are interested in using webhooks please contact your tenant manager.
-
 ## Tunnelling traffic to your local environment
 
 To test out webhooks locally without deploying an application to an environment or exposing your test environments to the Internet, you'll need some additional tooling. There are third party services to help you tunnel internet traffic to your local environment. In this guide we will be using ngrok.
