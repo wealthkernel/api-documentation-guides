@@ -34,7 +34,7 @@ State | Explanation
 For each status change that an inbound transfer goes through, we create a status history entry on the resource with a timestamp and an optional reason (populated for rejections and requests for more information).
 
 ## Requesting An Inbound Transfer
-To [request an inbound transfer](https://docs.wealthkernel.com/docs/api/c0641cdcaad59-request-an-inbound-transfer) through our API, you must provide us with the details of the account that you would like to transfer (there are specific requirements for each type of transfer, that can be found on the relevant transfer type guide page). We have a list of known ceding providers that can be queried by transfer type. These can be used to speed up the process of collecting data, as we have the address for these providers, so you will not have to collect it from the client. If the ceding provider is not one that is known by us, you can provide the name and address.
+To [request an inbound transfer](https://docs.wealthkernel.com/docs/api/c0641cdcaad59-request-an-inbound-transfer) through our API, you must provide us with the details of the account that you would like to transfer (there are specific requirements for each type of transfer, that can be found on the relevant transfer type guide page). We have a list of known ceding providers that can be queried by transfer type. If the ceding provider is not one that is known by us, you can provide the name and address.
 Each inbound transfer request must satisfy the following requirements:
 - The portfolio referenced on the inbound ISA transfer request must be Active.
 - The account that the portfolio is under must be Active.
