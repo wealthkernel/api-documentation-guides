@@ -14,7 +14,7 @@ Download ngrok [here](https://ngrok.com/download), then follow their getting sta
 
 Once you’re up and running with ngrok you will need to configure your webhooks through our dashboard, using the left menu to navigate to the webhook pages
 
-1. Navigate to the webhooks configuration section and click on the `+` button. Select your desired secret lifetime and then click on 'Create secret' and save its value for later. Note that you may only have two active secrets.
+1. Navigate to the webhooks configuration section and click on the '+' button next to the 'Secrets' heading. Select your desired secret lifetime and then click on 'Create secret', ensure you save its value for later. Note that you may only have two active secrets.
 
   ![Generate a secret in the dashboard](../../assets/images/webhooks/Generate-Secret2.gif)
 
