@@ -2,7 +2,7 @@
 
 To enable you to check you have set up your infrastructure correctly, we offer a test event type. This can be triggered via API or in our dashboard webhooks configuration page.
 
-  ![Create a webhook subscription](../../assets/images/webhooks/Test-Event2.png)
+  ![Send test event](../../assets/images/webhooks/Test-Event2.png)
 
 It does not contain any information pertaining to a resource, just the following:
 
