@@ -34,7 +34,7 @@ You can view the status of webhook requests in our dashboard.
 
 The details of an individual request can be seen from the details page, including the HTTP status code we received. You can also manually resend from this page should the automatic retries have been exhausted.
 
-  ![Create a webhook subscription](../../assets/images/webhooks/Webhook-Messages-Details2.png)
+  ![Message details](../../assets/images/webhooks/Webhook-Messages-Details2.png)
 
 Webhooks are also available to try out on our sandbox environment. 
 
