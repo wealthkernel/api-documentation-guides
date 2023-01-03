@@ -16,7 +16,8 @@ stateDiagram-v2
     Submitted --> Rejected
     Submitted --> Accepted
     Accepted --> Transferring
-    Transferring --> Completed
+    Transferring --> Transferred
+    Transferred --> Completed
     Completed --> [*]   
 ```
 
@@ -26,7 +27,8 @@ State | Explanation
  Submitted | The inbound transfer has been submitted to WealthKernel to be processed and requested from the ceding provider. 
  Accepted | The inbound transfer has been accepted by the ceding provider. 
  Transferring | The funds for the inbound transfer have been sent by the ceding provider to the portfolio managed by WealthKernel. 
- Completed | The funds for the inbound transfer have been received and are available in the portfolio managed by WealthKernel.
+ Transferred | The funds for the inbound transfer have been received and are available in the portfolio managed by WealthKernel.
+ Completed | The inbound transfer has been compeleted.
  Rejected | The inbound transfer has been rejected by WealthKernel. The reason will be communicated in the status history entry.
  Cancelled | The inbound transfer has been cancelled.
 
@@ -69,6 +71,9 @@ Once an inbound transfer is Accepted, the ceding provider will begin to liquidat
 Once we receive notification that that has happened, the inbound transfer will move to the Transferring status.
 
 Once we receive the money and it is available in the portfolio, we will move the inbound transfer to Completed.
+
+> If the inbound transfer is type of ISA, you will be required to provide ISA transfer history details in order to complete it. Check details in the ISA transfers section.
+
 ## Cancelling An Inbound Transfer
 You can [cancel an inbound transfer](https://docs.wealthkernel.com/docs/api/197b558519290-cancel-inbound-transfer) that is Pending, Submitted or Accepted. The inbound transfer will be immediately moved to Cancelled if the inbound transfer was Pending. However, if it is not in Pending, it will not immediately move to Cancelled as we may need to request cancellation from the ceding provider, and it may be the case that they have already begun the transfer of the funds and can’t cancel it. 
 In the case where we can´t cancel the inbound transfer, we will communicate the reason by adding a new status history entry.
