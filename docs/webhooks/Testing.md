@@ -30,7 +30,7 @@ Note that if this is triggered from our dashboard, the payload will be:
 
 You can view the status of webhook requests in our dashboard.
 
-  ![Create a webhook subscription](../../assets/images/webhooks/Webhook-Messages2.png)
+  ![Messages list](../../assets/images/webhooks/Webhook-Messages2.png)
 
 The details of an individual request can be seen from the details page, including the HTTP status code we received. You can also manually resend from this page should the automatic retries have been exhausted.
 
