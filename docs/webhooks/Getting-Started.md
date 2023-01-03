@@ -12,19 +12,19 @@ Download ngrok [here](https://ngrok.com/download), then follow their getting sta
 
 ## Configuring webhooks through the portal
 
-Once you’re up and running with ngrok you will need to configure your webhooks through our portal, using the left menu to navigate to the webhook pages
+Once you’re up and running with ngrok you will need to configure your webhooks through our dashboard, using the left menu to navigate to the webhook pages
 
-1. Navigate to the webhooks secret page. Click on 'Generate secret' and save its value for later. Note that you may only have two active secrets.
+1. Navigate to the webhooks configuration section and click on the `+` button. Select your desired secret lifetime and then click on 'Create secret' and save its value for later. Note that you may only have two active secrets.
 
-  ![Generate a secret in the portal](../../assets/images/webhooks/Generate-Secret.gif)
+  ![Generate a secret in the portal](../../assets/images/webhooks/Generate-Secret2.gif)
 
-2. Navigate to the webhook subscriptions page, click on 'Create' and use the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`.
+2. Navigate to the webhook subscriptions section and click on the `+` button. Enter the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`. Select the event type 'Test event (v1)', then click on 'Add subscription'.
 
-  ![Create a webhook subscription](../../assets/images/webhooks/Create-Subscription.gif)
+  ![Create a webhook subscription](../../assets/images/webhooks/Create-Subscription2.gif)
 
 Ensure ngrok is running and forwarding traffic to the port on which your local application is running.
 
-You can then send the test event by clicking the button in admin portal or sending an API request.
+You can then send the test event by clicking the button in the dashboard or sending an API request.
 
 ## Receiving the webhook request
 
