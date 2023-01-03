@@ -1,6 +1,6 @@
 # Secrets
 
-We sign our webhooks using a secret, to prove that it is WealthKernel sending you requests, and not a third party. You can generate this secret through our portal. The secret will only be shown to you once, and is not retrievable, so make sure you record it at this point. The secret should be stored securely.
+We sign our webhooks using a secret, to prove that it is WealthKernel sending you requests, and not a third party. You can generate this secret through our dashboard. The secret will only be shown to you once, and is not retrievable, so make sure you record it at this point. The secret should be stored securely.
 
 The secret is the same for all webhook subscriptions and event types, and consists of a series of cryptographically strong bytes encoded into base64. It is not possible to receive webhooks without first generating a secret.
 
@@ -8,9 +8,9 @@ Secrets can be disabled, should the need arise, for example if your secret becom
 
 ## Secret expiration
 
-The default secret expiration policy is 1 year, and you may have up to two active secrets concurrently, allowing you to continue to receive webhooks without any downtime. The expiration time of your secret can be viewed through our portal at any time.
+The default secret expiration policy is 1 year, and you may have up to two active secrets concurrently, allowing you to continue to receive webhooks without any downtime. The expiration time of your secret can be viewed through our dashboard at any time.
 
-As an alternative, you can select an expiration policy of 'Never' when creating a secret. This means the secret will never expire unless manually disabled through our API or portal. Even if you decide to use this policy, we recommend you rotate your secrets periodically.
+As an alternative, you can select an expiration policy of 'Never' when creating a secret. This means the secret will never expire unless manually disabled through our API or dashboard. Even if you decide to use this policy, we recommend you rotate your secrets periodically.
 
 The webhook signature header will contain one or more HMAC (hash-based message authentication code) values, depending on the number of active secrets at a given time. If you have two active secrets and one of them expires, from that point you will only receive HMAC(s) for the active secret. If all secrets expire you will stop receiving webhooks.
 

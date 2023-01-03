@@ -1,6 +1,6 @@
 # Event Types
 
-Depending on your needs, you may only need a subset of all the events we offer. To make this easy to manage, you can opt in to only the event types you need. You can choose these in our portal, and use them in your code to determine any action you need to take.
+Depending on your needs, you may only need a subset of all the events we offer. To make this easy to manage, you can opt in to only the event types you need. You can choose these in our dashboard, and use them in your code to determine any action you need to take.
 
 This is an excerpt of a request to demonstrate how event types are included in the webhook request.
 
