@@ -10,13 +10,13 @@ To test out webhooks locally without deploying an application to an environment 
 
 Download ngrok [here](https://ngrok.com/download), then follow their getting started guide.
 
-## Configuring webhooks through the portal
+## Configuring webhooks through the dashboard
 
 Once you’re up and running with ngrok you will need to configure your webhooks through our dashboard, using the left menu to navigate to the webhook pages
 
 1. Navigate to the webhooks configuration section and click on the `+` button. Select your desired secret lifetime and then click on 'Create secret' and save its value for later. Note that you may only have two active secrets.
 
-  ![Generate a secret in the portal](../../assets/images/webhooks/Generate-Secret2.gif)
+  ![Generate a secret in the dashboard](../../assets/images/webhooks/Generate-Secret2.gif)
 
 2. Navigate to the webhook subscriptions section and click on the `+` button. Enter the HTTPS URL provided by ngrok, ensuring you specify the path that your application has been set up on e.g. `https://9999-123-456-789-12.ngrok.io/webhooks`. Select the event type 'Test event (v1)', then click on 'Add subscription'.
 
