@@ -72,8 +72,6 @@ Once we receive notification that that has happened, the inbound transfer will m
 
 Once we receive the money and it is available in the portfolio, we will move the inbound transfer to Completed.
 
-> If the inbound transfer is type of ISA, you will be required to provide ISA transfer history details in order to complete it. Check details in the ISA transfers section.
-
 ## Cancelling An Inbound Transfer
 You can [cancel an inbound transfer](https://docs.wealthkernel.com/docs/api/197b558519290-cancel-inbound-transfer) that is Pending, Submitted or Accepted. The inbound transfer will be immediately moved to Cancelled if the inbound transfer was Pending. However, if it is not in Pending, it will not immediately move to Cancelled as we may need to request cancellation from the ceding provider, and it may be the case that they have already begun the transfer of the funds and can’t cancel it. 
 In the case where we can´t cancel the inbound transfer, we will communicate the reason by adding a new status history entry.
