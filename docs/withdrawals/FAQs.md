@@ -15,7 +15,7 @@ Note that due to external provider limitations, the reference will be truncated 
 There could be a number of reasons a withdrawal has been rejected:
 
 - The provided bank account or default bank account is not active.
-- There is already an active withdrawal.
+- The specified portfolio's mandate is not execution only and there is already an active withdrawal.
 - Party's account is not active.
 - There is insufficient balance to fulfil the withdrawal request.
 
