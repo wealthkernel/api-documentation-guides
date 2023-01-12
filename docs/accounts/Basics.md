@@ -99,4 +99,4 @@ Currently, the following webhooks are available:
 | Account was created | `Pending` | `accounts.account_created` |
 | Account passes all checks | `Active` | `accounts.account_activated` |
 | Account starts closing process | `Closing` | `accounts.account_closing` |
-| Before closure process is completed, client decides they do not wish to close, closure is cancelled | `Active` | `accounts.account_closure_cancelled` |
+| Before closure process is completed, closure is cancelled as it was accidental | `Active` | `accounts.account_closure_cancelled` |
