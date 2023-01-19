@@ -47,11 +47,10 @@ Once created, a payment will pass through several states as outlined below.
 ### Recurring Subscriptions
 A Subscription is a schedule definition describing when to generate payments. Once created these payments behave like any other single payment. As such you can manage it through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">payments APIs</a>. After a Subscription starts it will continue generating payments until <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions~1%7BsubscriptionId%7D~1actions~1pause/post">paused</a> or <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions~1%7BsubscriptionId%7D~1actions~1cancel/post">cancelled</a>.
 
-When <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions/post">creating</a> a Subscription, you can specify an interval of `Weekly`, `Monthly` or `Yearly`. Some optional request properties are only valid for certain intervals. If the request does not include any of these properties, the first payment will be taken at the earliest opportunity.
+When <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions/post">creating</a> a Subscription, you can specify an interval of `Monthly` or `Yearly`. Some optional request properties are only valid for certain intervals. If the request does not include any of these properties, the first payment will be taken at the earliest opportunity.
 
 |Interval|Description|
 |--------|-----------|
-|Weekly|The date cannot be selected explicitly. Payment will be taken weekly from the date of the first payment which will be taken at the first opportunity.|
 |Monthly|Can optionally specify a `dayOfMonth` when creating. |
 |Yearly|Can optionally specify a `dayOfMonth` and/or `month` when creating|
 
