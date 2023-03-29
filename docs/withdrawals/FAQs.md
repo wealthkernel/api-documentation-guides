@@ -26,3 +26,7 @@ If there is not enough cash to fulfil the withdrawal request, holdings will have
 ## How do fees work?
 
 A partial withdrawal will not have any effect on the fee charging process, however a full withdrawal means fees must be charged. Fees will be charged in accordance with your fee structure on a pro rata basis within that fee period.
+
+## Why is the paidOut field null?
+
+The paidOut field is not guaranteed to be populated for withdrawals requested before 2022-09-16. In the event of a withdrawal requiring manual intervention, paidOut may be null.
