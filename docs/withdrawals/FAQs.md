@@ -18,6 +18,7 @@ There could be a number of reasons a withdrawal has been rejected:
 - The specified portfolio's mandate is not execution only and there is already an active withdrawal.
 - Party's account is not active.
 - There is insufficient balance to fulfil the withdrawal request.
+- It is a partial withdrawal, the portfolio's mandate is not execution only and the withdrawal's amount is greater than 95% of the value of the portfolio
 
 ## How does the process differ between mandate types?
 
