@@ -16,7 +16,7 @@ Before requesting an IP allow list with us, make sure you have considered the fo
 
 ## Set up
 
-To begin setting up IP allow listing, you should contact your customer success manager and provide the following information:
+To begin setting up IP allow listing, you should contact your tenant manager and provide the following information:
 
 1. Which environment(s) you want to be IP allow listed
 2. The set of IPs (or the IP range) we should accept requests from
