@@ -1,6 +1,6 @@
 # Welcome to the WealthKernel Guides
 
-## Api Basics
+## API Basics
 1. <a href="/docs/api/docs/help/Introduction.md">Introduction</a>
 2. <a href="/docs/api/docs/help/GettingStarted.md">Getting Started</a>
 3. <a href="/docs/api/docs/help/Authentication.md">Authentication</a>
