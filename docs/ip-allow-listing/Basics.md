@@ -1,6 +1,5 @@
 ---
 tags: [IP Allow Listing]
-stoplight-id: de106d6bed233
 ---
 
 # IP Allow Listing
