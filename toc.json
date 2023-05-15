@@ -85,6 +85,20 @@
       "title": "Sandbox Simulation",
       "uri": "docs/inbound-transfers/Sandbox-Simulation.md"
     },
+        {
+      "type": "divider",
+      "title": "IP Allow Listing"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/ip-allow-listing/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/ip-allow-listing/FAQs.md"
+    },
     {
       "type": "divider",
       "title": "ISA Subscriptions"
