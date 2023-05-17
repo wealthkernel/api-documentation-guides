@@ -72,3 +72,12 @@ Currently not all of the securities we have set up in Production are mirrored in
 
 Similarly, we do not have up to date prices in Sandbox, and the ones that are generated each day stay the same for each ISIN.
 
+### Fees
+
+#### Sandbox
+
+Fee accrual, aggregation and charging is manual in sandbox, so if you want to test out fees, you'll need to contact your tenant manager. We will need the fee portfolio that you've set up and the accrual strategy details that you've agreed with your tenant manager. Typically we will simulate this for the previous month.
+
+#### Production
+
+In production this process is automated, with the only manual step being the payment out once fees have been charged.
