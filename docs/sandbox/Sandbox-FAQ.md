@@ -76,8 +76,10 @@ Similarly, we do not have up to date prices in Sandbox, and the ones that are ge
 
 #### Sandbox
 
-Fee accrual, aggregation and charging is manual in sandbox, so if you want to test out fees, you'll need to contact your tenant manager. We will need the fee portfolio that you've set up and the accrual strategy details that you've agreed with your tenant manager. Typically we will simulate this for the previous month.
+Fee accrual and charging is manual in sandbox. If you would like to test out fees in Sandbox please contact your tenant manager. 
+
+To test in sandbox we will need the ID of the fee portfolio that you have set up and the accrual strategy details that have been agreed upon with your tenant manager. There also needs to be enough cash present in the portfolio, which you can ensure by making a deposit or creating orders if the portfolio's mandate is execution only. Typically we will simulate this for the previous month but let your tenant manager know if you want a different period.
 
 #### Production
 
-In production this process is automated, with the only manual step being the payment out once fees have been charged.
+In production this process is automated.
