@@ -56,7 +56,15 @@ Be aware that orders will usually not match until after 3pm on the day they were
 
 ### Prices & Securities
 
-Currently not all of the securities we have set up in Production are mirrored into Sandbox. If you require a specific security for testing purposes, please create a service desk ticket.
+Not all of the securities we have set up in Production are mirrored in Sandbox. A sample selection of securities are provided to understand how our system works, which include:
+
+- Equities
+- ETFs
+- Investment Trusts
+- Government and corporate bonds
+- Funds
+
+If you require a specific security for testing purposes, please create a service desk ticket.
 
 Similarly, we do not have up to date prices in Sandbox, and the ones that are generated each day stay the same for each ISIN.
 
