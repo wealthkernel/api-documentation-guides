@@ -9,7 +9,7 @@ The process of withdrawing from a portfolio involves multiple steps:
 1. Construct a Withdrawal Definition.
     - `type` is the type of withdrawal, `SpecifiedAmount` or `Full`.
     - `portfolioId` is the identifier of the portfolio to withdraw from.
-    - `bankAccountId` is the identifier of the bank account the withdrawal will be going to. If `null` or not set, the party's default bank account will be used.
+    - `bankAccountId` is the identifier of the bank account the withdrawal will be going to. If `null` or not set, the party's default bank account will be used. The default bank account is the latest bank account added to a party. 
     - `consideration` is the amount requested in the withdrawal.
     - `reference` is the expected reference that will accompany the withdrawal. Please see the [FAQs](docs/withdrawals/FAQs.md) for guidance on values to use.
 2. `POST` the definition to `/withdrawals`.
