@@ -4,11 +4,9 @@ tags: [Accounts]
 
 # Account Basics
 
-Accounts are an entity which hold information about the type product a client may wish to open and validate that [all the requirements](Opening-Requirements.md) are met to be able to open that account.
+Accounts are an entity which hold information about the type of product a client may wish to open and validate that [all the requirements](Opening-Requirements.md) are met to be able to open that account.
 
-Each account can have multiple parties and also have multiple Portfolios.
-
-For example, here are the links that a JISA would have
+Accounts may be linked multiple parties and may also have multiple Portfolios. For example, here are the links that a JISA would have:
 
 ```mermaid
 erDiagram
@@ -35,6 +33,8 @@ Each of these will have their own requirements for opening, which will be checke
 
 ## Account Lifecycle
 
+Once an account has been added, it has a lifecycle starting from `Pending` (meaning the account can't be funded yet) to `Closed` (meaning the account has been fully withdrawn and will no longer be funded).
+
 ```mermaid
 stateDiagram-v2
     [*] --> Pending
@@ -50,11 +50,19 @@ stateDiagram-v2
 
 | Status | Explanation |
 |---|---|
-| Pending | A very short lived state, before the account has checked whether all the relevant checks for parties have passed, such as KYC. |
+| Pending | A short-lived state where the account isn't ready for funding, as additional checks (such as KYC) need to have passed for the associated parties |
 | Active | All checks have passed and the account is available to be used. |
 | Suspended | One or more checks on the parties have failed and the account is suspended. Once checks have been fixed the account will move back to `Active`. |
 | Closing | Account is in the process of closing but is not closed yet. This may be because there are still holdings currently in the process of selling down. |
 | Closed | Account is closed. This is the terminal state for an account. |
+
+## Opening Accounts and Due Diligence
+
+As mentioned previously, accounts will briefly wait in the `Pending` state until it is confirmed whether all checks have completed. Typically, this is a very short wait while our automated checks finish; these checks ensure we meet our legal requirements to perform due diligence on parties using our platform. In the case where accounts are already active for the client, it is very likely that we have already completed our checks and that the account will become active immediately.
+
+When building onboarding and account opening workflows, you should keep this in mind so that the experience for the end user is smooth. It is expected that an account could stay in `Pending` for a little while, and so it should be clear to the user that the account isn't ready for investment.
+
+In rare cases, we may need additional information about the party to complete our due diligence. In this case, accounts may stay in the `Pending` status for a longer period of time, but note that it is not expected to take more than a few days. To receive the most up-to-date information about an account's status, we recommend using the account webhooks which are detailed below.
 
 ## Accounts Webhooks
 
@@ -65,7 +73,7 @@ Currently, the following webhooks are available:
 | Event Type | Description |
 |------------|------------:|
 | `accounts.account_created` | Notification that a new account has been created. The account will be in the `Pending` status. |
-| `accounts.account_activated` | The account has passed all checks (KYC) and is now available for use. The account will be in the `Active` status. |
+| `accounts.account_activated` | The account has passed all checks and is now available for use. The account will be in the `Active` status. |
 | `accounts.account_suspended` | One or more checks on the parties have failed and the account is suspended. The account will be in the `Suspended` status. |
 | `accounts.account_unsuspended` | Previously failed checks have now passed and the account's activity can now be resumed. The account status will revert to the previous status before it was suspended. |
 | `accounts.account_closing` | Account is in the process of closing but is not closed yet. The account will be in the `Closing` status. |
