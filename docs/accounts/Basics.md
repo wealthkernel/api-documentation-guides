@@ -74,7 +74,7 @@ Currently, the following webhooks are available:
 | Event Type | Description |
 |------------|------------:|
 | `accounts.account_created` | Notification that a new account has been created. The account will be in the `Pending` status. |
-| `accounts.account_activated` | The account has passed all checks and is now available for use. The account will be in the `Active` status. |
+| `accounts.account_activated` | The party has passed all checks and their account is now available for use. The account will be in the `Active` status.
 | `accounts.account_suspended` | One or more checks on the parties have failed and the account is suspended. The account will be in the `Suspended` status. |
 | `accounts.account_unsuspended` | Previously failed checks have now passed and the account's activity can now be resumed. The account status will revert to the previous status before it was suspended. |
 | `accounts.account_closing` | Account is in the process of closing but is not closed yet. The account will be in the `Closing` status. |
