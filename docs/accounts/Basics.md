@@ -63,7 +63,7 @@ As mentioned previously, accounts will briefly wait in the `Pending` state until
 It is expected that an account could stay in `Pending` for a little while, and so it should be clear to the user that the account isn't ready for investment.
 
 
-In rare cases, we may need additional information about the party to complete our due diligence. In this case, accounts may stay in the `Pending` status for a longer period of time, but note that it is not expected to take more than a few days. To receive the most up-to-date information about an account's status, we recommend using the account webhooks which are detailed below.
+In rare cases, we may need additional information about the party to complete our due diligence. The account status will remain in a ‘Pending’ state until the additional information has been provided. To receive the most up-to-date information about an account's status, we recommend using the account webhooks which are detailed below.
 
 ## Accounts Webhooks
 
