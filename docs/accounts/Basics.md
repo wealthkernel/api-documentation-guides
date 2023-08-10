@@ -58,12 +58,9 @@ stateDiagram-v2
 
 ## Opening Accounts and Due Diligence
 
-As mentioned previously, accounts will briefly wait in the `Pending` state until it is confirmed whether all checks have completed. Typically, this is a very short wait while our automated checks finish; these checks ensure we meet our legal requirements to perform due diligence on parties using our platform. Additional accounts created for parties where all checks have been completed will become active immediately.  
+As mentioned previously, accounts will briefly wait in the `Pending` state until it is confirmed whether all checks have completed. Typically, this is a very short wait while our automated checks finish; these checks ensure we meet our legal requirements to perform due diligence on parties using our platform. It is expected that an account could stay in `Pending` for a little while, and so it should be clear to the user that the account isn't ready for investment. Additional accounts created for parties where all checks have been completed will move from `Pending` to `Active` immediately.  
 
-It is expected that an account could stay in `Pending` for a little while, and so it should be clear to the user that the account isn't ready for investment.
-
-
-In rare cases, we may need additional information about the party to complete our due diligence. The account status will remain in a ‘Pending’ state until the additional information has been provided. To receive the most up-to-date information about an account's status, we recommend using the account webhooks which are detailed below.
+In rare cases, we may need additional information about the party to complete our due diligence. The account status will remain in a `Pending` state until the additional information has been provided. To receive the most up-to-date information about an account's status, we recommend using the account webhooks which are detailed below.
 
 ## Accounts Webhooks
 
