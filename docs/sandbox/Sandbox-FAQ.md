@@ -18,6 +18,16 @@ We have also seen some customers use it to do their integration testing.
 
 Yes, in a number of areas outlined below.
 
+### Accounts
+
+#### Sandbox
+
+Created accounts will automatically move into the `Active` state almost immediately. To simulate a more realistic scenario, you can set the `clientReference` to `DELAY_ACCOUNT_ACTIVATION`, and the account activation will be delayed by roughly 30 seconds.
+
+#### Production
+
+Once created, accounts will stay in `Pending` until all necessary checks have passed.
+
 ### Deposits
 
 #### Sandbox
