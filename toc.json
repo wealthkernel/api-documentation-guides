@@ -20,6 +20,11 @@
       "uri": "docs/accounts/Opening-Requirements.md"
     },
     {
+    "type": "item",
+    "title": "Sandbox Simulation",
+    "uri": "docs/accounts/Sandbox-Simulation.md"
+    },
+    {
       "type": "divider",
       "title": "Balances"
     },

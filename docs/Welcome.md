@@ -8,6 +8,7 @@
 ## Accounts
 1. [Basics](./accounts/Basics.md)
 2. [Opening Requirements](./accounts/Opening-Requirements.md)
+3. [Sandbox Simulation](./accounts/Sandbox-Simulation.md)
 
 ## Balances
 1. [Basics](./balances/Basics.md)
