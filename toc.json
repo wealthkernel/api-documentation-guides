@@ -85,6 +85,11 @@
       "title": "ISA Transfers",
       "uri": "docs/inbound-transfers/ISA-Transfers.md"
     },
+        {
+      "type": "item",
+      "title": "JISA Transfers",
+      "uri": "docs/inbound-transfers/JISA-Transfers.md"
+    },
     {
       "type": "item",
       "title": "Sandbox Simulation",
