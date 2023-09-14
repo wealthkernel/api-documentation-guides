@@ -6,7 +6,7 @@ tags: [Inbound Transfers]
 ## What Is An Inbound Transfer?
 This is a transfer of funds from an existing account with another provider into a portfolio managed by WealthKernel.
 
-Currently we only support ISA transfers, however in future we will be supporting others, such as GIA, SIPP and JISA transfers.
+Currently we only support ISA, JISA and SIPP transfers, however in future we will be supporting others, such as GIA transfers.
 
 The inbound transfer will pass through the following stages:
 ```mermaid
@@ -38,12 +38,12 @@ For each status change that an inbound transfer goes through, we create a status
 ## Requesting An Inbound Transfer
 To [request an inbound transfer](https://docs.wealthkernel.com/docs/api/c0641cdcaad59-request-an-inbound-transfer) through our API, you must provide us with the details of the account that you would like to transfer (there are specific requirements for each type of transfer, that can be found on the relevant transfer type guide page). We have a list of known ceding providers that can be queried by transfer type. If the ceding provider is not one that is known by us, you can provide the name and address.
 Each inbound transfer request must satisfy the following requirements:
-- The portfolio referenced on the inbound ISA transfer request must be Active.
+- The portfolio referenced on the inbound transfer request must be Active.
 - The account that the portfolio is under must be Active.
 
 There are a few things to be aware of when providing client data:
 
-- The client address that we capture should be the address of the client that is registered with the account that they are wanting to transfer.
+- Any addresses that we capture should be as they are registered with the ceding provider.
 - The estimated transfer amount does not have to be exact.
 
 Once the resource has been created, it will be in the Pending status and WealthKernel will not process the inbound transfer until you submit it. The reason for this is that you may need to upload a document for the ceding provider. Some ceding providers require a signed form, and so you can choose to provide one at the start of the process or we will ask for one later on if the ceding provider requires one.
