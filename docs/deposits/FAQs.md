@@ -16,6 +16,8 @@ There could be a number of reasons a deposit has not automatically matched:
 - Party has transferred from a non-nominated bank account.
 - Party has transferred more than one deposit concurrently with the same reference.
 - Party's account or portfolio is not active.
+- Party's account has a subscription limit which has been reached (e.g. £20,000 ISA limit).
+- The party is no longer eligible to contribute (e.g. if they are a non-UK resident and are contributing to an ISA)
 
 ## What happens if a deposit cannot be matched?
 
