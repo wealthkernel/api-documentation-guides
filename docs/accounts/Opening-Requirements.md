@@ -23,6 +23,9 @@ The owner must:
 - Not be a US tax Resident
 - Have an email address
 - Have at least one active UK address
+- Specify their employment status (and industry, if employed)
+- Provide their expected annual income
+- Provide their sources of wealth
 
 ## ISA
 
@@ -38,6 +41,10 @@ The owner must:
 - Not be a US tax resident
 - Have an email address
 - Have at least one active UK address
+- Specify their employment status (and industry, if employed)
+- Provide their expected annual income
+- Provide their sources of wealth
+- Not have an existing ISA
 
 ## JISA
 
@@ -62,6 +69,7 @@ The child must:
 - Not be a US national
 - Not be a US tax resident
 - Have at least one active UK address
+- Not have an existing JISA
 
 ## SIPP
 
@@ -80,3 +88,6 @@ The member must:
 - Not be a US tax resident
 - Have an email address
 - Have at least one active UK address
+- Specify their employment status (and industry, if employed)
+- Provide their expected annual income
+- Provide their sources of wealth
