@@ -41,7 +41,7 @@ stateDiagram-v2
     Pending --> Active
     Pending --> Suspended
     Pending --> Closing
-    Pending --> Rejectedq
+    Pending --> Rejected
     Active --> Suspended
     Active --> Closing
     Suspended --> Active
