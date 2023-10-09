@@ -53,7 +53,7 @@ stateDiagram-v2
 |---|---|
 | Pending | A short-lived state where the account isn't ready for funding, as additional checks (such as KYC) need to have passed for the associated parties |
 | Active | All checks have passed and the account is available to be used. |
-| Rejected | The account has been rejected due to it failing to meet some opening requirements. |
+| Rejected | The account has been rejected due to it failing to meet some [opening requirements](./Opening-Requirements.md). |
 | Suspended | One or more checks on the parties have failed and the account is suspended. Once checks have been fixed the account will move back to `Active`. |
 | Closing | Account is in the process of closing but is not closed yet. This may be because there are still holdings currently in the process of selling down. |
 | Closed | Account is closed. This is the terminal state for an account. |
