@@ -41,6 +41,7 @@ stateDiagram-v2
     Pending --> Active
     Pending --> Suspended
     Pending --> Closing
+    Pending --> Rejectedq
     Active --> Suspended
     Active --> Closing
     Suspended --> Active
@@ -52,9 +53,13 @@ stateDiagram-v2
 |---|---|
 | Pending | A short-lived state where the account isn't ready for funding, as additional checks (such as KYC) need to have passed for the associated parties |
 | Active | All checks have passed and the account is available to be used. |
+| Rejected | The account has been rejected due to it failing to meet some opening requirements. |
 | Suspended | One or more checks on the parties have failed and the account is suspended. Once checks have been fixed the account will move back to `Active`. |
 | Closing | Account is in the process of closing but is not closed yet. This may be because there are still holdings currently in the process of selling down. |
 | Closed | Account is closed. This is the terminal state for an account. |
+
+<!-- theme: warning -->
+> The `Rejected` status is not yet in use. In the future, this will be used to asynchronously validate opening requirements - when these opening requirements fail, the account will move to `Rejected` instead of `Active`.
 
 ## Opening Accounts and Due Diligence
 
@@ -71,6 +76,7 @@ Currently, the following webhooks are available:
 | Event Type | Description |
 |------------|------------:|
 | `accounts.account_created` | Notification that a new account has been created. The account will be in the `Pending` status. |
+| `accounts.account_rejected` | The account has been rejected due to not meeting some opening requirements. The account will be in the `Rejected` status. |
 | `accounts.account_activated` | The party has passed all checks and their account is now available for use. The account will be in the `Active` status.
 | `accounts.account_suspended` | One or more checks on the parties have failed and the account is suspended. The account will be in the `Suspended` status. |
 | `accounts.account_unsuspended` | Previously failed checks have now passed and the account's activity can now be resumed. The account status will revert to the previous status before it was suspended. |
