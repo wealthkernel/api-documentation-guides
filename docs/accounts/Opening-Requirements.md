@@ -7,7 +7,7 @@ tags: [Accounts]
 Each Account has its own set of requirements, listed below, that must be validated before the account can be opened.
 
 <!-- theme: info -->
-> These requirements are up to date as of 2021-09-27
+> These requirements are up to date as of 2023-10-09
 
 ## GIA
 
