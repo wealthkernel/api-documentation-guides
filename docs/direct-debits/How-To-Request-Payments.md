@@ -5,7 +5,7 @@ tags: [Direct Debits]
 # How To Request Payments
 
 ## Creating a Mandate
-Before you can make any payments you have to first create a Mandate. To create a new mandate you must have already created a party and bank account. A mandate is only an instruction to give authority to take payments. As such you can create a mandate without creating a portfolio or account first.
+Before you can make any payments you have to first create a Mandate. To create a new mandate you must have already created a party and bank account. A mandate is only an instruction to the customer's bank give WealthKernel authority to take payments. As such you can create a mandate without creating a portfolio or account first. It typically takes 2 days to create a mandate.
 
 The bank account number and sort code used to create the mandate must be able to pass a Modulus check. To test on sandbox, you should use `55779911` as the account number and `20-00-00` as the sort code.
 
@@ -24,7 +24,8 @@ These are most commonly caused by incorrect bank account details. In this case t
 
 ## Creating a Payment
 
-You can create a payment either as a single one-off or as a recurring subscription. You must have created a portfolio and mandate before you can create a payment or subscription. The mandate must also be `Active`. Multiple payments and subscriptions or a mixture of both can all be raised against a single mandate.
+You can create a payment either as a single one-off or as a recurring subscription. You must have created a portfolio and mandate before you can create a payment or subscription. The mandate must also be `Active`. Multiple payments and subscriptions or a mixture of both can all be raised against a single mandate. Refer to the Direct debit [timings](./Timings.md) guide for more information about the timings related to payments.
+
 
 > Payments are submitted to BACS daily at around 4pm. After this they cannot be cancelled.
 

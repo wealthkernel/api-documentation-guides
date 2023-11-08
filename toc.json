@@ -72,6 +72,11 @@
       "uri": "docs/direct-debits/How-To-Request-Payments.md"
     },
     {
+      "type": "item",
+      "title": "Timings",
+      "uri": "docs/direct-debits/Timings.md"
+    },
+{
       "type": "divider",
       "title": "Inbound Transfers"
     },
