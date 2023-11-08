@@ -24,7 +24,7 @@ These are most commonly caused by incorrect bank account details. In this case t
 
 ## Creating a Payment
 
-You can create a payment either as a single one-off or as a recurring subscription. You must have created a portfolio and mandate before you can create a payment or subscription. The mandate must also be `Active`. Multiple payments and subscriptions or a mixture of both can all be raised against a single mandate. Refer to the Direct debit <a href="./Timings.md">timings</a> guide for more information about the timings related to payments.
+You can create a payment either as a single one-off or as a recurring subscription. You must have created a portfolio and mandate before you can create a payment or subscription. The mandate must also be `Active`. Multiple payments and subscriptions or a mixture of both can all be raised against a single mandate. Refer to the Direct debit [timings](./Timings.md) guide for more information about the timings related to payments.
 
 
 > Payments are submitted to BACS daily at around 4pm. After this they cannot be cancelled.
