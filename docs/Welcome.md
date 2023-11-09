@@ -20,8 +20,9 @@
 
 ## Direct Debits
 1. [API Access](./direct-debits/Api-Access.md)
-2. [How To Request Payments](./direct-debits/How-To-Request-Payments.md)
-3. [UI Guidelines](./direct-debits/UI-Guidelines.md)
+2. [UI Guidelines](./direct-debits/UI-Guidelines.md)
+3. [How To Request Payments](./direct-debits/How-To-Request-Payments.md)
+4. [Timings](./direct-debits/Timings.md)
 
 ## Inbound Transfers
 1. [Basics](./inbound-transfers/Basics.md)
