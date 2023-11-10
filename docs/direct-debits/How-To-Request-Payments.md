@@ -24,7 +24,9 @@ These are most commonly caused by incorrect bank account details. In this case t
 
 ## Creating a Payment
 
-You can create a payment either as a single one-off or as a recurring subscription. You must have created a portfolio and mandate before you can create a payment or subscription. The mandate must also be `Active`. Multiple payments and subscriptions or a mixture of both can all be raised against a single mandate. Refer to the Direct debit [timings](./Timings.md) guide for more information about the timings related to payments.
+You can create a payment either as a single one-off or as a recurring subscription. You must have created a portfolio and mandate before you can create a payment or subscription. The mandate must also be `Active`. Multiple payments and subscriptions or a mixture of both can all be raised against a single mandate. 
+
+The minimum and maximum limits per payment must be agreed if the defaults are not suitable.  By default the minimum amount per payment is £25 and the maximum is £2000.  For more information about the timings related to payments refer to the Direct debit [timings](./Timings.md) guide.
 
 
 > Payments are submitted to BACS daily at around 4pm. After this they cannot be cancelled.
