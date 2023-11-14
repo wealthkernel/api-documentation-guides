@@ -2,7 +2,7 @@
 tags: [IP Allow Listing]
 ---
 
-# IP Allow Listing
+# IP allow listing
 
 IP allow listing will ensure that when we receive your API requests, we only accept them from your IP addresses. This means that even if your API access is compromised, we will only allow requests from your infrastructure. This is an excellent security feature which ensures that you are the only one with access to your data. We support both ipv4 and ipv6 ranges, so if you have more than one IP then it isn't a problem. Note: We also offer IP allow listing for Dashboard, so that only your users can access your clients' data.
 

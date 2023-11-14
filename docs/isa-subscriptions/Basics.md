@@ -3,7 +3,7 @@ tags: [ISA Subscriptions]
 stoplight-id: 8738880941b84
 ---
 
-# ISA Subscription Basics
+# ISA subscription basics
 
 <!-- theme: info -->
 > This API is currently in **Beta** and is subject to change.
@@ -20,6 +20,7 @@ Be aware that not all changes to a portfolio mean a change to the corresponding 
 - Charges
 
 ## For non-flexible ISAs
+
 - Withdrawals
 
 # Entering a New Tax Year

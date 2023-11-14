@@ -21,4 +21,3 @@ We support both IPv4 and IPv6, and you can give us a list of IPs or a range.
 ## 3. What if we don't have an allow list?
 
 By default, if you don't have an allow list, we will serve any remote IP making requests to us which has a valid access token.
-

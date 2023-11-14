@@ -2,7 +2,7 @@
 tags: [Accounts]
 ---
 
-# Account Basics
+# Account basics
 
 Accounts are an entity which hold information about the type of product a client may wish to open and validate that [all the requirements](Opening-Requirements.md) are met to be able to open that account.
 
@@ -31,7 +31,7 @@ Each of these will have their own requirements for opening, which will be checke
 <!-- theme: warning -->
 > SIPPs are currently in a private beta. If you wish to access them, please contact your account manager for more details
 
-## Account Lifecycle
+## Account lifecycle
 
 Once an account has been added, it has a lifecycle starting from `Pending` (meaning the account can't be funded yet) to `Closed` (meaning the account has been fully withdrawn and will no longer be funded).
 
@@ -56,13 +56,13 @@ stateDiagram-v2
 | Closing | Account is in the process of closing but is not closed yet. This may be because there are still holdings currently in the process of selling down. |
 | Closed | Account is closed. This is the terminal state for an account. |
 
-## Opening Accounts and Due Diligence
+## Opening accounts and due diligence
 
 As mentioned previously, accounts will briefly wait in the `Pending` state until it is confirmed whether all checks have completed. Typically, this is a very short wait while our automated checks finish; these checks ensure we meet our legal requirements to perform due diligence on parties using our platform. It is expected that an account could stay in `Pending` for a little while, and so it should be clear to the user that the account isn't ready for investment. Additional accounts created for parties where all checks have been completed will move from `Pending` to `Active` immediately.  
 
 In rare cases, we may need additional information about the party to complete our due diligence. The account status will remain in a `Pending` state until the additional information has been provided. To receive the most up-to-date information about an account's status, we recommend using the account webhooks which are detailed below.
 
-## Accounts Webhooks
+## Accounts webhooks
 
 You can opt to receive accounts webhooks which will give you updates about accounts' current status. You can find out more about using webhooks on our [webhooks guide](../webhooks/Getting-Started.md), or look at our main API documentation to see the structure of each of the accounts webhooks.
 
@@ -78,7 +78,7 @@ Currently, the following webhooks are available:
 | `accounts.account_closed` | Account is closed. This is the terminal state for an account. The account will be in the `Closed` status. |
 | `accounts.account_closure_cancelled` | Occurs when the account was `Closing`, but the account's closure has been cancelled. The account status will revert to the previous status before it started closing. |
 
-### Account Lifecycle Webhooks Examples
+### Account lifecycle webhooks examples
 
 **1. Account receives updated checks**
 

@@ -27,7 +27,6 @@ Note that if this is triggered from our dashboard, the payload will be:
 }
 ```
 
-
 You can view the status of webhook requests in our dashboard.
 
   ![Messages list](../../assets/images/webhooks/Webhook-Messages2.png)
@@ -36,8 +35,8 @@ The details of an individual request can be seen from the details page, includin
 
   ![Message details](../../assets/images/webhooks/Webhook-Messages-Details2.png)
 
-Webhooks are also available to try out on our sandbox environment. 
+Webhooks are also available to try out on our sandbox environment.
 
-If you want to receive webhooks locally, you can use a service such as ngrok to make your local endpoint accessible publicly, see [here](../webhooks/Receiving-Webhooks.md) for more information. 
+If you want to receive webhooks locally, you can use a service such as ngrok to make your local endpoint accessible publicly, see [here](../webhooks/Receiving-Webhooks.md) for more information.
 
 You may wish to disable the webhook subscription for this event when you are finished.

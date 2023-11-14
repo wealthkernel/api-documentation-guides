@@ -2,7 +2,7 @@
 tags: [Webhooks]
 ---
 
-# Getting Started
+# Getting started
 
 ## Tunnelling traffic to your local environment
 

@@ -4,7 +4,7 @@ A transaction represents a movement of cash or holdings to/from a portfolio. Whe
 
 The status of every order will first be `Matched` before moving to `Settled` or `Cancelled`.
 
-# Type of Transactions
+# Type of transactions
 
 **Adjustment**: Used in order to rectify errors.
 

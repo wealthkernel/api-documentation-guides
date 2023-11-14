@@ -2,9 +2,10 @@
 tags: [Direct Debits]
 ---
 
-# How To Request Payments
+# How to request payments
 
-## Creating a Mandate
+## Creating a mandate
+
 Before you can make any payments you have to first create a Mandate. To create a new mandate you must have already created a party and bank account. A mandate is only an instruction to the customer's bank give WealthKernel authority to take payments. As such you can create a mandate without creating a portfolio or account first.
 
 The bank account number and sort code used to create the mandate must be able to pass a Modulus check. To test on sandbox, you should use `55779911` as the account number and `20-00-00` as the sort code.
@@ -17,21 +18,22 @@ The end user will receive an email, usually within an hour, of the mandate being
 
 > It's still possible for a mandate to fail after its reached the `Active` state. If this happens, any payments created against the mandate will fail as well.
 
-### Mandate Failures
+### Mandate failures
+
 When a mandate failure occurs, the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D/get">mandate resource</a> will usually include a reason.
 
 These are most commonly caused by incorrect bank account details. In this case the simplest solution is to create a new bank account against the same party. Using the id of the newly created bank account, try creating the mandate again.
 
-## Creating a Payment
+## Creating a payment
 
 You can create a payment either as a single one-off or as a recurring subscription. You must have created a portfolio and mandate before you can create a payment or subscription. The mandate must also be `Active`. Multiple payments and subscriptions or a mixture of both can all be raised against a single mandate. 
 
 The minimum and maximum limits per payment must be agreed if the defaults are not suitable.  By default the minimum amount per payment is £25 and the maximum is £2000.  For more information about the timings related to payments refer to the Direct debit [timings](./Timings.md) guide.
 
-
 > Payments are submitted to BACS daily at around 4pm. After this they cannot be cancelled.
 
-### Single Payments
+### Single payments
+
 You can create single payments through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments/post">Create Payment API</a>. You may specify a collection date. This must be on or after the date returned from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1next-possible-collection-date/get">next possible collection date endpoint</a> endpoint. If a collection date is not specified, the payment will be collected as soon as possible. If the collection date is not a working day, then the payment will be taken on the next working day.
 
 You can monitor the status of the payment through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">Get Payment API</a>. You can also <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D~1actions~1cancel/post">cancel</a> the payment before it has been submitted to BACS (See the note above).
@@ -47,7 +49,8 @@ Once created, a payment will pass through several states as outlined below.
 |Failed|The payment was rejected within the banking system|
 |Cancelled|The payment was cancelled at the intention of the API user|
 
-### Recurring Subscriptions
+### Recurring subscriptions
+
 A Subscription is a schedule definition describing when to generate payments. Once created these payments behave like any other single payment. As such you can manage it through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">payments APIs</a>. After a Subscription starts it will continue generating payments until <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions~1%7BsubscriptionId%7D~1actions~1pause/post">paused</a> or <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions~1%7BsubscriptionId%7D~1actions~1cancel/post">cancelled</a>.
 
 When <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1subscriptions/post">creating</a> a Subscription, you can specify an interval of `Monthly` or `Yearly`. Some optional request properties are only valid for certain intervals. If the request does not include any of these properties, the first payment will be taken at the earliest opportunity.
@@ -63,5 +66,6 @@ You should consider inspecting the <a href="/docs/api/docs/openapi/api.yaml/path
 
 Optionally, you can also supply a `startDate` when creating a subscription. This controls when the subscription can start triggering payments. For example if you create a monthly subscription on the 2nd of the month, with the `dayOfMonth` set to the 15th, but then set the `startDate` to the 20th. Then the first payment would not be created until just before the 15th of the following month. Whereas omitting the `startDate` would result in the first payment being created on the 15th of the same month.
 
-### Payment Failures
+### Payment failures
+
 As with mandates, if a payment fails then the reason will usually be returned on the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments~1%7BpaymentId%7D/get">Payment resource</a>.
