@@ -16,12 +16,12 @@
     },
     {
       "type": "item",
-      "title": "Opening Requirements",
+      "title": "Opening requirements",
       "uri": "docs/accounts/Opening-Requirements.md"
     },
     {
     "type": "item",
-    "title": "Sandbox Simulation",
+    "title": "Sandbox simulation",
     "uri": "docs/accounts/Sandbox-Simulation.md"
     },
     {
@@ -54,21 +54,21 @@
     },
     {
       "type": "divider",
-      "title": "Direct Debits"
+      "title": "Direct debits"
     },
     {
       "type": "item",
-      "title": "API Access",
+      "title": "API access",
       "uri": "docs/direct-debits/Api-Access.md"
     },
     {
       "type": "item",
-      "title": "UI Guidelines & Approval",
+      "title": "UI guidelines & approval",
       "uri": "docs/direct-debits/UI-Guidelines.md"
     },
     {
       "type": "item",
-      "title": "Requesting Payments",
+      "title": "Requesting payments",
       "uri": "docs/direct-debits/How-To-Request-Payments.md"
     },
     {
@@ -87,17 +87,17 @@
     },
     {
       "type": "item",
-      "title": "ISA Transfers",
+      "title": "ISA transfers",
       "uri": "docs/inbound-transfers/ISA-Transfers.md"
     },
         {
       "type": "item",
-      "title": "JISA Transfers",
+      "title": "JISA transfers",
       "uri": "docs/inbound-transfers/JISA-Transfers.md"
     },
     {
       "type": "item",
-      "title": "Sandbox Simulation",
+      "title": "Sandbox simulation",
       "uri": "docs/inbound-transfers/Sandbox-Simulation.md"
     },
     {
@@ -116,7 +116,7 @@
     },
     {
       "type": "divider",
-      "title": "ISA Subscriptions"
+      "title": "ISA subscriptions"
     },
     {
       "type": "item",
@@ -147,12 +147,12 @@
     },
     {
       "type": "item",
-      "title": "Getting Started",
+      "title": "Getting started",
       "uri": "docs/webhooks/Getting-Started.md"
     },
     {
       "type": "item",
-      "title": "Event Types",
+      "title": "Event types",
       "uri": "docs/webhooks/Event-Types.md"
     },
     {

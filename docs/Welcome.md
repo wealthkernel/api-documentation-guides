@@ -1,6 +1,6 @@
-# Welcome to the WealthKernel Guides
+# Welcome to the WealthKernel guides
 
-## API Basics
+## API basics
 
 1. <a href="/docs/api/docs/help/Introduction.md">Introduction</a>
 2. <a href="/docs/api/docs/help/GettingStarted.md">Getting Started</a>
@@ -9,8 +9,8 @@
 ## Accounts
 
 1. [Basics](./accounts/Basics.md)
-2. [Opening Requirements](./accounts/Opening-Requirements.md)
-3. [Sandbox Simulation](./accounts/Sandbox-Simulation.md)
+2. [Opening requirements](./accounts/Opening-Requirements.md)
+3. [Sandbox simulation](./accounts/Sandbox-Simulation.md)
 
 ## Balances
 
@@ -22,25 +22,25 @@
 1. [Basics](./deposits/Basics.md)
 2. [FAQs](./deposits/FAQs.md)
 
-## Direct Debits
+## Direct debits
 
-1. [API Access](./direct-debits/Api-Access.md)
-2. [UI Guidelines](./direct-debits/UI-Guidelines.md)
-3. [How To Request Payments](./direct-debits/How-To-Request-Payments.md)
+1. [API access](./direct-debits/Api-Access.md)
+2. [UI guidelines](./direct-debits/UI-Guidelines.md)
+3. [How to request payments](./direct-debits/How-To-Request-Payments.md)
 4. [Timings](./direct-debits/Timings.md)
 
-## Inbound Transfers
+## Inbound transfers
 
 1. [Basics](./inbound-transfers/Basics.md)
-2. [ISA Transfers](./inbound-transfers/ISA-Transfers.md)
-3. [Sandbox Simulation](./inbound-transfers/Sandbox-Simulation.md)
+2. [ISA transfers](./inbound-transfers/ISA-Transfers.md)
+3. [Sandbox simulation](./inbound-transfers/Sandbox-Simulation.md)
 
-## IP Allow Listing
+## IP allow listing
 
 1. [Basics](./ip-allow-listing/Basics.md)
 2. [FAQs](./ip-allow-listing/FAQs.md)
 
-## ISA Subscriptions
+## ISA subscriptions
 
 1. [Basics](./isa-subscriptions/Basics.md)
 
@@ -54,8 +54,8 @@
 
 ## Webhooks
 
-1. [Getting Started](./webhooks/Getting-Started.md)
-2. [Types of Event](./webhooks/Event-Types.md)
+1. [Getting started](./webhooks/Getting-Started.md)
+2. [Types of event](./webhooks/Event-Types.md)
 3. [Secrets](./webhooks/Secrets.md)
 4. [Testing](./webhooks/Testing.md)
 5. [FAQs](./webhooks/FAQs.md)
