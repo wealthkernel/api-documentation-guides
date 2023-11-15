@@ -6,6 +6,8 @@ tags: [Portfolios]
 
 Portfolios are a container for an investor's cash and holdings. All investment activity on the WealthKernel platform (balances, orders, transactions) is directly tied to a portfolio.
 
+You can have multiple portfolios under a single account to allow for different investment strategies. However, we do not recommend mixing and matching mandate types.
+
 ## Mandate types
 
 ### Execution only mandate
