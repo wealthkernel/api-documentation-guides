@@ -16,7 +16,7 @@ Trades will only be requested when instructed to do so through the orders API.
 
 ### Execution only model mandate
 
-Deposits and withdrawals will be invested/disinvested according to the configured model. The portfolio will not be periodically rebalanced to compensate for drift, However, we can establish a rebalance schedule if necessary.
+Deposits and withdrawals will be invested/disinvested according to the configured model. The portfolio will not be periodically rebalanced to compensate for drift; however, we can establish a rebalance schedule if necessary.
 
 ### Discretionary mandate
 
