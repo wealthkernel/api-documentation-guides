@@ -1,8 +1,11 @@
 ---
+tags: [Withdrawals]
 stoplight-id: 8i75b7xiegufv
 ---
 
-# Requesting a withdrawal from a portfolio
+# Withdrawals basics
+
+## Requesting a withdrawal from a portfolio
 
 The process of withdrawing from a portfolio involves multiple steps:
 

@@ -50,7 +50,7 @@ stateDiagram-v2
 
 | Status | Explanation |
 |---|---|
-| Pending | A short-lived state where the account isn't ready for funding, as additional checks (such as KYC) need to have passed for the associated parties |
+| Pending | A short-lived state where the account isn't ready for funding, as additional checks (such as KYC) need to have passed for the associated parties. |
 | Active | All checks have passed and the account is available to be used. |
 | Suspended | One or more checks on the parties have failed and the account is suspended. Once checks have been fixed the account will move back to `Active`. |
 | Closing | Account is in the process of closing but is not closed yet. This may be because there are still holdings currently in the process of selling down. |

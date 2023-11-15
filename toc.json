@@ -125,6 +125,15 @@
     },
     {
       "type": "divider",
+      "title": "Portfolios"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/portfolios/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "Sandbox"
     },
     {
