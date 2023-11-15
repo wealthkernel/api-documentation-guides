@@ -26,7 +26,7 @@ No trades will be executed.
 
 ## Changing a mandate's model
 
-The model of a execution only model or discretionary mandate can by changed using our [portfolios API](https://wealthkernel.stoplight.io/docs/api/bf12b86730c62-change-a-portfolio-s-mandate-or-model).
+The model of an execution only model or discretionary mandate can by changed using our [portfolios API](https://wealthkernel.stoplight.io/docs/api/bf12b86730c62-change-a-portfolio-s-mandate-or-model).
 
 ## Portfolio lifecycle
 
