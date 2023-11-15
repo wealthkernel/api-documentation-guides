@@ -1,10 +1,14 @@
-# Transactions
+---
+tags: [Transactions]
+---
+
+# Transaction basics
 
 A transaction represents a movement of cash or holdings to/from a portfolio. When the transaction refers to a cash movement it will only contain a consideration. If the transaction is related to a security, trading details about the security, price and quantity will also be included.
 
 The status of every order will first be `Matched` before moving to `Settled` or `Cancelled`.
 
-# Type of transactions
+## Types of transaction
 
 **Adjustment**: Used in order to rectify errors.
 
@@ -34,10 +38,10 @@ The status of every order will first be `Matched` before moving to `Settled` or 
 
 **Redemption**: Used for repayments of principal and interests owed of debts instruments.
 
-## `timestamp` and `updatedAt`
+### `timestamp` and `updatedAt`
 
 The `timestamp` is the time and date the transaction was initially created and this will not change, whereas the `updatedAt` is the time and date the transaction data was last updated. For example, a change of status from `Matched` to `Settled` or some other manual update if it was mispriced or similar.
 
-## `settledOn`
+### `settledOn`
 
 The `settledOn` is the date at which the transaction will be settled.

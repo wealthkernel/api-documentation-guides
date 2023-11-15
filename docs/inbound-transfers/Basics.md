@@ -2,7 +2,7 @@
 tags: [Inbound Transfers]
 ---
 
-# Inbound transfers basics
+# Inbound transfer basics
 
 ## What is an inbound transfer?
 
