@@ -4,7 +4,7 @@ tags: [Sandbox]
 
 # Sandbox FAQ
 
-## What is Sandbox?
+## What is sandbox?
 
 Sandbox is our pre-production environment that you will use as part of your onboarding process. 
 
@@ -54,7 +54,7 @@ If your portfolios are managed by us, we will be placing orders for your portfol
 
 Be aware that orders will usually not match until after 3pm on the day they were created, and typically not settle until 2 days after they were created. This will vary by ISIN.
 
-### Prices & Securities
+### Prices & securities
 
 Not all of the securities we have set up in Production are mirrored in Sandbox. A sample selection of securities are provided to understand how our system works, which include:
 

@@ -1,4 +1,4 @@
-# Event Types
+# Event types
 
 Depending on your needs, you may only need a subset of all the events we offer. To make this easy to manage, you can opt in to only the event types you need. You can choose these in our dashboard, and use them in your code to determine any action you need to take.
 

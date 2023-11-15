@@ -2,7 +2,7 @@
 tags: [Accounts]
 ---
 
-# Sandbox-Simulation
+# Sandbox simulation
 
 By default, Sandbox will behave almost exactly the same as production, the only difference being that processes that take time or need human intervention will be completed almost instantly. You can change the default behaviour to simulate certain scenarios: 
 

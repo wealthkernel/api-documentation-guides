@@ -2,7 +2,7 @@
 tags: [Accounts]
 ---
 
-# Opening Requirements
+# Opening requirements
 
 Each Account has its own set of requirements, listed below, that must be validated before the account can be opened.
 

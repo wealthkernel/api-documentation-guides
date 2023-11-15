@@ -2,7 +2,7 @@
 tags: [Direct Debits]
 ---
 
-# Getting Access to the API
+# Getting access to the API
 
 ## Sandbox
 

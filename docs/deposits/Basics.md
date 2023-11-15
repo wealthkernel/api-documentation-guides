@@ -2,11 +2,11 @@
 tags: [Deposits]
 ---
 
-# Deposit Basics
+# Deposit basics
 
 A deposit represents an expectation that the counter party of a portfolio will be depositing funds originating from a specified bank account.
 
-## Funding a Portfolio
+## Funding a portfolio
 
 The process of funding a portfolio involves multiple steps:
 

@@ -19,11 +19,13 @@ We recommend to have one active secret and generate a new one when the expiratio
 ## Using a secret to verify a webhook
 
 On every webhook request there is a header called `Webhook-Signature`, which is composed of:
+
 * A timestamp in [UNIX seconds](https://en.wikipedia.org/wiki/Unix_time) prefixed by `t=`.
 * A HMAC for each secret and scheme prefixed by `v{scheme}=`. (e.g. `v1=`). The only valid signature scheme at the moment is `v1`, but new schemes might be added in the future.
 
 A signature header with two HMACs looks like this:
-```
+
+```text
 t=164855520,v1=d7021975861ff5baf2ca05913dce24ff7d03a51be8cb2fdd11c2e761b95650c4,v1=6a4c3ab16a3c8327c52408be0f006b5f5b71f5c11847cd055824ce90f6370c1f
 ```
 
@@ -41,7 +43,8 @@ Note that if you have multiple secrets you might need to compare more than one H
 > A constant time string comparison here is recommended to avoid [timing attacks.](https://en.wikipedia.org/wiki/Timing_attack)
 
 Here's the pseudocode to verify a webhook signature with one HMAC:
-```
+
+```text
 signature = getRequestHeader("Webhook-Signature")
 body = getRequestBody()
 secretBase64 = getSecret()
