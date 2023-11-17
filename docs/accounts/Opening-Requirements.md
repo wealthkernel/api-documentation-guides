@@ -1,4 +1,5 @@
 ---
+stoplight-id: cb46e29ea99a4
 tags: [Accounts]
 ---
 
@@ -11,8 +12,11 @@ Each Account has its own set of requirements, listed below, that must be validat
 
 ## GIA
 
+Note that this is different to the opening requirements for a [corporate GIA](docs/guides/cb46e29ea99a4-opening-requirements#corporate-gia).
+
 The owner must:
 
+- Be a `Person`
 - Have a forename
 - Have a surname
 - Be older than 18 years old
@@ -31,6 +35,7 @@ The owner must:
 
 The owner must:
 
+- Be a `Person`
 - Have a forename
 - Have a surname
 - Be older than 18 years old
@@ -50,6 +55,7 @@ The owner must:
 
 The registered contact must:
 
+- Be a `Person`
 - Have a forename
 - Have a surname
 - Be older than 18 years old
@@ -62,6 +68,8 @@ The registered contact must:
 - Have at least one active UK address
 
 The child must:
+
+- Be a `Person`
 - Have a forename
 - Have a surname
 - Be younger than 18 years old
@@ -78,6 +86,7 @@ The child must:
 
 The member must:
 
+- Be a `Person`
 - Have a forename
 - Have a surname
 - Be older than 18 years old
@@ -91,3 +100,14 @@ The member must:
 - Specify their employment status (and industry, if employed)
 - Provide their expected annual income
 - Provide their sources of wealth
+
+## Corporate GIA
+
+To create a corporate GIA, the `productId` must be `prd-gia-corporate`.
+
+The owner must:
+
+- Be an `Organization`
+- Must have at least one active address
+- Must provide their country of incorporation
+- If the organization plans to trade reportable instruments, an LEI identifier is also required.
