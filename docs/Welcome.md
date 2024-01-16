@@ -40,6 +40,11 @@
 1. [Basics](./ip-allow-listing/Basics.md)
 2. [FAQs](./ip-allow-listing/FAQs.md)
 
+## ISA Declarations
+
+1. [Basics](./isa-declarations/Basics.md)
+2. [FAQs](./isa-declarations/FAQs.md)
+
 ## ISA subscriptions
 
 1. [Basics](./isa-subscriptions/Basics.md)
