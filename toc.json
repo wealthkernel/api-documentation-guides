@@ -140,6 +140,15 @@
       "type": "item",
       "title": "Sandbox FAQ",
       "uri": "docs/sandbox/Sandbox-FAQ.md"
+    },    
+    {
+      "type": "divider",
+      "title": "US Withholding Tax"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/us-withholding-tax/Basics.md"
     },
     {
       "type": "divider",
