@@ -2,7 +2,7 @@
 
 ## When does a customer need to complete a declaration?
 
-A declaration is required before a customer can subscribe to an ISA
+A declaration is required before a customer can subscribe to an ISA. Contributions will not be matched until a valid ISA declaration is provided.
 
 ## Does a customer need to complete a declaration every year?
 
