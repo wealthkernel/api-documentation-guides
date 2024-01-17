@@ -20,7 +20,7 @@ No - the ISA will remain open, but a fresh declaration will need to be completed
 
 ## What happens if a customer transfers money to the client bank account and they do not have a valid declaration?
 
-The cash will be held for the permitted amount of time whilst a new declaration is arranged. If a new declaration is not received within the permitted time period, the cash will be returned to source. 
+The cash will be held, but not matched to the client portfolio, for the permitted amount of time whilst a new declaration is arranged. If a new declaration is not received within the permitted time period, the cash will be returned to source. 
 
 ## Are there different rules for JISAs?
 
