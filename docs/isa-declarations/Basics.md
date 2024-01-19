@@ -19,7 +19,7 @@ Following a tax year with no subscriptions, if a customer wishes to further subs
 
 The declaration for a JISA confirms that:
 
-- the applicant is over 16 and is either the child or has parental responsibility for the child
+- either the applicant is over 16 and is the child, or the applicant is over 18 and has parental responsibility for the child
 - the child does not hold a Child Trust Fund
 - the child does not hold another stocks and shares JISA
 - the child is a UK resident (or permitted non-resident)
