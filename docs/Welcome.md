@@ -64,6 +64,7 @@
 ## US Withholding Tax
 
 1. [Basics](./us-withholding-tax/Basics.md)
+2. [FAQs](./us-withholding-tax/FAQs.md)
 
 ## Webhooks
 

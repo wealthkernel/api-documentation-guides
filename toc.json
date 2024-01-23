@@ -151,6 +151,11 @@
       "uri": "docs/us-withholding-tax/Basics.md"
     },
     {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/us-withholding-tax/FAQs.md"    
+    },
+    {
       "type": "divider",
       "title": "Transactions"
     },
