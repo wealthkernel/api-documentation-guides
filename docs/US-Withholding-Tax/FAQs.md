@@ -1,3 +1,7 @@
+---
+stoplight-id: 1wglbgxw55w7x
+---
+
 # US Withholding Tax FAQs
 
 ## How can a W-8BEN form be submitted?

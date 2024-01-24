@@ -1,3 +1,7 @@
+---
+stoplight-id: wd4h0w1bl31lb
+---
+
 # US Withholding Tax
 
 When a non-US resident invests in US shares, the US government mandates a tax charge on any income received from those shares. The tax charge will be dependent on the tax residency of the customer making the investment. 
