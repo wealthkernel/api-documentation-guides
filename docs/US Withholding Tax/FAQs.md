@@ -2,13 +2,13 @@
 
 ## How can a W-8BEN form be submitted?
 
-An endpoint is availble to request draft information required to complete a form for a given party. The information can be displayed to the customer, accompanied by an attestation that the information is correct. 
+An endpoint is available to request draft information required to complete a form for a given party. The information can be displayed to the customer, accompanied by an attestation that the information is correct. 
 
 On submission of the attestation to WealthKernel, a PDF copy of the W-8 BEN will be generated which can be accessed by a separate endpoint. 
 
 ## What if the W-8BEN draft has incorrect information?
 
-If any information in the draft requestt is incorrect, this should be updated separately and a new request generated. 
+If any information in the draft request is incorrect, this should be updated separately and a new request generated. 
 
 ## Once the party has attested the W-8BEN has the correct information, when does the W-8BEN become valid?
 
@@ -28,5 +28,4 @@ Currently only UK tax residents can submit the W-8 BEN form via the API.
 
 ## Can I submit a W-8BEN-E form via the API?
 
-Currently only the W-8 BEN form (for individuals) can be submitted via the API. 
-
+Currently only the W-8 BEN form (for individuals) can be submitted via the API.
