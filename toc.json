@@ -143,6 +143,15 @@
     },    
     {
       "type": "divider",
+      "title": "Transactions"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/transactions/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "US Withholding Tax"
     },
     {
@@ -154,15 +163,6 @@
       "type": "item",
       "title": "FAQs",
       "uri": "docs/us-withholding-tax/FAQs.md"    
-    },
-    {
-      "type": "divider",
-      "title": "Transactions"
-    },
-    {
-      "type": "item",
-      "title": "Basics",
-      "uri": "docs/transactions/Basics.md"
     },
     {
       "type": "divider",
