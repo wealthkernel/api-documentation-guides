@@ -25,7 +25,9 @@ sequenceDiagram
     T->>W: Confirmation of customer attestation
     W->>W: Log information 
     W->>W: Generate and store PDF
-opt   
+opt  
+    T->>C: Displays option to download a PDF copy of the W-8 BEN
+    C->>T: Selects to view the PDF 
     T->>W: Request W-8 BEN PDF
     W->>T: PDF returned
     T->>C: Display W-8 BEN PDF document to party
