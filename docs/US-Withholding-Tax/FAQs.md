@@ -20,7 +20,7 @@ Assuming all of the information is correct, the W-8 BEN form will become active 
 
 ## What happens when the W-8 BEN form expires?
 
-The form will last until the end of the third calendar year after it was initially signed (i.e. if the form is signed in September 2022, it will expire on 31st December 2025). If the form expires and no new form is submitted, the party will not benefit from reduced rates of withholding tax if applicable. 
+The form will last until the end of the third calendar year after it was initially signed (i.e. if the form is signed in January 2024, it will expire on 31st December 2027). If the form expires and no new form is submitted, the party will not benefit from reduced rates of withholding tax if applicable. 
 
 ## What happens if the details of the party changes?
 
