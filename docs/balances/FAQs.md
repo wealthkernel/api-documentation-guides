@@ -6,7 +6,7 @@ tags: [Balances]
 
 ## How does balances differ from valuations?
 
-Valuations provide a history of the value of a portfolio whereas balances provide a near realtime current value of a portfolio.
+Valuations provide a history of the value of a portfolio whereas balances provides an indicative value of a portfolio currently, based on last night prices for securities and FX rate.
 
 ## Why are cash and holdings balances not returned with total balance?
 
