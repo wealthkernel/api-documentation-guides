@@ -20,7 +20,7 @@ Assuming all of the information is correct, the W-8 BEN form will become active 
 
 ## What happens when the W-8 BEN form expires?
 
-The form will last until the end of the third calendar year after it was initially signed (i.e. if the form is signed in January 2024, it will expire on 31st December 2027). If the form expires and no new form is submitted, the party will not benefit from reduced rates of withholding tax if applicable. 
+The form will last until the end of the third calendar year after it was initially signed (i.e. if the form is signed in January 2024, it will expire on 31st December 2027). 
 
 ## What happens if the details of the party changes?
 
@@ -33,3 +33,7 @@ Currently only UK tax residents can submit the W-8 BEN form via the API.
 ## Can I submit a W-8BEN-E form via the API?
 
 Currently only the W-8 BEN form (for individuals) can be submitted via the API.
+
+## Is a W-8 BEN form required for each account a cutomer holds?
+
+No. Only one form is required for a customer no matter the number of accounts held. 
