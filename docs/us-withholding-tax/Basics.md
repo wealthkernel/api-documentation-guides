@@ -45,7 +45,7 @@ Under penalties of perjury, I declare that I have examined the information on th
 1. income not effectively connected with the conduct of a trade or business in the United States;
 2. income effectively connected with the conduct of a trade or business in the United States but is not subject to tax under an applicable income tax treaty;
 3. the partner’s share of a partnership’s effectively connected taxable income; or
-4. the partner’s amount realized from the transfer of a partnership interest subject to withholding under section 1446(f);
+4. the partner’s amount realised from the transfer of a partnership interest subject to withholding under section 1446(f);
 * The person named on line 1 of this form is a resident of the treaty country listed on line 9 of the form (if any) within the meaning of the income tax treaty between the United States and that country; and
 * For broker transactions or barter exchanges, the beneficial owner is an exempt foreign person as defined in the instructions.
 * I agree to the electronic submission of tax information under an electronic signature

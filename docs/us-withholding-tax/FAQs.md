@@ -34,6 +34,6 @@ Currently only UK tax residents can submit the W-8 BEN form via the API.
 
 Currently only the W-8 BEN form (for individuals) can be submitted via the API.
 
-## Is a W-8 BEN form required for each account a cutomer holds?
+## Is a W-8 BEN form required for each account a customer holds?
 
 No. Only one form is required for a customer no matter the number of accounts held. 
