@@ -166,6 +166,20 @@
     },
     {
       "type": "divider",
+      "title": "US Withholding Tax"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/us-withholding-tax/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/us-withholding-tax/FAQs.md"    
+    },
+    {
+      "type": "divider",
       "title": "Webhooks"
     },
     {

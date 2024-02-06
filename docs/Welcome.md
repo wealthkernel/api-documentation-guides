@@ -61,6 +61,11 @@
 
 1. [Basics](./transactions/Basics.md)
 
+## US Withholding Tax
+
+1. [Basics](./us-withholding-tax/Basics.md)
+2. [FAQs](./us-withholding-tax/FAQs.md)
+
 ## Webhooks
 
 1. [Getting started](./webhooks/Getting-Started.md)
