@@ -38,10 +38,10 @@ The status of every order will first be `Matched` before moving to `Settled` or 
 
 **Redemption**: Used for repayments of principal and interests owed of debts instruments.
 
-### timestamp and updatedAt
+### DateTime fields
 
 The `timestamp` is the time and date the transaction was initially created and this will not change, whereas the `updatedAt` is the time and date the transaction data was last updated. For example, a change of status from `Matched` to `Settled` or some other manual update if it was mispriced or similar.
 
-### settledOn
+### Date fields
 
 The `settledOn` is the date at which the transaction will be settled.
