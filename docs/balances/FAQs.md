@@ -8,9 +8,11 @@ tags: [Balances]
 
 Valuations provide a history of the value of a portfolio whereas balances provides an indicative value of a portfolio currently, based on the previous day's closing prices for securities and FX rates.
 
-A given day's valuation is created at the approximately same time every day, and would not be updated with transactions that are created after that time. The next day's valuation would include those transactions. The balance is continuously updated with ongoing transactions as they happen, and will therefore reflect any actions taken on the portfolio, such as deposits, orders, or bonuses.
+Valuations are created at approximately the same time every day, for the previous day. The valuation would not be updated with transactions that have a date after the previous day. The next day's valuation would include those transactions. For example a valuation for 2024-02-20 would be generated on 2024-02-21. On the date 2024-02-21, there is no valuation for 2024-02-21. Transactions dated 2024-02-21 would therefore not be reflected in any valuation, until one is generated on 2024-02-22. 
 
-Example: 100GBP deposit occurs before the valuation for 2024-02-20 is calculated. When the valuation is calculated, the cash portion will reflect that:
+The balance is not dated, and is continuously updated, and will therefore reflect any actions taken on the portfolio, such as deposits, orders, or bonuses, as they happen.
+
+Example: 100GBP deposit occurs before the valuation for 2024-02-20 is calculated. When the valuation is calculated, the cash portion will reflect the deposit:
 
 ```json
 "date": "2024-02-20",
@@ -28,7 +30,10 @@ Example: 100GBP deposit occurs before the valuation for 2024-02-20 is calculated
 ...
 ```
 
-The cash balance is continuously updated so also reflects that.
+<!-- theme: info -->
+> Valuations can be recalculated when transactions are booked to a portfolio which already has a valuation for the date of the transaction.
+
+The cash balance is continuously updated so also reflects the deposit.
 
 ```json
 ...
@@ -42,7 +47,7 @@ The cash balance is continuously updated so also reflects that.
 
 A bonus of 10GBP is paid to the investor later the same day.
 
-The valuation for 2024-02-20 does not change. The balance is updated immediately, making the full amount available for withdrawal or trading.
+The valuation for 2024-02-20 does not change, and will show a value of 100GBP. The balance is updated immediately, making the full amount available for withdrawal or trading.
 
 ```json
 ...

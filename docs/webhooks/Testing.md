@@ -8,12 +8,12 @@ It does not contain any information pertaining to a resource, just the following
 
 ```json
 {
-  “eventId”: ”whevt-abc123”,
-  “eventType”: {
-      “name”: “webhooks.test”,
-      “version”: 1,
+  "eventId": "whevt-abc123",
+  "eventType": {
+      "name": "webhooks.test",
+      "version": 1,
   },
-  “payload”: {
+  "payload": {
       
   }
 }
@@ -22,7 +22,7 @@ It does not contain any information pertaining to a resource, just the following
 Note that if this is triggered from our dashboard, the payload will be:
 
 ```json
-“payload”: {
+"payload": {
   "event": "This event was sent from WealthKernel Dashboard."
 }
 ```

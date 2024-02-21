@@ -7,9 +7,9 @@ This is an excerpt of a request to demonstrate how event types are included in t
 ```json
 {
 [...],
-“eventType”: {
-    “name”: “webhooks.test”,
-    “version”: 1
+"eventType": {
+    "name": "webhooks.test",
+    "version": 1
 },
 [...]
 }
