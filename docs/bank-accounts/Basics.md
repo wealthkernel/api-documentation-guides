@@ -36,7 +36,7 @@ stateDiagram-v2
 
 # Bank account checks
 
-WealthKernel perform checks on bank accounts to makes sure that the bank account details provided match the party name. It is important that the correct party name and bank details are provided, otherwise these checks are likely to fail and require manual intervention. WealthKernel has an obligation to meet money laundering and financial crime regulations, and these checks are part of ensuring we fulfill our obligations.
+WealthKernel perform checks on bank accounts to makes sure that the bank account details provided match the party name. It is important that the correct party name and bank details are provided, otherwise these checks are likely to fail and require manual intervention.
 
 In the rare cases where we cannot automatically verify a bank account belongs to the party, we may need additional information to prove that the bank account belongs to them. The bank account status will remain in a `Pending` state until the additional information has been provided and verification has been successful. To receive the most up-to-date information about a bank account's status, we recommend using the bank account webhooks which are detailed below.
 
