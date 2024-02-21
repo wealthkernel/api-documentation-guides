@@ -14,30 +14,29 @@ Example: 100GBP deposit occurs before the valuation for 2024-02-20 is calculated
 
 ```
 "date": "2024-02-20",
-[...]
-    "cash": [
-      {
+...
+"cash": [
+    {
         "currency": "GBP",
         "value": {
-          "currency": "GBP",
-          "amount": 100
+            "currency": "GBP",
+            "amount": 100
         },
-        [...]
-      }
-    ]
-[...]
+    ...
+    }
+],
+...
 ```
 The cash balance is continuously updated so also reflects that.
 
 ```
-[...]
-    "amount": 100,
-    "value": {
-      "currency": "GBP",
-      "amount": 100
-
-    },
-    [...]
+...
+"amount": 100,
+"value": {
+    "currency": "GBP",
+    "amount": 100
+},
+...
 ```
 
 A bonus of 10GBP is paid to the investor later the same day.
@@ -45,14 +44,13 @@ A bonus of 10GBP is paid to the investor later the same day.
 The valuation for 2024-02-20 does not change. The balance is updated immediately, making the full amount available for withdrawal or trading.
 
 ```
-[...]
-    "amount": 110,
-    "value": {
-      "currency": "GBP",
-      "amount": 110
-
-    },
-    [...]
+...
+"amount": 110,
+"value": {
+    "currency": "GBP",
+    "amount": 110
+},
+...
 ```
 
 When the valuation is calculated for 2024-02-21, the transaction is reflected, so the amount will be 110GBP.
