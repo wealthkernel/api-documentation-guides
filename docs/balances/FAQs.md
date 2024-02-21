@@ -12,7 +12,7 @@ A given day's valuation is created at the approximately same time every day, and
 
 Example: 100GBP deposit occurs before the valuation for 2024-02-20 is calculated. When the valuation is calculated, the cash portion will reflect that:
 
-```
+```json
 "date": "2024-02-20",
 ...
 "cash": [
@@ -27,9 +27,10 @@ Example: 100GBP deposit occurs before the valuation for 2024-02-20 is calculated
 ],
 ...
 ```
+
 The cash balance is continuously updated so also reflects that.
 
-```
+```json
 ...
 "amount": 100,
 "value": {
@@ -43,7 +44,7 @@ A bonus of 10GBP is paid to the investor later the same day.
 
 The valuation for 2024-02-20 does not change. The balance is updated immediately, making the full amount available for withdrawal or trading.
 
-```
+```json
 ...
 "amount": 110,
 "value": {
