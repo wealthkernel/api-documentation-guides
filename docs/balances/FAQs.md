@@ -32,7 +32,7 @@ todayMarker off
 ```
 
 <!-- theme: info -->
-> Valuations will be recalculated when transactions are booked to a portfolio which already has a valuation for the date of the transaction - 1.
+> An existing dated valuation will be recalculated if a transaction is booked with a timestamp of the date of the valuation.
 
 
 ```mermaid
