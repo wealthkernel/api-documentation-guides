@@ -8,7 +8,7 @@ tags: [Balances]
 
 Valuations provide a history of the value of a portfolio whereas balances provides an indicative value of a portfolio currently, based on the previous day's closing prices for securities and FX rates.
 
-Valuations are created at approximately the same time every day, for the previous day. Transactions booked with a date of t are only reflected in the valuation for t+1.
+Valuations are created at approximately the same time every day, for the previous day. Transactions booked with a date of `t` are only reflected in the valuation for `t+1`.
 
 The balance is not dated, and is continuously updated, and will therefore reflect any actions taken on the portfolio, such as deposits, orders, or bonuses, as they happen.
 
@@ -32,7 +32,7 @@ todayMarker off
 ```
 
 <!-- theme: info -->
-> Valuations can be recalculated when transactions are booked to a portfolio which already has a valuation for the date of the transaction - 1.
+> Valuations will be recalculated when transactions are booked to a portfolio which already has a valuation for the date of the transaction - 1.
 
 
 ```mermaid
@@ -50,7 +50,7 @@ todayMarker off
     Cash Balance 110GBP :active, val1, 2024-02-20 12:00, 44h
 ```
 
-The cash balance is continuously updated so also the deposit immediately. The bonus behaves the same way, so the balance is updated immediately, making the full amount available for withdrawal or trading.
+The cash balance is continuously updated so shows the deposit immediately. The bonus behaves the same way, so the balance is updated immediately, making the full amount available for withdrawal or trading.
 
 ## Why are cash and holdings balances not returned with total balance?
 
