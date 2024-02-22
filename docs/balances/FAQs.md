@@ -8,9 +8,9 @@ tags: [Balances]
 
 Valuations provide a history of the value of a portfolio whereas balances provides an indicative value of a portfolio currently, based on the previous day's closing prices for securities and FX rates.
 
-Valuations are created at approximately the same time every day, for the previous day. Transactions booked with a date of `t` are only reflected in the valuation for `t+1`.
+Valuations are dated, and only transactions with a timestamp on or before a valuation's date will be reflected in the valuation.
 
-The balance is not dated, and is continuously updated, and will therefore reflect any actions taken on the portfolio, such as deposits, orders, or bonuses, as they happen.
+Balances are not dated and are continuously updated; therefore, they will reflect any transactions booked to the portfolio as they occur.
 
 ### Example
 
@@ -22,13 +22,13 @@ title Dated valuations
 todayMarker off
 
     section Valuation
-    Latest Valuation 0GBP :active, val1, 2024-02-19 17:00, 13h
+    Valuation 2024-02-19 0GBP :active, val1, 2024-02-19 17:00, 62h
     Deposit 100GBP :milestone, deposit, 2024-02-20 02:00, 0h
     Valuation 2024-02-20 calculated :milestone, calc1, 2024-02-20 06:00, 0h
-    Latest Valuation 100GBP :active, val1, 2024-02-20 06:00, 1d
+    Valuation 2024-02-20 100GBP :active, val1, 2024-02-20 06:00, 49h
     Bonus awarded 10GBP :milestone, bon, 2024-02-20 12:00, 0h
     Valuation 2024-02-21 calculated :milestone, calc2, 2024-02-21 06:00, 0h
-    Latest Valuation 110GBP :active, val2, 2024-02-21 06:00, 1d
+    Valuation 2024-02-21 110GBP :active, val2, 2024-02-21 06:00, 25h
 ```
 
 <!-- theme: info -->
