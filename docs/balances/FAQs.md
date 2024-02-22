@@ -12,45 +12,10 @@ Valuations are dated, and only transactions with a timestamp on or before a valu
 
 Balances are not dated and are continuously updated; therefore, they will reflect any transactions booked to the portfolio as they occur.
 
-### Example
-
-```mermaid
-gantt
-dateFormat YYYY-MM-DD HH:mm
-axisFormat %m-%d %H:%M
-title Dated valuations
-todayMarker off
-
-    section Valuation
-    Valuation 2024-02-19 0GBP :active, val1, 2024-02-19 17:00, 62h
-    Deposit 100GBP :milestone, deposit, 2024-02-20 02:00, 0h
-    Valuation 2024-02-20 calculated :milestone, calc1, 2024-02-20 06:00, 0h
-    Valuation 2024-02-20 100GBP :active, val1, 2024-02-20 06:00, 49h
-    Bonus awarded 10GBP :milestone, bon, 2024-02-20 12:00, 0h
-    Valuation 2024-02-21 calculated :milestone, calc2, 2024-02-21 06:00, 0h
-    Valuation 2024-02-21 110GBP :active, val2, 2024-02-21 06:00, 25h
-```
-
 <!-- theme: info -->
 > An existing dated valuation will be recalculated if a transaction is booked with a timestamp of the date of the valuation.
 
-
-```mermaid
-gantt
-dateFormat  YYYY-MM-DD HH:mm
-axisFormat %m-%d %H:%M
-title Ongoing balance
-todayMarker off
-
-    section Balance
-    Cash Balance 0GBP :active, bal1, 2024-02-19 17:00, 9h
-    Deposit 100GBP :milestone, deposit, 2024-02-20 02:00, 0h
-    Cash Balance 100GBP :active, val1, 2024-02-20 02:00, 10h
-    Bonus awarded 10GBP :milestone, bon, 2024-02-20 12:00, 0h
-    Cash Balance 110GBP :active, val1, 2024-02-20 12:00, 44h
-```
-
-The cash balance is continuously updated so shows the deposit immediately. The bonus behaves the same way, so the balance is updated immediately, making the full amount available for withdrawal or trading.
+The cash balance is continuously updated so shows any action, e.g. a deposit, immediately, making the full amount available for withdrawal or trading straight away.
 
 ## Why are cash and holdings balances not returned with total balance?
 
