@@ -16,18 +16,18 @@ The balance is not dated, and is continuously updated, and will therefore reflec
 
 ```mermaid
 gantt
-dateFormat  YYYY-MM-DD HH:mm
+dateFormat YYYY-MM-DD HH:mm
 axisFormat %m-%d %H:%M
 title Dated valuations
 todayMarker off
 
     section Valuation
     Latest Valuation 0GBP :active, val1, 2024-02-19 18:00, 12h
-    Deposit 100GBP :milestone, deposit, 2024-02-20, 6h
-    Valuation 2024-02-20 calculated :milestone, calc1, after deposit,
+    Deposit 100GBP :milestone, deposit, 2024-02-20 02:00, 0h
+    Valuation 2024-02-20 calculated :milestone, calc1, 2024-02-20 06:00, 0h
     Latest Valuation 100GBP :active, val1, 2024-02-20 06:00, 1d
-    Bonus awarded 10GBP :milestone, bon, 2024-02-20, 24h
-    Valuation 2024-02-21 calculated :milestone, calc2, 2024-02-21, 12h
+    Bonus awarded 10GBP :milestone, bon, 2024-02-20 12:00, 0h
+    Valuation 2024-02-21 calculated :milestone, calc2, 2024-02-21 06:00, 0h
     Latest Valuation 110GBP :active, val2, 2024-02-21 06:00, 1d
 ```
 
@@ -44,9 +44,9 @@ todayMarker off
 
     section Balance
     Cash Balance 0GBP :active, bal1, 2024-02-19 18:00, 9h
-    Deposit 100GBP :milestone, deposit, 2024-02-20, 6h
-    Cash Balance 100GBP :active, val1, after bal1, 9h
-    Bonus awarded 10GBP :milestone, bon, 2024-02-20, 24h
+    Deposit 100GBP :milestone, deposit, 2024-02-20 02:00, 0h
+    Cash Balance 100GBP :active, val1, 2024-02-20 02:00, 10h
+    Bonus awarded 10GBP :milestone, bon, 2024-02-20 12:00, 0h
     Cash Balance 110GBP :active, val1, 2024-02-20 12:00, 44h
 ```
 
