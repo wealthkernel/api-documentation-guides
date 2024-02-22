@@ -22,7 +22,7 @@ title Dated valuations
 todayMarker off
 
     section Valuation
-    Latest Valuation 0GBP :active, val1, 2024-02-19 18:00, 12h
+    Latest Valuation 0GBP :active, val1, 2024-02-19 17:00, 13h
     Deposit 100GBP :milestone, deposit, 2024-02-20 02:00, 0h
     Valuation 2024-02-20 calculated :milestone, calc1, 2024-02-20 06:00, 0h
     Latest Valuation 100GBP :active, val1, 2024-02-20 06:00, 1d
@@ -43,7 +43,7 @@ title Ongoing balance
 todayMarker off
 
     section Balance
-    Cash Balance 0GBP :active, bal1, 2024-02-19 18:00, 9h
+    Cash Balance 0GBP :active, bal1, 2024-02-19 17:00, 9h
     Deposit 100GBP :milestone, deposit, 2024-02-20 02:00, 0h
     Cash Balance 100GBP :active, val1, 2024-02-20 02:00, 10h
     Bonus awarded 10GBP :milestone, bon, 2024-02-20 12:00, 0h
