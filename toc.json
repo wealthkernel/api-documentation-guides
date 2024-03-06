@@ -26,6 +26,20 @@
     },
     {
       "type": "divider",
+      "title": "Bank Accounts"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/bank-accounts/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/bank-accounts/FAQs.md"
+    },
+    {
+      "type": "divider",
       "title": "Balances"
     },
     {
