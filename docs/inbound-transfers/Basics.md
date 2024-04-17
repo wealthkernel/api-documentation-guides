@@ -14,14 +14,18 @@ The inbound transfer will pass through the following stages:
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Pending
+    [*] --> Pending: Request
     Pending --> Submitted
+    Pending --> Cancelled
+    Submitted --> Pending: Revision Requested
     Submitted --> Rejected
+    Submitted --> Cancelled
     Submitted --> Accepted
-    Accepted --> Transferring
-    Transferring --> Transferred
+    Accepted --> Transferring: Begin transfer
+    Accepted --> Cancelled
+    Transferring --> Transferred: Transferred assets received
     Transferred --> Completed
-    Completed --> [*]   
+    Completed --> [*]
 ```
 
 State | Explanation
@@ -70,7 +74,7 @@ After submission we validate the inbound transfer to check that the portfolio an
 
 If the ceding provider accepts the transfer request, we will move the inbound transfer to the Accepted status.
 
-However, if the inbound transfer fails our validation or the ceding provider rejects our request we move it back to Pending if we need more information or we move it to Rejected if it is not recoverable. You will be able to see the reason in the status history entry.
+However, if the inbound transfer fails our validation or the ceding provider rejects our request we move it back to `Pending` if we need more information or we move it to `Rejected` if it is not recoverable. You will be able to see the reason in the status history entry.
 
 > If the inbound transfer is moved back to Pending, you can update the resource again.
 
@@ -86,3 +90,33 @@ Once we receive the money and it is available in the portfolio, we will move the
 
 You can [cancel an inbound transfer](https://docs.wealthkernel.com/docs/api/197b558519290-cancel-inbound-transfer) that is Pending, Submitted or Accepted. The inbound transfer will be immediately moved to Cancelled if the inbound transfer was Pending. However, if it is not in Pending, it will not immediately move to Cancelled as we may need to request cancellation from the ceding provider, and it may be the case that they have already begun the transfer of the funds and can’t cancel it. 
 In the case where we can´t cancel the inbound transfer, we will communicate the reason by adding a new status history entry.
+
+## Webhooks
+
+To allow you to respond more quickly to changes on inbound transfers, we expose webhooks that you can consume. You can find out more about using webhooks on our [webhooks guide](../webhooks/Getting-Started.md), or look at our main API documentation to see the structure of each of the inbound transfer webhooks.
+
+| Event Type | Description |
+|------------|------------:|
+| `inbound_transfers.inbound_transfer_requested` | Notification that a new inbound transfer has been requested. The inbound transfer will be in the `Pending` status. |
+| `inbound_transfers.inbound_transfer_submitted` | The inbound transfer has been submitted to WealthKernel. The inbound transfer will be in the `Submitted` status and will be validated. |
+| `inbound_transfers.inbound_transfer_revision_requested` | The inbound transfer needs more information or changes before it will be accepted. The transfer has been moved back to the `Pending` status. |
+| `inbound_transfers.inbound_transfer_rejected` | The inbound transfer failed validation and is not recoverable. To continue, a new inbound transfer will need to be created. This inbound transfer will be in the `Rejected` status. |
+| `inbound_transfers.inbound_transfer_accepted` | Validation has passed and the ceding provider has accepted the inbound transfer. The inbound transfer will be in the `Accepted` status. |
+| `inbound_transfers.inbound_transfer_transferring` | The ceding provider is now in the process of sending WealthKernel the assets. The inbound transfer will be in the `Transferring` status. |
+| `inbound_transfers.inbound_transfer_transferred` | WealthKernel has received the assets and they are now in the client's portfolio. The inbound transfer will be in the `Tranferred` status. |
+| `inbound_transfers.inbound_transfer_completed` | The transfer has completed successfully and is now in the `Completed` status. |
+| `inbound_transfers.inbound_transfer_cancelled` | The inbound transfer was cancelled and is now in the `Cancelled` status. |
+| `inbound_transfers.inbound_transfer_cancellation_rejected` | We received a request to cancel the transfer, but it is already too late and we cannot cancel the transfer anymore. The inbound transfer's status has not changed. |
+
+### Typical inbound transfer lifecycle
+
+Usually an inbound transfer will follow the below lifecycle and you should receive webhooks in this order. This assumes it is not cancelled or rejected.
+
+| What happened | Updated account status | Webhook event |
+| ------------- | ---------------------- | ------------- |
+| Inbound transfer is requested | `Pending` | `inbound_transfers.inbound_transfer_requested` |
+| The transfer is submitted to us | `Submitted` | `inbound_transfers.inbound_transfer_submitted` |
+| The ceding provider has accepted the transfer | `Accepted` | `inbound_transfers.inbound_transfer_accepted` |
+| Assets are being transferred to WealthKernel | `Transferring` | `inbound_transfers.inbound_transfer_transferring` |
+| The assets have been received and moved into the client's portfolio. | `Transferred` | `inbound_transfers.inbound_transfer_transferred` |
+| The inbound transfer is complete. | `Completed` | `inbound_transfers.inbound_transfer_completed` |
