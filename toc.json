@@ -39,6 +39,11 @@
       "uri": "docs/bank-accounts/FAQs.md"
     },
     {
+      "type": "item",
+      "title": "Sandbox simulation",
+      "uri": "docs/bank-accounts/Sandbox-Simulation.md"
+    },
+    {
       "type": "divider",
       "title": "Balances"
     },

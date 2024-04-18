@@ -12,6 +12,12 @@
 2. [Opening requirements](./accounts/Opening-Requirements.md)
 3. [Sandbox simulation](./accounts/Sandbox-Simulation.md)
 
+## Bank accounts
+
+1. [Basics](./bank-accounts/Basics.md)
+2. [FAQs](./bank-accounts/FAQs.md)
+3. [Sandbox simulation](./bank-accounts/Sandbox-Simulation.md)
+
 ## Balances
 
 1. [Basics](./balances/Basics.md)
