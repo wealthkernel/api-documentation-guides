@@ -6,7 +6,7 @@ tags: [Accounts]
 
 Accounts are an entity which hold information about the type of product a client may wish to open and validate that [all the requirements](Opening-Requirements.md) are met to be able to open that account.
 
-Accounts may be linked multiple parties and may also have multiple Portfolios. For example, here are the links that a JISA would have:
+Accounts may be linked to multiple parties and may also have multiple Portfolios. For example, here are the links that a JISA would have:
 
 ```mermaid
 erDiagram
@@ -30,6 +30,23 @@ Each of these will have their own requirements for opening, which will be checke
 
 <!-- theme: warning -->
 > SIPPs are currently in a private beta. If you wish to access them, please contact your account manager for more details
+
+## Account currencies
+
+Each account created within the system can have an allocated currency. The currencies currently supported are GBP, EUR and USD. Once the currency of an account has been set, it cannot be changed. Any [Portfolios](docs/guides/adc4b06b3d4ed-portfolio-basics) created under an account will be opened in the same currency as the account itself. 
+
+Account currency can only be set on GIAs. The currency does not need to be set for other account types when they are created. 
+
+An example account structure for a party could be set up as follows:
+
+```mermaid
+flowchart TD
+    A(Party - Person) --> B(GIA GBP)
+    A(Party - Person) --> C(GIA EUR)
+    A(Party - Person) --> D(GIA USD)
+    A(Party - Person) --> E(ISA)
+    A(Party - Person) --> F(SIPP)
+```
 
 ## Account lifecycle
 
