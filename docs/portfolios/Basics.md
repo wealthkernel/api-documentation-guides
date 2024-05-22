@@ -4,7 +4,9 @@ tags: [Portfolios]
 
 # Portfolio basics
 
-Portfolios are a container for an investor's cash and holdings. All investment activity on the WealthKernel platform (balances, orders, transactions) is directly tied to a portfolio. When a portfolio is created under an account, it will inherit the same currency as the account. Multiple portfolios can be created under a single account to allow for different investment strategies. However, we do not recommend mixing and matching mandate types.
+Portfolios are a container for an investor's cash and holdings. All investment activity on the WealthKernel platform (balances, orders, transactions) is directly tied to a portfolio. When a portfolio is created under an account, it will inherit the same currency as the account. The currency does not need to be stipulated when creating a portfolio, however if it is, there will be a check made against the currency to ensure consistency. 
+
+Multiple portfolios can be created under a single account to allow for different investment strategies. However, we do not recommend mixing and matching mandate types.
 
 The below diagram represents an example account and portfolio structure. 
 
@@ -27,10 +29,10 @@ The following table provides a summary of how currencies work across different f
 |---|---|---|---|-------------|
 | Money in | GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |All currencies can be paid into any portfolio under a GIA account. Portfolios under ISA and SIPP accounts only support GBP being paid in|
 | Money out | GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |All currencies can be paid out of any portfolio under a GIA account. Portfolios under ISA and SIPP accounts only support GBP being paid out|
-| Valuations | GBP | EUR | USD |The valuation of a portfolio will be in the currency of the account that the portfolio is under|
-| Balances | GBP | EUR | USD |The balance of a portfolio will be in the currency of the account that the portfolio is under|
+| Valuations | GBP | EUR | USD |The valuation of a portfolio will be in the currency selected for the portfolio|
+| Balances | GBP | EUR | USD |The balance of a portfolio will be in the currency selected for the portfolio|
 | Dividends | GBP | EUR | USD |Dividends will be paid into a portfolio in the currency of the portfolio|
-| Settlement| GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |Multicurrency trading means that you can specify any settlement currency.  order.SettlementCurrency is a required field and will shortly be respected by the orders service|
+| Settlement| GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |Multicurrency trading means that you can specify any settlement currency.  `settlementCurrency` is a required field and will shortly be respected by the orders service|
 | Fees | GBP | Not supported  |Not supported |Fees can only be taken in GBP from GBP portfolios|
 | Charges | GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |Charges can be added in any currency and paid out in that same currency|
 | Currencies that can be held | GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |All currencies can be held in any portfolio under a GIA account. Portfolios under ISA and SIPP accounts only hold GBP|
