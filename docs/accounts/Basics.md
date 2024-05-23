@@ -28,14 +28,11 @@ There are currently four types of accounts supported
 
 Each of these will have their own requirements for opening, which will be checked upon creation of the account.
 
-<!-- theme: warning -->
-> SIPPs are currently in a private beta. If you wish to access them, please contact your account manager for more details
-
 ## Account currencies
 
-Each account created within the system has an allocated currency. The currencies currently supported are GBP, EUR and USD. Once the currency of an account has been set, it cannot be changed. Any [Portfolios](docs/guides/adc4b06b3d4ed-portfolio-basics) created under an account will be opened in the same currency as the account itself. 
+Account currency should be set for all account types, however we will default the account to GBP if it is not provided. The account currencies currently supported are GBP, EUR and USD. This applies to GIAs only. GBP is the only currency allowed for other account types. 
 
-Account currency can only be set on GIAs. The currency does not need to be set for other account types when they are created. 
+Once the currency of an account has been set, it cannot be changed. Any [Portfolios](docs/guides/adc4b06b3d4ed-portfolio-basics) created under an account will be opened in the same currency as the account itself. 
 
 An example account structure for a party could be set up as follows:
 
