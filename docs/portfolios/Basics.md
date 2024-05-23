@@ -50,6 +50,10 @@ Deposits and withdrawals will be invested/disinvested according to the configure
 
 Deposits and withdrawals will be invested/disinvested according to the configured model. The portfolio will be periodically rebalanced to compensate for drift.
 
+### Single product mandate
+
+Deposits will be invested only in the configured ISIN.
+
 ### Null mandate
 
 No trades will be executed.
