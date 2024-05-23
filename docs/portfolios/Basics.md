@@ -17,25 +17,24 @@ flowchart TD
     B(GIA GBP) --> H(Portfolio GBP)
     A(Party - Person) --> C(GIA EUR) --> I(Portfolio EUR)
     A(Party - Person) --> D(GIA USD) --> J(Portfolio USD)
-    A(Party - Person) --> E(ISA) --> K(Portfolio)
-    A(Party - Person) --> F(SIPP) --> L(Portfolio)
+    A(Party - Person) --> E(ISA GBP) --> K(Portfolio GBP)
+    A(Party - Person) --> F(SIPP GBP) --> L(Portfolio GBP)
     F(SIPP) --> M(Portfolio)
 ```
 ## Portfolio characteristics
 
 The following table provides a summary of how currencies work across different functions. 
 
-| Function | GBP Portfolio | EUR Portfolio | USD Portfolio | Notes |
-|---|---|---|---|-------------|
-| Money in | GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |All currencies can be paid into any portfolio under a GIA account. Portfolios under ISA and SIPP accounts only support GBP being paid in|
-| Money out | GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |All currencies can be paid out of any portfolio under a GIA account. Portfolios under ISA and SIPP accounts only support GBP being paid out|
-| Valuations | GBP | EUR | USD |The valuation of a portfolio will be in the currency selected for the portfolio|
-| Balances | GBP | EUR | USD |The balance of a portfolio will be in the currency selected for the portfolio|
-| Dividends | GBP | EUR | USD |Dividends will be paid into a portfolio in the currency of the portfolio|
-| Settlement| GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |Multicurrency trading means that you can specify any settlement currency.  `settlementCurrency` is a required field and will shortly be respected by the orders service|
-| Fees | GBP | Not supported  |Not supported |Fees can only be taken in GBP from GBP portfolios|
-| Charges | GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |Charges can be added in any currency and paid out in that same currency|
-| Currencies that can be held | GBP, EUR, USD | GBP, EUR, USD | GBP, EUR, USD |All currencies can be held in any portfolio under a GIA account. Portfolios under ISA and SIPP accounts only hold GBP|
+| Function | Rules |
+|---|---|
+| Money in | The currency on the portfolio does not affect which currencies will be allowed into a portfolio. |
+| Money out | The currency on the portfolio does not affect which currencies will be allowed out of a portfolio. |
+| Valuations | The valuation of a portfolio will be in the currency on the portfolio. |
+| Balances | The balance of a portfolio will be in the currency on the portfolio. |
+| Dividends | Dividends will be paid into a portfolio in the currency on the portfolio. |
+| Settlement | The currency on a portfolio does not affect which currencies can be settled in. |
+| Fees | Fees can currently only be taken in GBP from GBP portfolios. |
+| Charges | The currency on a portfolio does not affect which currencies can be used for charges. |
 
 ## Mandate types
 
