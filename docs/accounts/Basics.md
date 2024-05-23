@@ -30,20 +30,9 @@ Each of these will have their own requirements for opening, which will be checke
 
 ## Account currencies
 
-Account currency should be set for all account types, however we will default the account to GBP if it is not provided. The account currencies currently supported are GBP, EUR and USD. This applies to GIAs only. GBP is the only currency allowed for other account types. 
+Account currency should be set for all account types, however we will default the account to GBP if it is not provided. The account currencies currently supported are GBP, EUR and USD. This applies to GIAs only. GBP is the only currency allowed for other account types. There are no restrictions on the number of GIAs that can be opened for a party and each party can hold accounts with different currencies. 
 
 Once the currency of an account has been set, it cannot be changed. Any [Portfolios](docs/guides/adc4b06b3d4ed-portfolio-basics) created under an account will be opened in the same currency as the account itself. 
-
-An example account structure for a party could be set up as follows:
-
-```mermaid
-flowchart TD
-    A(Party - Person) --> B(GIA GBP)
-    A(Party - Person) --> C(GIA EUR)
-    A(Party - Person) --> D(GIA USD)
-    A(Party - Person) --> E(ISA)
-    A(Party - Person) --> F(SIPP)
-```
 
 ## Account lifecycle
 
