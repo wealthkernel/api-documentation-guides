@@ -33,7 +33,7 @@ Each of these will have their own requirements for opening, which will be checke
 
 ## Account currencies
 
-Each account created within the system can have an allocated currency. The currencies currently supported are GBP, EUR and USD. Once the currency of an account has been set, it cannot be changed. Any [Portfolios](docs/guides/adc4b06b3d4ed-portfolio-basics) created under an account will be opened in the same currency as the account itself. 
+Each account created within the system has an allocated currency. The currencies currently supported are GBP, EUR and USD. Once the currency of an account has been set, it cannot be changed. Any [Portfolios](docs/guides/adc4b06b3d4ed-portfolio-basics) created under an account will be opened in the same currency as the account itself. 
 
 Account currency can only be set on GIAs. The currency does not need to be set for other account types when they are created. 
 
