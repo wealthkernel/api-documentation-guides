@@ -19,7 +19,7 @@ flowchart TD
     A(Party - Person) --> D(GIA USD) --> J(Portfolio USD)
     A(Party - Person) --> E(ISA GBP) --> K(Portfolio GBP)
     A(Party - Person) --> F(SIPP GBP) --> L(Portfolio GBP)
-    F(SIPP) --> M(Portfolio)
+    F(SIPP GBP) --> M(Portfolio GBP)
 ```
 ## Portfolio characteristics
 
