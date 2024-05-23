@@ -6,7 +6,7 @@ tags: [Accounts]
 
 Accounts are an entity which hold information about the type of product a client may wish to open and validate that [all the requirements](Opening-Requirements.md) are met to be able to open that account.
 
-Accounts may be linked multiple parties and may also have multiple Portfolios. For example, here are the links that a JISA would have:
+Accounts may be linked to multiple parties and may also have multiple Portfolios. For example, here are the links that a JISA would have:
 
 ```mermaid
 erDiagram
@@ -28,8 +28,11 @@ There are currently four types of accounts supported
 
 Each of these will have their own requirements for opening, which will be checked upon creation of the account.
 
-<!-- theme: warning -->
-> SIPPs are currently in a private beta. If you wish to access them, please contact your account manager for more details
+## Account currencies
+
+Account currency should be set for all account types, however we will default the account to GBP if it is not provided. The account currencies currently supported are GBP, EUR and USD. This applies to GIAs only. GBP is the only currency allowed for other account types. There are no restrictions on the number of GIAs that can be opened for a party and each party can hold accounts with different currencies. 
+
+Once the currency of an account has been set, it cannot be changed. Any [Portfolios](docs/guides/adc4b06b3d4ed-portfolio-basics) created under an account will be opened in the same currency as the account itself. 
 
 ## Account lifecycle
 

@@ -4,9 +4,37 @@ tags: [Portfolios]
 
 # Portfolio basics
 
-Portfolios are a container for an investor's cash and holdings. All investment activity on the WealthKernel platform (balances, orders, transactions) is directly tied to a portfolio.
+Portfolios are a container for an investor's cash and holdings. All investment activity on the WealthKernel platform (balances, orders, transactions) is directly tied to a portfolio. When a portfolio is created under an account, it will inherit the same currency as the account. The currency does not need to be stipulated when creating a portfolio, however if it is, there will be a check made against the currency to ensure consistency. 
 
-You can have multiple portfolios under a single account to allow for different investment strategies. However, we do not recommend mixing and matching mandate types.
+Multiple portfolios can be created under a single account to allow for different investment strategies. However, we do not recommend mixing and matching mandate types.
+
+The below diagram represents an example account and portfolio structure. 
+
+
+```mermaid
+flowchart TD
+    A(Party - Person) --> B(GIA GBP) --> G(Portfolio GBP)
+    B(GIA GBP) --> H(Portfolio GBP)
+    A(Party - Person) --> C(GIA EUR) --> I(Portfolio EUR)
+    A(Party - Person) --> D(GIA USD) --> J(Portfolio USD)
+    A(Party - Person) --> E(ISA GBP) --> K(Portfolio GBP)
+    A(Party - Person) --> F(SIPP GBP) --> L(Portfolio GBP)
+    F(SIPP GBP) --> M(Portfolio GBP)
+```
+## Portfolio characteristics
+
+The following table provides a summary of how currencies work across different functions. 
+
+| Function | Rules |
+|---|---|
+| Money in | The currency on the portfolio does not affect which currencies will be allowed into a portfolio. |
+| Money out | The currency on the portfolio does not affect which currencies will be allowed out of a portfolio. |
+| Valuations | The valuation of a portfolio will be in the currency on the portfolio. |
+| Balances | The balance of a portfolio will be in the currency on the portfolio. |
+| Dividends | Dividends will be paid into a portfolio in the currency on the portfolio. |
+| Settlement | The currency on a portfolio does not affect which currencies can be settled in. |
+| Fees | Fees can currently only be taken in GBP from GBP portfolios. |
+| Charges | The currency on a portfolio does not affect which currencies can be used for charges. |
 
 ## Mandate types
 
