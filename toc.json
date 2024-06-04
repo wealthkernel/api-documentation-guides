@@ -158,6 +158,15 @@
     },
     {
       "type": "divider",
+      "title": "Performance"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/performance/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "Portfolios"
     },
     {
