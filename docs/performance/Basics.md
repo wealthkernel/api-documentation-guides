@@ -17,14 +17,11 @@ For a given day we calculate the rate of return as
 
 <!--TODO: Could make this mermaid diagram when stoplight supports mermaid v10.9.0 https://mermaid.js.org/config/math.html -->
 
-<!-- focus: false -->
 ![grossperf.png](../../assets/images/grossperf-2.png)
-
 
 or
 
 ![netperf.png](../../assets/images/netperf.png)
-
 
 In other words, we take the value at the end of the current interval, add on expected income, subtract cashflow, (and accrued fees for the net figure) and divide by the end value at the end of the previous interval.
 
