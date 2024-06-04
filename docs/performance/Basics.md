@@ -15,7 +15,10 @@ Performance intervals are daily, except for weekends where Saturday to Monday is
 
 For a given day we calculate the rate of return as 
 
-$$ GrossPerf = \frac{EndValue + ExpectedIncome - CashFlow}{PreviousEndValue} $$
+<!--TODO: Could make this mermaid diagram when stoplight supports mermaid v10.9.0 https://mermaid.js.org/config/math.html -->
+
+<!-- focus: false -->
+![grossperf.png](../../assets/images/grossperf.png)
 
 or
 
