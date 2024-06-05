@@ -85,8 +85,7 @@ Due to the nature of the platform, we may not generate valuations at the same ti
 Once a withdrawal is created, fees (if any) will be charged and then the requested withdrawal will automatically be paid out. This process from start to finish should take roughly one minute, with pause between charging any fees and then paying out the money requested.
 
 <!-- theme: danger -->
-
-Due to how fast you can request withdrawals (multiple in one day), you can end up in a state where you withdraw into negative cash. This cannot happen in production.
+> Due to how fast you can request withdrawals (multiple in one day), you can end up in a state where you withdraw into negative cash. This cannot happen in production.
 
 #### Production
 
