@@ -60,13 +60,13 @@ We only include accrued fees in the net figures, so the gross figure is the same
 
 Due to the nature of the TWRR, dividends are included ahead of time to negate odd figures being produced under certain circumstances, which can also affect aggregated performance. If we were to include dividends in performance on the day they are paid, it would look like this:
 
-|Day|StartValue|EndValue|Dividend|Cash flow|Performance Gross
-|--------|--------|--------|--------|--------|--------|
-|Day n|£0|£100|-|-|-|
-|Day n+1|£100|£100|-|-|((100+0-0)/100)-1=0 or 0%|
-|Day n+2|£100|£102|-|-|((102-0)/100)-1=0.02 or 2%|
-|Day n+3|£102|£3|-|-100|((3-(-100))/102)-1=0.009803 or 0.9803%|
-|Day n+4|£3|£14|-|10|(14/3)-1=3.666666 or 366.6666%|
+|Day|StartValue|EndValue|Cash flow|Performance Gross
+|--------|--------|--------|--------|--------|
+|Day n|£0|£100|-|-|
+|Day n+1|£100|£100|-|((100+0-0)/100)-1=0 or 0%|
+|Day n+2|£100|£102|-|((102-0)/100)-1=0.02 or 2%|
+|Day n+3|£102|£3|-100|((3-(-100))/102)-1=0.009803 or 0.9803%|
+|Day n+4|£3|£14|-|(14/3)-1=3.666666 or 366.6666%|
 
 If a dividend is paid on day n+4, after a withdrawal of £100 has taken place on day n+3, the performance for that day becomes 3.6666 or 366.66%. This is not a good representation of the performance of the investor's portfolio. This effect will also mean any aggregation of performance suffers from the same problem. For example aggregating the figures across the last 3 days would produce a figure of 3.8066 or 380.66%.
 
