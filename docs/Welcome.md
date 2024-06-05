@@ -58,6 +58,7 @@
 ## Performance
 
 1. [Basics](./performance/Basics.md)
+2. [FAQs](./performance/FAQs.md)
 
 ## Portfolios
 
