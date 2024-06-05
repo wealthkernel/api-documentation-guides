@@ -17,7 +17,7 @@ For a given day we calculate the rate of return as
 
 <!--TODO: Could make this mermaid diagram when stoplight supports mermaid v10.9.0 https://mermaid.js.org/config/math.html -->
 
-![grossperf.png](../../assets/images/grossperf-2.png)
+![grossperf.png](../../assets/images/grossperf.png)
 
 or
 
