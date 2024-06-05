@@ -55,6 +55,10 @@
 
 1. [Basics](./isa-subscriptions/Basics.md)
 
+## Performance
+
+1. [Basics](./performance/Basics.md)
+
 ## Portfolios
 
 1. [Basics](./portfolios/Basics.md)
