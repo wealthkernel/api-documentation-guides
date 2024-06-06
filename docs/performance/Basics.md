@@ -9,7 +9,7 @@ WealthKernel calculates performance using the Time-Weighted Rate of Return (TWRR
 Performance intervals are daily, except for weekends where Saturday to Monday is treated as a single interval.
 
 <!-- theme: warning -->
-> If WealthKernel does not know how your fees are accrued, these figures will not be accurate.
+> If WealthKernel does not know how your fees are accrued, then we will be unable to calculate an accurate net performance figure.
 
 # How does our performance calculation work?
 
