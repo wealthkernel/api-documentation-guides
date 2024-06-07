@@ -58,7 +58,7 @@ We only include accrued fees in the net figures, so the gross figure is the same
 
 ## Dividends and ExpectedIncome
 
-Due to the nature of the TWRR, and the fact that dividends usually result in a drop in stock price, dividends are included ahead of time to negate odd figures being produced under certain circumstances, which can also affect aggregated performance. If we were to include dividends in performance on the day they are paid, it would look like this:
+Dividends are included ahead of time due to the nature of the Time-Weighted Rate of Return (TWRR) combined with the fact that dividends typically cause a drop in stock price. This negates the possibility of odd figures being produced under certain circumstances that could also affect aggregated performance. For instance, if we were to include dividends in performance on the day they are paid, it would look like this:
 
 |Day|StartValue|EndValue|Cash flow|Performance Gross|
 |--------|--------|--------|--------|--------|
