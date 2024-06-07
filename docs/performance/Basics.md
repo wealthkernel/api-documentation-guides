@@ -83,7 +83,7 @@ If we instead use ExpectedIncome, we get these figures:
 As the drop in price is accounted for by the dividend represented by `ExpectedIncome` on the record date, and is included in `CashFlow` on the payment date, the figures now show the reality that no actual gain or loss has occurred. We treat the dividend as cash flow on day n+4 as it has already been accounted for as `ExpectedIncome` on day n+2.
 
 <!--- theme:info --->
-> `ExpectedIncome` is an approximation and may vary slightly compared to the actual payment.
+> The `ExpectedIncome` is an approximation and may vary slightly compared to the actual payment.
 
 ## Partial Withdrawals
 
