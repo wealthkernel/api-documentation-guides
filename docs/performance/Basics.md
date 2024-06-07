@@ -60,7 +60,7 @@ We only include accrued fees in the net figures, so the gross figure is the same
 
 Due to the nature of the TWRR, and the fact that dividends usually result in a drop in stock price, dividends are included ahead of time to negate odd figures being produced under certain circumstances, which can also affect aggregated performance. If we were to include dividends in performance on the day they are paid, it would look like this:
 
-|Day|StartValue|EndValue|Cash flow|Performance Gross
+|Day|StartValue|EndValue|Cash flow|Performance Gross|
 |--------|--------|--------|--------|--------|
 |Day n|£0|£100|-|-|
 |Day n+1|£100|£100|-|((100 + 0 - 0) / 100) - 1 = 0 or 0%|
@@ -72,7 +72,7 @@ On day n+2, the value of the security invested in has dropped due to the dividen
 
 If we instead use ExpectedIncome, we get these figures:
 
-|Day|StartValue|EndValue|Cash flow|Performance Gross
+|Day|StartValue|EndValue|Cash flow|Performance Gross|
 |--------|--------|--------|--------|--------|
 |Day n|£0|£100|-|-|
 |Day n+1|£100|£100|-|((100 + 0 - 0) / 100) - 1 = 0 or 0%|
@@ -82,14 +82,14 @@ If we instead use ExpectedIncome, we get these figures:
 
 As the drop in price is accounted for by the dividend represented by `ExpectedIncome` on the record date, and is included in `CashFlow` on the payment date, the figures now show the reality that no actual gain or loss has occurred. We treat the dividend as cash flow on day n+4 as it has already been accounted for as `ExpectedIncome` on day n+2.
 
-<!--- theme:info --->
-> The `ExpectedIncome` is an approximation and may vary slightly compared to the actual payment.
+<!-- theme:info -->
+> `ExpectedIncome` is an approximation and may vary slightly compared to the actual payment.
 
 ## Partial Withdrawals
 
 Another scenario that could cause this is that of a partial withdrawal.
 
-|Day|StartValue|EndValue|Cash flow|Performance Gross
+|Day|StartValue|EndValue|Cash flow|Performance Gross|
 |--------|--------|--------|--------|--------|
 |Day n|£0|£100|-|-|
 |Day n+1|£100|£100|-|((100 + 0 - 0) / 100) - 1 = 0 or 0%|
@@ -99,7 +99,7 @@ Another scenario that could cause this is that of a partial withdrawal.
 
 If a dividend is paid on day n+4, after a withdrawal of £80 has taken place on day n+3, the performance for that day becomes 1 or 100%. This is not a good representation of the performance of the investor's portfolio. This effect will also mean any aggregation of performance suffers from the same problem. For example aggregating the figures across the last 3 days would produce a figure of 0.8 or 80%.
 
-Again, to counteract this, we instead include the dividend on the record date, and call it `ExpectedIncome`.
+Again, to counteract this, we instead include the dividend on the record date, as `ExpectedIncome`.
 
 |Day|StartValue|EndValue|ExpectedIncome|Cash flow|Performance Gross
 |--------|--------|--------|--------|--------|--------|
