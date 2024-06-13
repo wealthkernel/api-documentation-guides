@@ -39,7 +39,7 @@ In the most simple example, there are no fees, dividends or cash flow. For a val
 |Day|StartValue|EndValue|Performance Gross|Performance Net|
 |--------|--------|--------|--------|--------|
 |Day n|£0|£100|-|-|
-|Day n+1|£100|£100|((100 + 0 - 0 ) / 100) - 1 = 0 or 0%|((100 + 0 - 0) / 100) - 1 = 0 or 0%|
+|Day n+1|£100|£100|((100 + 0 - 0 ) / 100) - 1 = 0 or 0%|((100 + 0 - 0 - 0) / 100) - 1 = 0 or 0%|
 |Day n+2|£100|£102|((102 + 0 - 0 ) / 100) - 1 = 0.02 or 2%|((102 + 0 - 0 - 0) / 100) - 1 = 0.02 or 2%|
 
 There are no performance figures on day n, as this is only a single interval, so the first available point performance can be calculated is day n+1.
@@ -51,7 +51,7 @@ In a more complex example, there could be more components affecting the TWRR. Gi
 |Day|StartValue|EndValue|Accrued Fees|Performance Gross|Performance Net|
 |--------|--------|--------|--------|--------|--------|
 |Day n|£0|£100|£0.00|-|-|
-|Day n+1|£100|£100|£0.02737|((100 + 0 - 0) / 100) - 1 = 0.02 or 2%|((100 + 0 - 0 - 0.02737) / 100) - 1 = -0.0002737 or -0.02737%|
+|Day n+1|£100|£100|£0.02737|((100 + 0 - 0) / 100) - 1 = 0 or 0%|((100 + 0 - 0 - 0.02737) / 100) - 1 = -0.0002737 or -0.02737%|
 |Day n+2|£102|£102 holdings|£0.02792|((102 + 0 - 0) / 100) - 1 = 0.02 or 2%|((102 + 0 - 0 - 0.02737) / 100) - 1 = 0.0197 or 1.97%|
 
 We only include accrued fees in the net figures, so the gross figure is the same as before. The net figure is slightly less, reflecting the fees accrued.
