@@ -83,3 +83,15 @@ stateDiagram-v2
 | Active | All checks have passed and the portfolio is available to be used. |
 | Closing | Portfolio is in the process of closing but is not closed yet. This may be because there are still holdings currently in the process of selling down. |
 | Closed | Portfolio is closed. This is the terminal state for a portfolio. |
+
+## Portfolio webhooks
+
+You can subscribe to portfolio webhooks to receive updates about portfolios in the system. Currently, the webhooks listed below are available which trigger based on current status of the portfolio. You can find out more about using webhooks on our [webhooks guide](../webhooks/Getting-Started.md), or look at our main API documentation to see the structure of each of the portfolios webhooks.
+
+| Event Type | Description |
+|------------|------------:|
+| `portofolios.portfolio_created` | Notification that a new portfolio has been created. The portfolio will be in the `Created` status. |
+| `portofolios.portfolio_activated` | The attached account has become active, and therefore the portfolio is now also active. The portfolio can now be funded. The portfolio will be in the `Active` status.
+| `portofolios.portfolio_closing` | The portfolio is in the process of closing but is not closed yet. The portfolio will be in the `Closing` status. |
+| `portofolios.portfolio_closed` | The portfolio has closed. This is the terminal state for a portfolio. The portfolio will be in the `Closed` status. |
+| `portofolios.portfolio_closure_cancelled` | Occurs when the portfolio was `Closing`, but the portfolio's closure has been cancelled. The portfolio status will revert to the previous status before it started closing. |
