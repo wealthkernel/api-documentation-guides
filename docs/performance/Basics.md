@@ -93,8 +93,8 @@ Another scenario that could cause this fluctuation in performance is that of a p
 |--------|--------|--------|--------|--------|--------|
 |Day n|£0|£100|-|-|-|
 |Day n+1|£100|£100|-|-|((100 - 0) / 100) - 1 = 0 or 0%|
-|Day n+2|£100|£90|-|-|((90 - 0) / 100) - 1 = 0.1 or -10%|
-|Day n+3|£90|£10|-|-80|(10 - (- 80)) / 90 = 0 or 0%|
+|Day n+2|£100|£90|-|-|((90 - 0) / 100) - 1 = -0.1 or -10%|
+|Day n+3|£90|£10|-|-80|((10 - (- 80)) / 90) - 1 = 0 or 0%|
 |Day n+4|£10|£20|-|-|((20 - 0) / 10) - 1 = 1 or 100%|
 
 If a dividend is paid on day n+4, after a withdrawal of £80 has taken place on day n+3, the performance for that day becomes 1 or 100%. This is not a good representation of the performance of the investor's portfolio. This effect will also mean any aggregation of performance suffers from the same problem. For example aggregating the figures across the last 3 days would produce a figure of 0.8 or 80%.
@@ -106,7 +106,7 @@ Again, to counteract this, we instead include the dividend on the record date, a
 |Day n|£0|£100|-|-|-|
 |Day n+1|£100|£100|-|-|((100 + 0 - 0) / 100) - 1 = 0 or 0%|
 |Day n+2|£100|£90|10|-|((90 + 10 - 0) / 100) - 1 = 0.0 or 0%|
-|Day n+3|£90|£10|-|-80|(10 + 0 - (- 80)) / 90 = 0 or 0%|
+|Day n+3|£90|£10|-|-80|((10 + 0 - (- 80)) / 90) -1 = 0 or 0%|
 |Day n+4|£10|£20|-|10|((20 + 0 - 10) / 10) - 1 = 0 or 0%|
 
 The figures now accurately show that no actual gain or loss has been made.
