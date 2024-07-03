@@ -22,3 +22,5 @@ There could be a number of reasons a deposit has not automatically matched:
 ## What happens if a deposit cannot be matched?
 
 We will hold the deposit for 10 days and contact you to try to resolve the destination portfolio. If it cannot be matched on the 10th day we will return the deposit to the originating account.
+
+The deposit expectation will remain allowing your customer to retry the payment with correct amount/reference/account. We will keep a deposit expectations with a status of 'Created' for up to 90 days, after which we will cancel the deposit.
