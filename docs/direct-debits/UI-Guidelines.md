@@ -23,8 +23,8 @@ This page must contain the following:
   - Account Number
   - Sort Code
 - A mandatory checkbox for the user that states "I confirm that I am the account holder and am authorized to set up Direct Debit payments on this account"
-- A checkbox which must be not be checked which states "More than one person is required to authorize Direct Debits"
-  - Mandates for accounts with multiple signatories are not currently supported and so must be explicitly excluded.
+- A checkbox which must not be checked which states "More than one person is required to authorize Direct Debits"
+  - Mandates for accounts that require **multiple** signatories are not currently supported and so must be explicitly excluded. However, joint accounts that require only one signatory are supported.
 - A <a name="Page1DDStatement" href="#direct-debit-guarantee---full-wording">statement</a> relating to the Direct Debit guarantee with the [Direct Debit logo](https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg) beside it.
   - The statement must read "Your payments are protected by the Direct Debit guarantee"
   - It must also contain a link to the full Direct Debit wording, [see below](#direct-debit-guarantee---full-wording).
