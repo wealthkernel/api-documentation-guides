@@ -103,7 +103,7 @@ To allow you to respond more quickly to changes on inbound transfers, we expose 
 | `inbound_transfers.inbound_transfer_rejected` | The inbound transfer failed validation and is not recoverable. To continue, a new inbound transfer will need to be created. This inbound transfer will be in the `Rejected` status. |
 | `inbound_transfers.inbound_transfer_accepted` | Validation has passed and the ceding provider has accepted the inbound transfer. The inbound transfer will be in the `Accepted` status. |
 | `inbound_transfers.inbound_transfer_transferring` | The ceding provider is now in the process of sending WealthKernel the assets. The inbound transfer will be in the `Transferring` status. |
-| `inbound_transfers.inbound_transfer_transferred` | WealthKernel has received the assets and they are now in the client's portfolio. The inbound transfer will be in the `Tranferred` status. |
+| `inbound_transfers.inbound_transfer_transferred` | WealthKernel has received the assets and they are now in the client's portfolio. The inbound transfer will be in the `Transferred` status. |
 | `inbound_transfers.inbound_transfer_completed` | The transfer has completed successfully and is now in the `Completed` status. |
 | `inbound_transfers.inbound_transfer_cancelled` | The inbound transfer was cancelled and is now in the `Cancelled` status. |
 | `inbound_transfers.inbound_transfer_cancellation_rejected` | We received a request to cancel the transfer, but it is already too late and we cannot cancel the transfer anymore. The inbound transfer's status has not changed. |
