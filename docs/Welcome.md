@@ -35,6 +35,12 @@
 3. [How to request payments](./direct-debits/How-To-Request-Payments.md)
 4. [Timings](./direct-debits/Timings.md)
 
+## Illustrations
+
+1. [Basics](./illustrations/Basics.md)
+2. [ISA transfers](./illustrations/FAQs.md)
+3. [Sandbox simulation](./inbound-transfers/Sandbox-Simulation.md)
+
 ## Inbound transfers
 
 1. [Basics](./inbound-transfers/Basics.md)
