@@ -38,7 +38,7 @@
 ## Illustrations
 
 1. [Basics](./illustrations/Basics.md)
-2. [ISA transfers](./illustrations/FAQs.md)
+2. [FAQs](./illustrations/FAQs.md)
 
 ## Inbound transfers
 
