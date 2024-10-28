@@ -39,7 +39,6 @@
 
 1. [Basics](./illustrations/Basics.md)
 2. [ISA transfers](./illustrations/FAQs.md)
-3. [Sandbox simulation](./inbound-transfers/Sandbox-Simulation.md)
 
 ## Inbound transfers
 
