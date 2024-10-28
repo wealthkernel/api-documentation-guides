@@ -95,7 +95,21 @@
       "title": "Timings",
       "uri": "docs/direct-debits/Timings.md"
     },
-{
+    {
+      "type": "divider",
+      "title": "Illustrations"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/illustrations/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/illustrations/FAQs.md"
+    },
+    {
       "type": "divider",
       "title": "Inbound Transfers"
     },
