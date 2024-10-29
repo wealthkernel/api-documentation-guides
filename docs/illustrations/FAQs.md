@@ -22,7 +22,7 @@ Yes, more than one transfer can be included on a single illustration if required
 
 ## Can the raw data of the illustration be accessed?
 
-At present only the illustration document can be retrieved.
+At present only the illustration document can be retrieved along with the inputs used for the illustration.
 
 ##  Is it possible to edit an existing illustration?
 
