@@ -14,23 +14,9 @@ Drawdown illustrations are similar to accumulation illustrations, but these cove
 
 The illustration allows one product and/or provider to be compared to another, assuming the investment selection and contribution information is consistent between the two. Where investment growth and contributions are consistent, the impact of fees between product providers can be easily compared.
 
-## How to produce an illustration
+## Current supported scope
 
-The below diagram represents the process flow for generating an illustration.
-
-```mermaid
-sequenceDiagram
-    Tenant->>WealthKernel: Request illustration (/sipp-illustrations)
-    WealthKernel->>Tenant: resource ID returned (illustrationId)
-    WealthKernel-->>WealthKernel: Illustration generation
-    WealthKernel->>Tenant: Webhook notification when document is available
-    Tenant->>WealthKernel: Retrieve document (/sipp-illustrations/{illustrationId})
-    WealthKernel->>Tenant: Document sent in API response
-```
-
-Presently, only the document can be retrieved, rather than the underlying data which is used to populate the document. 
-
-## Illustration inputs
+At present, the illustration service only supports accumulation SIPPs. Support for benefit crystallisations and drawdown transfers will be available in future releases. 
 
 The illustrations service supports the following capabilities for accumulation:
 - Member information
@@ -48,3 +34,19 @@ The illustrations service supports the following capabilities for accumulation:
   - Model
   - Individual assets
   - Investment fees (initial and OCF)
+
+## How to produce an illustration
+
+The below diagram represents the process flow for generating an illustration.
+
+```mermaid
+sequenceDiagram
+    Tenant->>WealthKernel: Request illustration (/sipp-illustrations)
+    WealthKernel->>Tenant: resource ID returned (illustrationId)
+    WealthKernel-->>WealthKernel: Illustration generation
+    WealthKernel->>Tenant: Webhook notification when document is available
+    Tenant->>WealthKernel: Retrieve document (/sipp-illustrations/{illustrationId})
+    WealthKernel->>Tenant: Document sent in API response
+```
+
+Presently, only the document can be retrieved, rather than the underlying data which is used to populate the document. 
