@@ -22,7 +22,7 @@ The below diagram represents the process flow for generating an illustration.
 sequenceDiagram
     Tenant->>WealthKernel: Request illustration (/sipp-illustrations)
     WealthKernel->>Tenant: resource ID returned (illustrationId)
-    WealthKernel-->>WealthKernel: Illustration calculation
+    WealthKernel-->>WealthKernel: Illustration generation
     WealthKernel->>Tenant: Webhook notification when document is available
     Tenant->>WealthKernel: Retrieve document (/sipp-illustrations/{illustrationId})
     WealthKernel->>Tenant: Document sent in API response
