@@ -16,6 +16,8 @@ Yes, fee tiers can be accommodated, as per the example in the API documentation.
 
 Yes, this combination of fees can be added, as per the example in the API documentation. 
 
+Adviser fees can be added into the adviser section ofthe API request. DFM and product provider fees can be added into the 'provider' section of the API request.
+
 ## Is it possible to include more than one transfer?
 
 Yes, more than one transfer can be included on a single illustration if required. The example illustration in the API documentation shows how this can be requested. 
