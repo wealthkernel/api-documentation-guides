@@ -10,7 +10,7 @@ At present, the illustration service only supports accumulation illustrations. I
 
 ## Does the illustration service support fee tiering?
 
-Yes, fee tiers can be accommodate, as per the example in the API documentation.
+Yes, fee tiers can be accommodated, as per the example in the API documentation.
 
 ## Is it possible to add adviser, DFM and product provider charges in one illustration?
 
