@@ -68,6 +68,11 @@
 
 1. [Sandbox FAQ](./sandbox/Sandbox-FAQ.md)
 
+## SIPP Illustrations
+
+1. [Basics](./sipp-illustrations/Basics.md)
+2. [FAQs](./sipp-illustrations/FAQs.md)
+
 ## Transactions
 
 1. [Basics](./transactions/Basics.md)
