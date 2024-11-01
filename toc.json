@@ -97,20 +97,6 @@
     },
     {
       "type": "divider",
-      "title": "Illustrations"
-    },
-    {
-      "type": "item",
-      "title": "Basics",
-      "uri": "docs/illustrations/Basics.md"
-    },
-    {
-      "type": "item",
-      "title": "FAQs",
-      "uri": "docs/illustrations/FAQs.md"
-    },
-    {
-      "type": "divider",
       "title": "Inbound Transfers"
     },
     {
@@ -201,6 +187,20 @@
       "type": "item",
       "title": "Sandbox FAQ",
       "uri": "docs/sandbox/Sandbox-FAQ.md"
+    },
+    {
+      "type": "divider",
+      "title": "SIPP Illustrations"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/sipp-illustrations/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/sipp-illustrations/FAQs.md"
     },
     {
       "type": "divider",

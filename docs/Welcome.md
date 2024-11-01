@@ -35,11 +35,6 @@
 3. [How to request payments](./direct-debits/How-To-Request-Payments.md)
 4. [Timings](./direct-debits/Timings.md)
 
-## Illustrations
-
-1. [Basics](./illustrations/Basics.md)
-2. [FAQs](./illustrations/FAQs.md)
-
 ## Inbound transfers
 
 1. [Basics](./inbound-transfers/Basics.md)
@@ -72,6 +67,11 @@
 ## Sandbox
 
 1. [Sandbox FAQ](./sandbox/Sandbox-FAQ.md)
+
+## SIPP Illustrations
+
+1. [Basics](./sipp-illustrations/Basics.md)
+2. [FAQs](./sipp-illustrations/FAQs.md)
 
 ## Transactions
 
