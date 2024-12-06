@@ -25,7 +25,7 @@ This page must contain the following:
 - A mandatory checkbox for the user that states "I confirm that I am the account holder and am authorized to set up Direct Debit payments on this account"
 - A checkbox which must not be checked which states "More than one person is required to authorize Direct Debits"
   - Mandates for accounts that require **multiple** signatories are not currently supported and so must be explicitly excluded. However, joint accounts that require only one signatory are supported.
-- A <a name="Page1DDStatement" href="#direct-debit-guarantee---full-wording">statement</a> relating to the Direct Debit guarantee with the [Direct Debit logo](https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg) beside it.
+- A <a name="Page1DDStatement" href="#direct-debit-guarantee---full-wording">statement</a> relating to the Direct Debit guarantee with the [Direct Debit logo](../../assets/images/direct-debits/direct-debit-logo.svg) beside it.
   - The statement must read "Your payments are protected by the Direct Debit guarantee"
   - It must also contain a link to the full Direct Debit wording, [see below](#direct-debit-guarantee---full-wording).
 - A statement relating to the GoCardless privacy notice.
@@ -37,9 +37,9 @@ This page must contain the following:
 
 ### Direct debit guarantee - Full wording
 
-You must have a page that shows the Full Direct Debit Guarantee wording as shown below. The [Direct Debit logo](https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg) must also appear beside the statement. You should link to this page in the Direct Debit statement shown on [page 1](#Page1DDStatement) when setting up a mandate.
+You must have a page that shows the Full Direct Debit Guarantee wording as shown below. The [Direct Debit logo](../../assets/images/direct-debits/direct-debit-logo.svg) must also appear beside the statement. You should link to this page in the Direct Debit statement shown on [page 1](#Page1DDStatement) when setting up a mandate.
 
-> <div style="text-align:center"><img width="200" style="display:inline" src="https://wealthkernel.azureedge.net/wealthkernel-api-docs/direct-debits/direct-debit-logo.svg" /></div>
+> <div style="text-align:center"><img width="200" style="display:inline" src="../../assets/images/direct-debits/direct-debit-logo.svg" /></div>
 ><div style="text-align:center;margin:15px 0"><span><strong>Direct Debit Guarantee</strong></span></div>
 > The Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits.
 > If there are any changes to the amount, date or frequency of your Direct Debit GC re WealthKernel will notify you (normally 2 working days) in advance of your account being debited or as otherwise agreed.
