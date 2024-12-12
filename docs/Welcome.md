@@ -2,9 +2,10 @@
 
 ## API basics
 
-1. <a href="/docs/api/docs/help/Introduction.md">Introduction</a>
-2. <a href="/docs/api/docs/help/GettingStarted.md">Getting Started</a>
-3. <a href="/docs/api/docs/help/Authentication.md">Authentication</a>
+1. <a href="/docs/api/docs/help/GettingStarted.md">Getting started</a>
+2. <a href="/docs/api/docs/help/Authentication.md">Authentication</a>
+3. <a href="/docs/api/docs/help/Webhooks.md">Webhooks</a>
+4. <a href="/docs/api/docs/help/EventualConsistency.md">Eventual consistency</a>
 
 ## Accounts
 
@@ -66,7 +67,7 @@
 
 ## Sandbox
 
-1. [Sandbox FAQ](./sandbox/Sandbox-FAQ.md)
+1. [FAQs](./sandbox/Sandbox-FAQ.md)
 
 ## SIPP Illustrations
 
