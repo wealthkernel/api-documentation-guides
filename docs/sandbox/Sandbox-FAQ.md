@@ -10,9 +10,9 @@ Sandbox is our pre-production environment that you will use as part of your onbo
 
 ## How should I use it?
 
-You can use it in a number of different ways. When onboarding, you will likely be wanting to creates Parties, Accounts and Portfolios and then fund them to test the API.
+You can use it in a number of different ways. When onboarding, you will likely be wanting to create Parties, Accounts and Portfolios and then fund them to test the API.
 
-We have also seen some customers use it to do their integration testing.
+We have also seen some tenants use it to do their integration testing.
 
 ## Are there any differences between Sandbox and Production?
 
@@ -22,11 +22,11 @@ Yes, in a number of areas outlined below.
 
 #### Sandbox
 
-Deposits will automatically move into a `Matched` state roughly 30 seconds after creation, at which time the `Deposit` transaction will be booked into the Portfolio for that day
+Deposits will automatically move into a `Matched` state roughly 30 seconds after creation, at which time the `Deposit` transaction will be booked into the Portfolio for that day.
 
 #### Production
 
-Once created, it may take some time for the client (your user) to deposit the money. Once we have received the money, it will then be matched at the earliest available opportunity. Because of these steps, the process could potentially take days
+Once created, it may take some time for the investor to deposit the money. Once we have received the money, it will then be matched at the earliest available opportunity. Because of these steps, the process could potentially take days.
 
 ### Fees
 

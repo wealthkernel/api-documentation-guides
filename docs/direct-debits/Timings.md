@@ -12,6 +12,7 @@ The first is setting up a mandate.  This typically takes 2 business days.  It is
 There are several timings related to taking a payment using Direct Debits.  Direct Debits use the UK’s BACS payment system and thus are subject to the timeframes of the BACS payment system.
 Creating the payment for a customer.
 The funds being transferred into the bank account and matched to the customer’s portfolio.  
+
 An overview of the BACS payment timings is available <a href="https://hub.gocardless.com/s/article/United-Kingdom-Bacs-payment-timings?language=en_GB" target="_blank" rel="noopener noreferrer">here</a>.
 
 ## Creating a payment for a customer
