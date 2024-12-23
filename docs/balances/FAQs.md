@@ -11,6 +11,7 @@ Valuations provide a history of the value of a portfolio whereas balances provid
 Valuations are dated, and only transactions with a timestamp on or before a valuation's date will be reflected in the valuation.
 
 Balances are not dated and are continuously updated; therefore, they will reflect any transactions booked to the portfolio as they occur.
+
 ## Why are cash and holdings balances not returned with total balance?
 
 This is to avoid large responses from portfolios that hold many positions.
