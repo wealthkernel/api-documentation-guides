@@ -6,7 +6,7 @@ tags: [Outbound Transfers]
 
 ## Requesting an outbound transfer
 
-To request an outbound transfer, you will need to contact us. There is currently no API to request an outbound transfer.
+To request an outbound transfer, you will need to contact us and provide us the account ID you'd like to transfer out. There is currently no API to request an outbound transfer.
 
 ## Simulation flow
 
