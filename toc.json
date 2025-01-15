@@ -121,6 +121,20 @@
     },
     {
       "type": "divider",
+      "title": "Outbound Transfers"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/outbound-transfers/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "Sandbox simulation",
+      "uri": "docs/outbound-transfers/Sandbox-Simulation.md"
+    },
+    {
+      "type": "divider",
       "title": "IP Allow Listing"
     },
     {
