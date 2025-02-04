@@ -12,7 +12,7 @@ Each Account has its own set of requirements, listed below, that must be validat
 
 ## GIA
 
-Note that this is different to the opening requirements for a [corporate GIA](docs/guides/cb46e29ea99a4-opening-requirements#corporate-gia).
+Note that this is different to the opening requirements for a [corporate GIA](docs/guides/cb46e29ea99a4-opening-requirements##corporate-gia).
 
 The owner must:
 
