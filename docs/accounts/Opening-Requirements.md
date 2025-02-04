@@ -12,7 +12,7 @@ Each Account has its own set of requirements, listed below, that must be validat
 
 ## GIA
 
-Note that this is different to the opening requirements for a [corporate GIA](docs/guides/cb46e29ea99a4-opening-requirements##corporate-gia).
+Note that this is different to the opening requirements for a corporate GIA.
 
 The owner must:
 
@@ -108,6 +108,6 @@ To create a corporate GIA, the `productId` must be `prd-gia-corporate`.
 The owner must:
 
 - Be an `Organization`
-- Must have at least one active address
-- Must provide their country of incorporation
-- If the organization plans to trade reportable instruments, an LEI identifier is also required.
+- Have at least one active address
+- Provide their country of incorporation
+- Have a Legal Entity Identifier (LEI) if the organization plans to trade reportable instruments
