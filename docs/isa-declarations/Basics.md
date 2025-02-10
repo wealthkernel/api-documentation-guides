@@ -11,9 +11,9 @@ The declaration for an ISA confirms that the customer:
 - has not and will not subscribe to another stocks and share ISA in the same tax year
 - is a resident of the UK (or permitted non-resident)
 
-After completing a declaration, the customer can continue to make subscriptions for the remainder of the tax year. As long as a customer makes at least one subscription in the tax year, the declaration will rollover to the following tax year. This will continue indefinitely until there is a year with no subscriptions.
+After completing a declaration, the customer can make subscriptions to their ISA account as long as the ISA is still open. The ISA declaration does not expire.
 
-Following a tax year with no subscriptions, if a customer wishes to further subscribe to their ISA, a new declaration will need to be completed. 
+Note that, historically, ISA declarations would only remain valid when contributions were made in consecutive years; this changed in the 2024-25 fiscal year when HMRC abolished these rules. All ISA declarations that were completed prior to these changes have been updated and are now valid indefinitely.
 
 ## JISAs
 
