@@ -41,7 +41,7 @@ WealthKernel perform checks on bank accounts to makes sure that the bank account
 In the rare cases where we cannot automatically verify a bank account belongs to the party, we may need additional information to prove that the bank account belongs to them. The bank account status will remain in a `Pending` state until the additional information has been provided and verification has been successful. To receive the most up-to-date information about a bank account's status, we recommend using the bank account webhooks which are detailed below.
 
 <!-- theme: info -->
-> Please note that we cannot perform automatic checks for international bank accounts with BIC and IBAN.
+> Note that we cannot perform automatic checks for international bank accounts with BIC and IBAN. Our compliance team will manually check international bank accounts upon request with valid documentation. Please contact your tenant manager for more information.
 
 # Bank account webhooks
 
