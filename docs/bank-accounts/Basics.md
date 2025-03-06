@@ -34,11 +34,26 @@ stateDiagram-v2
 | Suspended | One or more checks on the bank account have failed and the bank account is suspended. Once checks have been fixed the account will move back to `Active`. |
 | Inactive | The bank account is no longer active and cannot be used for funding. To use the bank account again, it will need to be added as a new bank account. |
 
+# Bank account validation
+
+Bank accounts with a sort code and account number pass through a modulus check. This algorithm verifies whether the combination of sort code and account number is legitimate. The check allows us to minimise errors but does not validate that the bank account details exist; an additional check is performed for that purpose, as described in the section below.
+
+For more information on modulus checking, visit [Vocalink's website](https://www.vocalink.com/tools/modulus-checking/).
+
+## International bank accounts
+
+Bank accounts with BIC and IBAN go through some checks. These checks will validate the IBAN checksum, the IBAN structure, and the account number checksum (on the BBAN). The last two checks will vary, depending on the bank account's country.
+
+For more information on IBAN verification, visit the [IBAN checker](https://www.iban.com/iban-checker) and [IBAN structure examples](https://www.iban.com/structure)
+
 # Bank account checks
 
-WealthKernel perform checks on bank accounts to makes sure that the bank account details provided match the party name. It is important that the correct party name and bank details are provided, otherwise these checks are likely to fail and require manual intervention.
+WealthKernel perform checks on bank accounts to make sure that the bank account details provided match the party name. It is important that the correct party name and bank details are provided, otherwise these checks are likely to fail and require manual intervention.
 
 In the rare cases where we cannot automatically verify a bank account belongs to the party, we may need additional information to prove that the bank account belongs to them. The bank account status will remain in a `Pending` state until the additional information has been provided and verification has been successful. To receive the most up-to-date information about a bank account's status, we recommend using the bank account webhooks which are detailed below.
+
+<!-- theme: info -->
+> Note that we cannot perform automatic checks for international bank accounts with BIC and IBAN. Our compliance team will manually check international bank accounts upon request with valid documentation. Please contact your tenant manager for more information.
 
 # Bank account webhooks
 
