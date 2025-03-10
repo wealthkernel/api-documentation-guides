@@ -32,6 +32,8 @@ The minimum and maximum limits per payment must be agreed if the defaults are no
 
 > Payments are submitted to BACS daily at around 4pm. After this they cannot be cancelled.
 
+> Cancelling a mandate will cancel all associated cancellable payments. Cancelling a subscription will **not** cancel any payment created from it, they will still be collected unless cancelled manually.
+
 ### Single payments
 
 You can create single payments through the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1payments/post">Create Payment API</a>. You may specify a collection date. This must be on or after the date returned from the <a href="/docs/api/docs/openapi/api.yaml/paths/~1direct-debits~1mandates~1%7BmandateId%7D~1next-possible-collection-date/get">next possible collection date endpoint</a> endpoint. If a collection date is not specified, the payment will be collected as soon as possible. If the collection date is not a working day, then the payment will be taken on the next working day.
