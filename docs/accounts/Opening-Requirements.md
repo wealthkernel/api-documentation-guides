@@ -5,10 +5,10 @@ tags: [Accounts]
 
 # Opening requirements
 
-Each Account has its own set of requirements, listed below, that must be validated before the account can be opened.
+Each Account has its own set of requirements, listed below, that must be validated before the account can be opened. On top of the requirements below, adult parties (including the registered contact, or parent / guardian for a SIPP) must also pass KYC checks.
 
 <!-- theme: info -->
-> These requirements are up to date as of 2021-09-27
+> These requirements are up to date as of 2025-03-28.
 
 ## GIA
 
@@ -81,10 +81,7 @@ The child must:
 
 ## SIPP
 
-<!-- theme: warning -->
-> SIPPs are currently in a private beta. If you wish to access them, please contact your account manager for more details
-
-The member must:
+For an adult member, the member must:
 
 - Be a `Person`
 - Have a forename
@@ -100,6 +97,20 @@ The member must:
 - Specify their employment status (and industry, if employed)
 - Provide their expected annual income
 - Provide their sources of wealth
+
+For a child member, the member must:
+
+- Be a `Person`
+- Have a forename
+- Have a surname
+- Be under 18 years old
+- Have a nationality
+- Not be a US national
+- Not be a US tax resident
+- Have at least one active UK address
+- Have a `parentOrGuardian` party added to their account
+
+Note that the parent or guardian must meet the requirements of the adult SIPP member above.
 
 ## Corporate GIA
 
