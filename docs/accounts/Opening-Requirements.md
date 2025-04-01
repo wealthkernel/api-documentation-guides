@@ -5,7 +5,7 @@ tags: [Accounts]
 
 # Opening requirements
 
-Each Account has its own set of requirements, listed below, that must be validated before the account can be opened. On top of the requirements below, adult parties (including the registered contact, or parent / guardian for a SIPP) must also pass KYC checks.
+Each Account has its own set of requirements, listed below, that must be validated before the account can be opened. On top of the requirements below, adult parties (including the registered contact for a JISA, or parent / guardian for a SIPP) must also pass KYC checks.
 
 <!-- theme: info -->
 > These requirements are up to date as of 2025-03-28.
