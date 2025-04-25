@@ -26,6 +26,20 @@
     },
     {
       "type": "divider",
+      "title": "Balances"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/balances/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/balances/FAQs.md"
+    },    
+    {
+      "type": "divider",
       "title": "Bank Accounts"
     },
     {
@@ -42,20 +56,6 @@
       "type": "item",
       "title": "Sandbox simulation",
       "uri": "docs/bank-accounts/Sandbox-Simulation.md"
-    },
-    {
-      "type": "divider",
-      "title": "Balances"
-    },
-    {
-      "type": "item",
-      "title": "Basics",
-      "uri": "docs/balances/Basics.md"
-    },
-    {
-      "type": "item",
-      "title": "FAQs",
-      "uri": "docs/balances/FAQs.md"
     },
     {
       "type": "divider",
