@@ -1,4 +1,8 @@
-# Deposit into a cash savings portfolios
+---
+tags: [Cash Savings]
+---
+
+# Cash savings basics
 
 ## Prerequisites
 

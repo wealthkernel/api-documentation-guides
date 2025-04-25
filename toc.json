@@ -59,6 +59,15 @@
     },
     {
       "type": "divider",
+      "title": "Cash savings"
+    },
+    {
+      "type": "item",
+      "title": "Overview",
+      "uri": "docs/cash-savings/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "Deposits"
     },
     {
