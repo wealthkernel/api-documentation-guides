@@ -26,6 +26,20 @@
     },
     {
       "type": "divider",
+      "title": "Balances"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/balances/Basics.md"
+    },
+    {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/balances/FAQs.md"
+    },    
+    {
+      "type": "divider",
       "title": "Bank Accounts"
     },
     {
@@ -45,17 +59,12 @@
     },
     {
       "type": "divider",
-      "title": "Balances"
+      "title": "Cash savings"
     },
     {
       "type": "item",
       "title": "Basics",
-      "uri": "docs/balances/Basics.md"
-    },
-    {
-      "type": "item",
-      "title": "FAQs",
-      "uri": "docs/balances/FAQs.md"
+      "uri": "docs/cash-savings/Basics.md"
     },
     {
       "type": "divider",
