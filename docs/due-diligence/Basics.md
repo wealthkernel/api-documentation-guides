@@ -92,6 +92,8 @@ stateDiagram-v2
 
 When a due diligence update is created, it stays as `Pending`. Note that it is only possible to add evidence to a due diligence update in this state. After submitting the update, it will be automatically completed. However, the update could be rejected under certain circumstances, for example, when the provided `PartyId` does not exist.
 
+The diagram below shows a typical workflow of a due diligence update.
+
 ```mermaid
 sequenceDiagram
     autonumber
