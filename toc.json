@@ -106,10 +106,19 @@
     },
     {
       "type": "divider",
+      "title": "Due Diligence"
+    },
+    {
+    "type": "item",
+      "title": "Basics",
+      "uri": "docs/due-diligence/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "Inbound Transfers"
     },
     {
-      "type": "item",
+    "type": "item",
       "title": "Basics",
       "uri": "docs/inbound-transfers/Basics.md"
     },
