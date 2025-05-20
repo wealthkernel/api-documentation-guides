@@ -116,7 +116,7 @@ sequenceDiagram
 
 Steps 3 to 6 show the requests needed to add a due diligence update, from initializing the due diligence update to submitting it.
 
-Steps 4 and 5 can be repeated as many times as needed, as it is allowed to include multiple evidence items in an update, including none. Note the different IDs used in these requests. Step 4 uses the due diligence update ID, whereas Step 5 uses the evidence ID.
+Steps 4 and 5 can be repeated as many times as needed, as it is allowed to include multiple evidence items in an update, including none.
 
 Finally, when the due diligence update completes in Step 6, the due diligence summary will apply the update.
 
