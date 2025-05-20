@@ -22,7 +22,7 @@ Internal transfers must be requested before the cut off to be eligible for curre
 
 ## Withdrawals
 
-If cash is moved out of the savings portfolio, or completely withdrawn from the platform, interest will be paid as usual on the 1st of the next month, accrued for the days which it was held in the savings portfolio.
+If cash is transferred out of the savings portfolio, interest earned will be paid as usual on the 1st of the next month, accrued for the days which it was held in the savings portfolio.
 
 For example, if £100 was held in a savings portfolio from 2025-01-01, and a transfer back to the wallet completes on 2025-01-15, 14 days worth of interest would be paid into the savings portfolio on 2025-02-01.
 
