@@ -4,13 +4,13 @@ tags: [Due Diligence]
 
 # Due Diligence Outsourcing
 
-We require KYC checks to be performed on parties as part of the onboarding process. Regular checks must also be in place as long as the party is active in the system. Our Due Diligence Outsourcing model is evidence-based, meaning that you can provide evidence for a KYC check along with the outcome from an external KYC provider or your own KYC integration.
+We require KYC checks to be performed for each party as part of the onboarding process. Regular checks must also be in place as long as the party has active accounts in the system. Our due diligence outsourcing model is evidence-based, meaning that you can provide evidence for a KYC check along with the outcome from an external KYC provider or your own KYC integration.
 
-Please note that Due Diligence Outsourcing is only available for persons. Organizations require a different set of checks.
+Please note that due diligence outsourcing is only available for parties of type `Person`. Organizations are currently not eligible for this model.
 
 ### Expectations for tenants using due diligence outsourcing
 
-In order to use due diligence outsourcing, tenants must perform KYC checks in all parties of type `Person` and provide us with the outcome of such checks. Additionally, tenants must have a monitoring system in place, as a person's circumstances could change at any moment.
+In order to use due diligence outsourcing, tenants must perform KYC checks for all parties of type `Person` and provide us with the outcome of such checks. Additionally, tenants must have a monitoring system in place, as a person's circumstances could change at any moment.
 
 For persons, the following checks must be undertaken:
 
@@ -21,7 +21,7 @@ For persons, the following checks must be undertaken:
     - Adverse media
     - Legal and regulatory warnings
 
-Note that material information does not have a particular status to update. If your KYC provider or integration confirms a match for material information, you must contact us.
+Note that material information does not have a particular status to update. If you become aware of some material information that should disbar a party from investing, you must contact us.
 
 ## Due diligence summary
 
@@ -33,7 +33,7 @@ Check outcomes and monitoring information can be added to a person's due diligen
 
 - Due diligence level
 - Identity
-- Politically exposed persons (PEPs)
+- Political exposure
 - Sanctions
 - Material information
 
@@ -50,7 +50,7 @@ The due diligence update doesn't need all of this information at once. Partial u
 }
 ```
 
-This request will only update the PEP's continuous monitoring information, without altering the PEP status, or any other check information.
+This request will only update the political exposure's continuous monitoring information, without altering the political exposure status, or any other check information.
 
 A `null` value, in a nullable field, will be honored and recorded in the due diligence summary, for example:
 
@@ -65,7 +65,7 @@ A `null` value, in a nullable field, will be honored and recorded in the due dil
 }
 ```
 
-The `UpdatedBy` field keeps a record of the person who made the update. This is typically the the individual's email address, but `System` updates are also acceptable for automated updates.
+The `UpdatedBy` field keeps a record of the person who made the update. This is typically the the individual's email address, but `System` is an acceptable value to indicate that the update had no human involvement.
 
 ### Monitoring
 
@@ -122,11 +122,11 @@ Finally, when the due diligence update completes in Step 6, the due diligence su
 
 ## Due diligence and Accounts
 
-A person must have valid KYC checks in order to activate their accounts, and for that purpose, the due diligence summary must have all of the following outcomes:
+A person must have a valid due diligence summary in order for their accounts to be activated. A valid due diligence summary must have the following information:
 
 - Identity status: Verified
 - Sanctions status: Not sanctioned
-- Political Exposure status: Not unknown
+- Political Exposure status: Not politically exposed, directly politically exposed, or indirectly politically exposed
 
 Please note that an underlying Customer Risk Assessment system is also in place, which will ultimately decide whether the party can be onboarded or not.
 
