@@ -118,7 +118,7 @@
       "title": "Inbound Transfers"
     },
     {
-    "type": "item",
+      "type": "item",
       "title": "Basics",
       "uri": "docs/inbound-transfers/Basics.md"
     },
@@ -127,7 +127,7 @@
       "title": "ISA transfers",
       "uri": "docs/inbound-transfers/ISA-Transfers.md"
     },
-        {
+    {
       "type": "item",
       "title": "JISA transfers",
       "uri": "docs/inbound-transfers/JISA-Transfers.md"
