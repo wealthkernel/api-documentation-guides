@@ -8,7 +8,7 @@ We require KYC checks to be performed for each party as part of the onboarding p
 
 Please note that due diligence outsourcing is only available for parties of type `Person`. Organizations are currently not eligible for this model.
 
-### Expectations for tenants using due diligence outsourcing
+## Expectations for tenants using due diligence outsourcing
 
 In order to use due diligence outsourcing, tenants must perform KYC checks for all parties of type `Person` and provide us with the outcome of such checks. Additionally, tenants must have a monitoring system in place, as a person's circumstances could change at any moment.
 
