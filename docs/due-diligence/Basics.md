@@ -65,6 +65,8 @@ A `null` value, in a nullable field, will be honored and recorded in the due dil
 }
 ```
 
+This request will also update the political exposure's continuous monitoring information and will not alter the political exposure status, or any other check information.
+
 The `UpdatedBy` field keeps a record of the person who made the update. This is typically the the individual's email address, but `System` is an acceptable value to indicate that the update had no human involvement.
 
 ### Monitoring
