@@ -23,6 +23,8 @@ For persons, the following checks must be undertaken:
 
 Note that material information does not have a particular status to update. If you become aware of some material information that should disbar a party from investing, you must contact us.
 
+You must also inform us of the due diligence level applied to the party: `Standard` or `Enhanced`.
+
 ## Due diligence summary
 
 A due diligence summary contains the most recent state of a person's due diligence. An initial summary with unknown outcomes is automatically initialized after a person is added.
