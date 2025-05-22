@@ -36,6 +36,10 @@
 3. [How to request payments](./direct-debits/How-To-Request-Payments.md)
 4. [Timings](./direct-debits/Timings.md)
 
+## Due Diligence
+
+1. [Basics](./due-diligence/Basics.md)
+
 ## Inbound transfers
 
 1. [Basics](./inbound-transfers/Basics.md)
