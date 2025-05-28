@@ -3,7 +3,8 @@
     {
       "type": "item",
       "title": "Welcome",
-      "uri": "docs/Welcome.md"
+      "uri": "docs/Welcome.md",
+      "slug": "welcome-to-the-wealthkernel-guides"
     },
     {
       "type": "divider",
