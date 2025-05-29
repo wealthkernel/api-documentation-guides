@@ -1,6 +1,6 @@
 # Welcome to the WealthKernel guides
 
-Here you can find further information on some of our more involved endpoints, organised by domain, as well as extra details on general concepts. Most sections will cover the basics of the topic, and FAQs to help with any common issues. We also detail the services that are simulated in our sandbox environment, and how you can simulate different scenarios.
+Here you can find more information on our complex endpoints, organized by domain, along with additional details on general concepts. Most sections cover the basics of each topic and include FAQs to address common issues. We also outline the services simulated in our sandbox environment and explain how you can simulate different scenarios.
 
 ## Basics
 
