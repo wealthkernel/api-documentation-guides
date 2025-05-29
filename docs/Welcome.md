@@ -9,14 +9,14 @@ For an introduction to our platform and to get up and running quickly, start her
 1. <a href="/docs/api/docs/help/GettingStarted.md">Getting started</a>
 2. <a href="/docs/api/docs/help/Authentication.md">Authentication</a>
 3. <a href="/docs/api/docs/help/EventualConsistency.md">Eventual consistency</a>
-4. <a href="../docs/sandbox/Sandbox-FAQ.md">General Sandbox FAQ</a>
+4. <a href="./sandbox/Sandbox-FAQ.md">General Sandbox FAQ</a>
 
 ## Additional features
 
 Additionally, we provide some optional features which you may find useful:
 
 1. <a href="/docs/api/docs/help/Webhooks.md">Webhooks concepts</a>
-2. <a href="../docs/webhooks/Getting-Started.md">Webhooks configuration</a>
+2. <a href="./webhooks/Getting-Started.md">Webhooks configuration</a>
 3. <a href="/docs/api/docs/help/Idempotency.md">Idempotency</a>
-4. <a href="../docs/ip-allow-listing/Basics.md">IP allow listing</a>
+4. <a href="./ip-allow-listing/Basics.md">IP allow listing</a>
 5. <a href="/docs/api/docs/help/Pagination.md">Pagination</a>
