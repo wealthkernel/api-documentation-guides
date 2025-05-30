@@ -4,7 +4,7 @@ tags: [Due Diligence]
 
 # Due Diligence Outsourcing
 
-We require KYC checks to be performed for each party as part of the onboarding process. Regular checks must also be in place as long as the party has active accounts in the system. Our due diligence outsourcing model is evidence-based, meaning that you can provide evidence for a KYC check along with the outcome from an external KYC provider or your own KYC integration.
+We require KYC checks to be performed for each party as part of the onboarding process. Regular checks must also be in place as long as the party has active accounts in the system. Our due diligence outsourcing model is evidence-based, meaning that you should provide evidence for a KYC check along with the outcome from an external KYC provider or your own KYC integration.
 
 Please note that due diligence outsourcing is only available for parties of type `Person`. Organizations are currently not eligible for this model.
 
@@ -33,13 +33,13 @@ A due diligence summary contains the most recent state of a person's due diligen
 
 Check outcomes and monitoring information can be added to a person's due diligence summary through a due diligence update. Any of the following due diligence fields can be updated:
 
-- Due diligence level
+- Level
 - Identity
 - Political exposure
 - Sanctions
 - Material information
 
-The due diligence update doesn't need all of this information at once. Partial updates are also supported. In the due diligence update request, any undefined field within the five fields mentioned above will be ignored. For example, the following update request is valid:
+Due diligence updates do not need to provide all information at once. Partial updates are also supported. In the due diligence update request, any undefined field within the five fields mentioned above will be ignored. For example, the following update request is valid:
 
 ```json
 {
@@ -94,7 +94,7 @@ stateDiagram-v2
     Submitted --> Rejected
 ```
 
-When a due diligence update is created, it stays as `Pending`. Note that it is only possible to add evidence to a due diligence update in this state. After submitting the update, it will be automatically completed. However, the update could be rejected under certain circumstances, for example, when the provided `PartyId` does not exist.
+When a due diligence update is sent, it stays as `Pending`. Note that it is only possible to add evidence to a due diligence update in this state. After submitting the update, it will be automatically completed. However, the update could be rejected under certain circumstances, for example, when the provided `PartyId` does not exist.
 
 The diagram below shows a typical workflow of a due diligence update.
 
@@ -120,11 +120,11 @@ sequenceDiagram
 
 Steps 3 to 6 show the requests needed to add a due diligence update, from initializing the due diligence update to submitting it.
 
-Steps 4 and 5 can be repeated as many times as needed, as it is allowed to include multiple evidence items in an update, including none.
+Steps 4 and 5 can be repeated as many times as needed if there is evidence to upload, as it is allowed to include multiple evidence items in an update.
 
-Finally, when the due diligence update completes in Step 6, the due diligence summary will apply the update.
+Finally, when the due diligence update completes in Step 6, the update will be applied to the due diligence summary.
 
-## Due diligence and Accounts
+## Due diligence and accounts
 
 A person must have a valid due diligence summary in order for their accounts to be activated. A valid due diligence summary must have the following information:
 
