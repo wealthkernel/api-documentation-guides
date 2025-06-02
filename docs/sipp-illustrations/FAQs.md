@@ -1,5 +1,6 @@
 ---
 stoplight-id: 26cgp5wk2wbxx
+tags: [SIPP Illustrations]
 ---
 
 # Illustrations FAQs

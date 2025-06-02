@@ -219,6 +219,15 @@
     },
     {
       "type": "divider",
+      "title": "Pension Income Payments"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/pension-income/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "SIPP Illustrations"
     },
     {
