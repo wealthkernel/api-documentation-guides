@@ -112,6 +112,15 @@
     },
     {
       "type": "divider",
+      "title": "Due Diligence"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/due-diligence/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "Inbound Transfers"
     },
     {
@@ -124,7 +133,7 @@
       "title": "ISA transfers",
       "uri": "docs/inbound-transfers/ISA-Transfers.md"
     },
-        {
+    {
       "type": "item",
       "title": "JISA transfers",
       "uri": "docs/inbound-transfers/JISA-Transfers.md"
