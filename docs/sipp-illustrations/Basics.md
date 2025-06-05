@@ -1,5 +1,6 @@
 ---
 stoplight-id: xndc5l7aksqmw
+tags: [SIPP Illustrations]
 ---
 
 # Basics

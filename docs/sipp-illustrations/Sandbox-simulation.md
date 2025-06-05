@@ -1,5 +1,6 @@
 ---
 stoplight-id: nzadva7z6p6vh
+tags: [SIPP Illustrations]
 ---
 
 # Sandbox simulation
