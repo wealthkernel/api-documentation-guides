@@ -17,22 +17,9 @@ API secrets are used as part of our authentication method. Documentation for thi
 ## Generating a secret
 
 1. Log in to the dashboard and go to Configuration -> API clients.
+1. Select your API client. If you do not have one yet, click "Add API client". If you already have an API client, skip to step 4.
+1. Type in a name for the API client and click "Add".
+1. Click on the three-dot menu and select "Generate secret".
+1. Your secret will be generated and displayed. Store this secret somewhere secure, as recommended in the prompt.
 
-![ApiClientGenerate1](../../assets/images/api-client/api-client-1.png)
-
-2. Select your API client. If you do not have one yet, click "Add API client". If you already have an API client, skip to step 4.
-
-![ApiClientGenerate2](../../assets/images/api-client/api-client-2.png)
-
-3. Type in a name for the API client and click "Add".
-
-![ApiClientGenerate3](../../assets/images/api-client/api-client-3.png)
-
-4. Click on the three-dot menu and select "Generate secret".
-
-![ApiClientGenerate4](../../assets/images/api-client/api-client-4.png)
-![ApiClientGenerate5](../../assets/images/api-client/api-client-5.png)
-
-5. Your secret will be generated and displayed. Store this secret somewhere secure, as recommended in the prompt.
-
-![ApiClientGenerate6](../../assets/images/api-client/api-client-6.png)
+![Video walkthrough](../../assets/videos/api-clients/secret-generation.mp4)
