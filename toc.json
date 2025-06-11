@@ -8,6 +8,15 @@
     },
     {
       "type": "divider",
+      "title": "API clients"
+    },
+    {
+      "type": "item",
+      "title": "Managing secrets",
+      "uri": "docs/api-clients/Managing-Secrets.md"
+    },
+    {
+      "type": "divider",
       "title": "Accounts"
     },
     {
