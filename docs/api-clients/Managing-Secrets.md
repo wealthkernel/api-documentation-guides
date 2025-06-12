@@ -22,4 +22,6 @@ API secrets are used as part of our authentication method. Documentation for thi
 1. Click on the three-dot menu and select "Generate secret".
 1. Your secret will be generated and displayed. Store this secret somewhere secure, as recommended in the prompt.
 
-![Video walkthrough](../../assets/videos/api-clients/secret-generation.mp4)
+### Video walkthrough
+
+https://vimeo.com/1092732869/aa94ff9071
