@@ -12,7 +12,7 @@ API secrets are used as part of our authentication method. Documentation for thi
 
 > #### Becoming an admin user
 >
-> If you do not have an admin user for your organisation, please contact your account manager who will be able to set this up for you.
+> If you do not have an admin user for your organisation, please contact your tenant manager who will be able to set this up for you.
 
 ## Generating a secret
 
