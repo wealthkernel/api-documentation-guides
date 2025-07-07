@@ -17,6 +17,15 @@
     },
     {
       "type": "divider",
+      "title": "Authentication"
+    },
+    {
+      "type": "item",
+      "title": "Single Sign On (SSO) - Auth0",
+      "uri": "docs/single-sign-on/sso-auth0.md"
+    },
+    {
+      "type": "divider",
       "title": "Accounts"
     },
     {
@@ -30,9 +39,9 @@
       "uri": "docs/accounts/Opening-Requirements.md"
     },
     {
-    "type": "item",
-    "title": "Sandbox simulation",
-    "uri": "docs/accounts/Sandbox-Simulation.md"
+      "type": "item",
+      "title": "Sandbox simulation",
+      "uri": "docs/accounts/Sandbox-Simulation.md"
     },
     {
       "type": "divider",
@@ -47,7 +56,7 @@
       "type": "item",
       "title": "FAQs",
       "uri": "docs/balances/FAQs.md"
-    },    
+    },
     {
       "type": "divider",
       "title": "Bank Accounts"
@@ -75,7 +84,7 @@
       "type": "item",
       "title": "Basics",
       "uri": "docs/cash-savings/Basics.md"
-    },    
+    },
     {
       "type": "item",
       "title": "Interest",
@@ -279,7 +288,7 @@
     {
       "type": "item",
       "title": "FAQs",
-      "uri": "docs/us-withholding-tax/FAQs.md"    
+      "uri": "docs/us-withholding-tax/FAQs.md"
     },
     {
       "type": "divider",
@@ -309,7 +318,7 @@
       "type": "item",
       "title": "FAQs",
       "uri": "docs/webhooks/FAQs.md"
-    },    
+    },
     {
       "type": "divider",
       "title": "Withdrawals"
