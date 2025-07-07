@@ -16,6 +16,7 @@ This document describes the steps to set up Auth0 application for Single Sign-On
 
 4. Configure `Maximumum ID Token Lifetime` to be a shorter, for example, `300 seconds`.
 
+![alt text](image.png)
 ![alt text](token-lifetime.png)
 
 5. Provide the following details back to WealthKernel support:

@@ -22,7 +22,7 @@
     {
       "type": "item",
       "title": "Single Sign On (SSO) - Auth0",
-      "uri": "docs/single-sign-on/sso-auth0.md"
+      "uri": "docs/single-sign-on/auth0/sso-auth0.md"
     },
     {
       "type": "divider",
