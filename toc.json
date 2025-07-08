@@ -27,7 +27,7 @@
     {
       "type": "item",
       "title": "Single Sign On (SSO) - Entra ID",
-      "uri": "docs/single-sign-on/auth0/sso-entra-id.md"
+      "uri": "docs/single-sign-on/entra-id/sso-entra-id.md"
     },
     {
       "type": "divider",
