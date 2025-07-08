@@ -20,7 +20,7 @@ This document describes the steps to set up Auth0 application for Single Sign-On
 
 5. Provide the following details back to WealthKernel support:
 
-   - Type of your SSO provider (Auth0)
+   - Name of your SSO provider (Auth0)
    - `Domain`
    - `Client Id`
    - `Client Secret`

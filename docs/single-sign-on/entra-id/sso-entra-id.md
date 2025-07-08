@@ -22,7 +22,7 @@ This document describes the steps to set up Entra ID application for Single Sign
 
 7. Provide the following details back to WealthKernel support:
 
-   - Type of your SSO provider (EntraID)
+   - Name of your SSO provider (EntraID)
    - Authority URL: `https://login.microsoftonline.com/<PUBLISHER_DOMAIN>` (from step 4)
    - `Client Id`
    - `Client Secret`
