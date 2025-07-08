@@ -13,6 +13,7 @@ This document describes the steps to set up Auth0 application for Single Sign-On
 3. Configure `Allowed Callback URLs` and `Allowed Logout URLs` with values provided by WealthKernel support.
 
 <!-- focus: false --->
+
 ![Configure callback URLs](application-callback-urls.png)
 
 4. Configure `Maximumum ID Token Lifetime` to be a shorter, for example, `300 seconds`.
