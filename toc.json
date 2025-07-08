@@ -17,12 +17,17 @@
     },
     {
       "type": "divider",
-      "title": "Authentication"
+      "title": "Dashboard Authentication"
     },
     {
       "type": "item",
       "title": "Single Sign On (SSO) - Auth0",
       "uri": "docs/single-sign-on/auth0/sso-auth0.md"
+    },
+    {
+      "type": "item",
+      "title": "Single Sign On (SSO) - Entra ID",
+      "uri": "docs/single-sign-on/auth0/sso-entra-id.md"
     },
     {
       "type": "divider",
