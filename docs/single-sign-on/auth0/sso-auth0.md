@@ -5,8 +5,8 @@ This document describes the steps to set up Auth0 application for Single Sign-On
 # Steps
 
 1. In Auth0, go to the **Applications** section and click **Create Application**. Name the application `WealthKernel Dashboard (Sandbox)` or `WealthKernel Dashboard (Production)` depending on the environment, and choose **Regular Web Applications** application type.
-  <!-- focus: false --->
-  ![Create an application](create-application.png)
+   <!-- focus: false --->
+   ![Create an application](create-application.png)
 
 2. From the new application's settings section, note down the `Domain`, `Client ID` and `Client Secret` values.
 
