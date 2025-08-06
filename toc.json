@@ -297,6 +297,15 @@
     },
     {
       "type": "divider",
+      "title": "Valuations"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/valuations/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "Webhooks"
     },
     {
