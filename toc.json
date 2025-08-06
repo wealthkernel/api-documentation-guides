@@ -305,6 +305,11 @@
       "uri": "docs/valuations/Basics.md"
     },
     {
+      "type": "item",
+      "title": "FAQs",
+      "uri": "docs/valuations/FAQs.md"
+    },
+    {
       "type": "divider",
       "title": "Webhooks"
     },

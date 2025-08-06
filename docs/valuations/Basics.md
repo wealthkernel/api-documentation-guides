@@ -6,14 +6,10 @@ tags: [Valuations]
 
 A valuation is a breakdown of the cash and holdings in a portfolio, taking into account prices and FX rates. 
 
-Although valuations are dated daily, transactions can be booked that affect existing valuations, causing their values to change. For example, an incorrectly dated Dividend transaction being rebooked for the correct date.
-
-In other words, transactions with a timestamp on or before a valuation’s date will be reflected in the valuation, even if they are booked retrospectively days after the valuation date. This effect perpetuates through all valuations up to the current valuation.
-
 ## Concepts
 
 - New valuations are calculated for the previous day, i.e. are T+1. 
-- Valuations are designed to give a point in time snapshot of a portfolio. For more realtime data, [Balances](../balances/Basics.md) should be used.
+- Valuations are designed to give a value at close on the valuation's date. For more realtime data, [Balances](../balances/Basics.md) should be used.
 - The `changedAt` property on a valuation shows the time that the most recent update to that valuation occurred.
 
 ## Examples
