@@ -7,7 +7,7 @@ tags: [SIPP Illustrations]
 
 ## Does the illustration service support drawdown illustrations?
 
-At present, the illustration service only supports accumulation illustrations. Illustrations for drawdown and drawdown transfer will be added in the future. 
+Yes, both accumulation and decumulation (drawdown) illustrations are supported.
 
 ## Does the illustration service support fee tiering?
 
