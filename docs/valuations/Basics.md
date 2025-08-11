@@ -8,7 +8,7 @@ A valuation is the breakdown of the value of cash and holdings in a portfolio at
 
 ## Concepts
 
-- New valuations are calculated for the previous day, i.e. are T+1. 
+- Valuations are made available on a T+1 basis.
 - Valuations are designed to give a value at close on the valuation's date. For more realtime data, [Balances](../balances/Basics.md) should be used.
 - The `changedAt` property on a valuation shows the time that the most recent update to that valuation occurred.
 
