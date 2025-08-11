@@ -4,7 +4,7 @@ tags: [Valuations]
 
 # Valuations
 
-A valuation is a breakdown of the cash and holdings in a portfolio, taking into account prices and FX rates. 
+A valuation is the breakdown of the value of cash and holdings in a portfolio at the close of its date.
 
 ## Concepts
 
