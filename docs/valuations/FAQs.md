@@ -16,4 +16,4 @@ In other words, transactions with a timestamp on or before a valuation’s date 
 
 ## Why haven't the valuations been created yet?
 
-In rare circumstances due delays with our downstream providers, we may be delayed in receiving data required to calculate valuations. As soon as the data arrives with us will we endeavour to generate valuations as soon as possible.
+In rare circumstances, we may experience delays in receiving the data needed to calculate valuations from our downstream providers.
