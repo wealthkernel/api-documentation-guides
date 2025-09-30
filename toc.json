@@ -297,6 +297,20 @@
     },
     {
       "type": "divider",
+      "title": "User Management"
+    },
+    {
+      "type": "item",
+      "title": "Users",
+      "uri": "docs/user-management/Users.md"
+    },
+    {
+      "type": "item",
+      "title": "Groups",
+      "uri": "docs/user-management/Groups.md"
+    },
+    {
+      "type": "divider",
       "title": "Valuations"
     },
     {
