@@ -21,8 +21,8 @@ page for more details on group and permission configuration)
 
 ![Groups nav](../../assets/images/user-management/user-detail.png)
 
-The '...' menu in the top right allows you to perform various actions for a user.  (Note: the exact actions may vary 
-depending on whether you use single-sign-on (SSO) or a username and password to log in)
+The '...' menu in the top right allows you to perform various actions for a user.  (Note: the 'reset password' 
+option will be hidden if your organization uses single-sign-on (SSO))
 
 ![Groups nav](../../assets/images/user-management/user-detail-actions.png)
 
