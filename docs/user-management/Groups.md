@@ -18,14 +18,14 @@ new group with custom permissions.
 
 Use the 'members' tab on the group page to add or remove users from a group
 
-![Groups members](../../assets/images/user-management/group-add-members.gif)
+![Group members](../../assets/images/user-management/group-add-members.gif)
 
 
 ## Group permissions
 
 Use the 'permissions' tab on on the group page to edit which permissions are assigned to that group
 
-![Groups members](../../assets/images/user-management/group-edit-permissions.gif)
+![Group permissions](../../assets/images/user-management/group-edit-permissions.gif)
 
 <!-- theme: info -->
 > Note: Changes to group membership and permissions only take effect the next time the user logs in.
