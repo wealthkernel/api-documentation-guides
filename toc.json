@@ -30,6 +30,11 @@
       "uri": "docs/single-sign-on/entra-id/sso-entra-id.md"
     },
     {
+      "type": "item",
+      "title": "Single Sign On (SSO) - Google",
+      "uri": "docs/single-sign-on/google/sso-google.md"
+    },
+    {
       "type": "divider",
       "title": "Accounts"
     },
