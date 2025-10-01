@@ -32,4 +32,4 @@ This document describes the steps to set up Google OAuth application for Single 
     - **Client Id**
     - **Client Secret**
 
-7. Once the SSO provider is set up by WealthKernel, users will start being redirected to the Microsoft Entra ID login page when trying to access the Dashboard.
+7. Once the SSO provider is set up by WealthKernel, users will start being redirected to the Google login page when trying to access the Dashboard.
