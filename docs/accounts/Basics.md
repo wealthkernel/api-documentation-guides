@@ -31,7 +31,10 @@ Each of these will have their own requirements for opening, which will be checke
 
 ## Account currencies
 
-Account currency should be set for all account types, however we will default the account to GBP if it is not provided for GIAs, ISAs, JISAs, and SIPPs. The account currencies currently supported are GBP, EUR and USD. This applies to GIAs only. GBP is the only currency allowed for other account types. There are no restrictions on the number of GIAs that can be opened for a party and each party can hold accounts with different currencies.
+
+Account currency should be set for all account types, however we will default the account to GBP if it is not provided for GIAs, ISAs, JISAs, and SIPPs. Keep in mind that there is no default currency for SIAs. The account currencies currently supported are GBP, EUR and USD, and can be used for both GIAs and SIAs. Other account types will only allow GBP as the currency.
+
+There are no restrictions on the number of GIAs and SIAs that can be opened for a party.
 
 Once the currency of an account has been set, it cannot be changed. Any [portfolios](../portfolios/Basics.md) created under an account will be opened in the same currency as the account itself. 
 
