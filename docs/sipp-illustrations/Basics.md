@@ -17,7 +17,7 @@ The illustration allows one product and/or provider to be compared to another, a
 
 ## Current supported scope
 
-At present, the illustration service only supports accumulation SIPPs. Support for benefit crystallisations and drawdown transfers will be available in future releases. 
+At present, the illustration service only supports key features illustrations for both accumulation and decumulation SIPPs. Support for SMPI illustrations will be available in future releases. 
 
 The illustrations service supports the following capabilities for accumulation:
 - Member information
@@ -35,6 +35,30 @@ The illustrations service supports the following capabilities for accumulation:
   - Model
   - Individual assets
   - Investment fees (initial and OCF)
+
+And for decumulation, supports the following:
+- Member information
+- Transfers
+  - Single or multiple
+- Fees
+  - Adviser
+  - Provider
+  - DFM
+- Valuations
+  - Value of the accumulation pot
+  - Value of the decumulation pot
+- Investment selection
+  - Model
+  - Individual assets
+  - Investment fees (initial and OCF)
+- Benefit crystallizations
+  - Flexi-access only
+  - Tax-free cash can be taken as a lump sum, or in instalments
+- Taxable income schedules
+  - Single or multiple
+  - Can have varying payout schedules / frequencies
+
+Note that accumulation and decumulation illustrations are both requested and retrieved from different API endpoints with different request bodies and responses.
 
 ## How to produce an illustration
 
