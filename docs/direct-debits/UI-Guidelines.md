@@ -10,6 +10,8 @@ Please note the designs for the UI of screens relating to Direct Debit payments 
 
 We would ask that you follow these guidelines as closely as possible. This will help avoid delay in gaining approval and also to prevent problems arising when regulators force change.
 
+For organization accounts, Direct Debit screens should display the **company name** instead of the full name (e.g. on confirmation and success screens).
+
 ## Page 1 - Bank account capture
 
 The first page must capture the back account to be used for the mandate. See the example below
@@ -58,7 +60,7 @@ The second screen must confirm back to the user the banking details they have en
 
 This page must meet the following criteria:
 
-- It must display to the user their full name, account name, account number and sort code so they can confirm they are correct.
+- It must display to the user their full name (or company name for organization accounts), account name, account number and sort code so they can confirm they are correct.
 - The user must be able to change or correct the account details if they are incorrect.
 - It must display the users email address to be used for communication purposes.
 - It must confirm that WealthKernel will appear on the users bank statement.

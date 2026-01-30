@@ -17,3 +17,7 @@ To access these APIs in Production you must complete the following steps to meet
 3. The UI of the customer facing screens used to set up a Direct Debit mandate must be approved based on the  [guidelines](./UI-Guidelines.md) outlined.
 4. The minimum and maximum limits per payment must be agreed if the defaults are not suitable. By default the minimum amount per payment is £25 and the maximum is £2000.
 5. When the Direct Debit APIs are available to you, the Dashboard Direct Debit information screens will also be made visible.
+
+## Direct Debits for organizations (beta)
+
+Direct Debits for organization accounts is currently in beta. If you need access for organization (non-individual) accounts, please speak to your tenant manager.
