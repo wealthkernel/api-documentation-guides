@@ -4,13 +4,13 @@ stoplight-id: wd4h0w1bl31lb
 
 # US Withholding Tax
 
-When a non-US resident invests in US shares, the US government mandates information is provided to confirm the non-US residential status, usually by way of completing a W-8 BEN form.  
+When a non-US resident invests in US shares, the US government mandates information is provided to confirm the non-US residential status, usually by way of completing a W-8 BEN form.
 
 The W-8 BEN form is a declaration by the customer and includes information such as their personal details and tax residency. The form remains active until the end of the third calendar year after the form is signed (i.e. if the form is signed in January 2024, it is valid until 31st December 2027).
 
 WealthKernel provides a service for Tenants which will generate all of the required information to complete the W-8 BEN form to be presented to a customer. If all of the information presented to a customer is correct, the customer can attest to the information. Tenants can submit a customer's attestation which will create a PDF copy of the W-8 BEN form with a digital signature of the customer. The customer can access a copy of the W-8 BEN form should they require for their records. 
 
-In all cases, a customer must complete a W-8 BEN form to hold shares in a GIA and ISA. 
+In all cases, a customer must complete a W-8 BEN form to hold US shares with us. 
 
 The below process shows the sequence in which the API should be called. 
 
