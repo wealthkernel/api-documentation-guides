@@ -29,15 +29,13 @@ Individual SIPP contributions will receive tax relief which we (WealthKernel) wi
 
 ## Employer contributions
 
-Employer contributions are deposits into the **member’s** SIPP where the paying party is an `Organization`(i.e. the member’s employer). The cash still lands in the member’s SIPP portfolio, but the source of funds and party on the deposit reflect the organisation making the payment.
+Employer contributions are deposits into the **member’s** SIPP where the paying party is an `Organization` (i.e. the member’s employer). The cash still lands in the member’s SIPP portfolio, but the source of funds and party on the deposit reflect the organisation making the payment.
 
 Organisation parties have their own due diligence and setup requirements; see [opening requirements](../accounts/Opening-Requirements.md) for how `Organization` parties are used elsewhere on the platform.
 
 ### Tax relief
 
 Employer contributions are not eligible for tax relief, as these contributions are usually done as part of the pay-as-you-earn (PAYE) process before tax has been taken.
-
-## Tax relief
 
 ## Drawdown (decumulation) SIPPs
 
