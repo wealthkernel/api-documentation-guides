@@ -256,6 +256,15 @@
     },
     {
       "type": "divider",
+      "title": "SIPP Contributions"
+    },
+    {
+      "type": "item",
+      "title": "Basics",
+      "uri": "docs/sipp-contributions/Basics.md"
+    },
+    {
+      "type": "divider",
       "title": "Pension Income Payments"
     },
     {
