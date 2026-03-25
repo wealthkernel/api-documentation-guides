@@ -33,6 +33,8 @@ Employer contributions are deposits into the **member’s** SIPP where the payin
 
 Organisation parties have their own due diligence and setup requirements; see [opening requirements](../accounts/Opening-Requirements.md) for how `Organization` parties are used elsewhere on the platform.
 
+An employer contribution can be made by following our standard deposit process, but setting the `portfolioId` to the portfolio in the member's SIPP and the `bankAccountId` to the organisation's bank account.
+
 ### Tax relief
 
 Employer contributions are not eligible for tax relief, as these contributions are usually done as part of the pay-as-you-earn (PAYE) process before tax has been taken.
